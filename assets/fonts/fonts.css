@@ -1,0 +1,8 @@
+/* tools/build-fonts.py가 만든다. 손으로 고치지 말 것. */
+@font-face{font-family:"Hahmlet";src:url("hahmlet.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Gowun Batang";src:url("gowun-batang-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Gowun Batang";src:url("gowun-batang-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Pretendard Variable";src:url("pretendard.woff2") format("woff2");font-weight:45 920;font-style:normal;font-display:swap;}
+@font-face{font-family:"Pretendard";src:url("pretendard.woff2") format("woff2");font-weight:45 920;font-style:normal;font-display:swap;}
+@font-face{font-family:"Cormorant Garamond";src:url("cormorant.woff2") format("woff2");font-weight:300 700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Sora";src:url("sora.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap;}
