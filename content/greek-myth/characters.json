@@ -1,0 +1,4449 @@
+[
+  {
+    "id": "gaia",
+    "name": "가이아",
+    "alias": [
+      "대지의 여신"
+    ],
+    "faction": "primordial",
+    "oneLine": "세상의 맨 처음에 나타난 땅의 여신.",
+    "titles": [
+      {
+        "sinceEp": 1,
+        "text": "땅의 여신"
+      }
+    ],
+    "about": "세상에 아무것도 없던 때, 맨 처음 나타난 이예요. 머리카락과 옷자락이 푸른 언덕과 꽃으로 되어 있어요. 웬만해서는 화를 내지 않지만, 자기 아이들이 다치는 일에는 물러서는 법이 없어요.",
+    "look": "a gentle giant woman whose hair and robe are made of green hills and flowers, earthy browns and greens",
+    "relations": [
+      {
+        "to": "uranus",
+        "label": "함께 세상을 이룬 짝",
+        "kind": [
+          "spouse",
+          "child"
+        ]
+      },
+      {
+        "to": "cronus",
+        "label": "막내아들",
+        "kind": "child"
+      },
+      {
+        "to": "cyclopes",
+        "label": "아들 삼 형제",
+        "kind": "child"
+      },
+      {
+        "to": "hecatoncheires",
+        "label": "아들 삼 형제",
+        "kind": "child"
+      },
+      {
+        "to": "rhea",
+        "label": "딸",
+        "kind": "child",
+        "sinceEp": 2
+      },
+      {
+        "to": "typhon",
+        "label": "가장 늦게 낳은 아이",
+        "kind": "child",
+        "sinceEp": 7
+      }
+    ],
+    "firstEp": 1,
+    "timeline": [
+      {
+        "ep": 1,
+        "text": "텅 빈 카오스에서 가장 먼저 나타나 하늘 우라노스를 낳았고, 갇힌 아이들을 위해 낫을 만들었어요."
+      },
+      {
+        "ep": 2,
+        "text": "크로노스가 아기를 삼키는 것을 보면서도 막지 못하고, 레아에게 크레타섬을 알려 주었어요."
+      },
+      {
+        "ep": 3,
+        "text": "크레타섬에서 자란 손자가 자기 아버지에게로 돌아가려 한다는 것을 알고 잠자코 지켜보았어요."
+      },
+      {
+        "ep": 6,
+        "text": "티탄들이 무너지고 잔치가 벌어지는 동안, 아무 말 없이 땅속을 오래 내려다보았어요."
+      },
+      {
+        "ep": 7,
+        "text": "땅속 가장 깊은 불 앞에서 폭풍 괴물 티폰을 낳고, 아무에게도 알리지 않은 채 뒤로 몇 걸음 물러섰어요."
+      }
+    ],
+    "portrait": "img/char/gaia.jpg"
+  },
+  {
+    "id": "uranus",
+    "name": "우라노스",
+    "alias": [
+      "하늘의 신"
+    ],
+    "faction": "primordial",
+    "oneLine": "가이아가 낳은 하늘의 신, 첫 번째 세상의 왕.",
+    "titles": [
+      {
+        "sinceEp": 1,
+        "text": "하늘의 신"
+      }
+    ],
+    "about": "가이아가 낳은 첫 아이이면서 세상의 첫 번째 왕이에요. 밤하늘과 별로 이루어진 몸에 짙푸른 망토를 둘렀어요. 자기 자리를 빼앗길까 봐 늘 아래를 내려다보며 지냈어요.",
+    "look": "a stern giant made of night sky and stars, deep blue cloak",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "땅",
+        "kind": [
+          "spouse",
+          "parent"
+        ]
+      },
+      {
+        "to": "cronus",
+        "label": "막내아들",
+        "kind": "child"
+      },
+      {
+        "to": "cyclopes",
+        "label": "아들 삼 형제",
+        "kind": "child"
+      },
+      {
+        "to": "hecatoncheires",
+        "label": "아들 삼 형제",
+        "kind": "child"
+      },
+      {
+        "to": "rhea",
+        "label": "딸",
+        "kind": "child",
+        "sinceEp": 2
+      }
+    ],
+    "firstEp": 1,
+    "timeline": [
+      {
+        "ep": 1,
+        "text": "자식들을 땅속 깊이 가두어 가이아를 슬프게 했고, 크로노스에게 힘을 빼앗긴 뒤 하늘 높이 물러났어요. 물러나며 “너도 언젠가 네 아들의 손에 똑같이 그 자리를 빼앗기게 될 것이다”라는 말을 남겼어요."
+      },
+      {
+        "ep": 2,
+        "text": "크로노스가 아기를 삼킨다는 소식이 땅속까지 닿았고, 남긴 예언이 그대로 되어 가고 있었어요."
+      }
+    ],
+    "portrait": "img/char/uranus.jpg"
+  },
+  {
+    "id": "cronus",
+    "name": "크로노스",
+    "alias": [
+      "사투르누스는 로마식 이름",
+      "낫을 든 티탄"
+    ],
+    "faction": "titans",
+    "oneLine": "가이아와 우라노스의 막내아들, 말수가 적은 티탄.",
+    "titles": [
+      {
+        "sinceEp": 1,
+        "text": "티탄의 왕"
+      }
+    ],
+    "about": "가이아와 우라노스의 막내아들이에요. 굽은 낫을 들고 어두운 청동 갑옷을 입었어요. 형제들 가운데 가장 말수가 적은데, 한번 마음을 정하면 아무도 못 말려요.",
+    "look": "a powerful bearded titan with a curved sickle, dark bronze armor",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "uranus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 2
+      },
+      {
+        "to": "atlas",
+        "label": "같은 편의 티탄",
+        "kind": "other",
+        "sinceEp": 6
+      }
+    ],
+    "firstEp": 1,
+    "timeline": [
+      {
+        "ep": 1,
+        "text": "형제들 가운데 혼자 나서서 가이아의 낫을 들고 아버지 우라노스에게 맞섰고, 세상의 새 왕이 되었어요."
+      },
+      {
+        "ep": 2,
+        "text": "예언이 무서워 태어나는 아기를 차례로 삼켰고, 여섯째 대신 돌덩이를 삼키고도 알아채지 못했어요."
+      },
+      {
+        "ep": 3,
+        "text": "왕좌에 앉은 채 아무것도 모르고 있었고, 산 아래에서는 여섯째가 내려올 채비를 하고 있었어요."
+      },
+      {
+        "ep": 4,
+        "text": "제우스가 건넨 약을 마시고 삼킨 것을 모두 게워 냈어요. 돌덩이가 먼저 나오고 다섯 아이가 걸어 나왔어요."
+      },
+      {
+        "ep": 5,
+        "text": "열 해가 넘도록 제우스 편과 맞섰지만 승부를 내지 못했어요."
+      },
+      {
+        "ep": 6,
+        "text": "번개와 백 개의 손 앞에서 물러났어요. 우라노스가 남긴 말이 그대로 이루어졌어요."
+      }
+    ],
+    "portrait": "img/char/cronus.jpg"
+  },
+  {
+    "id": "cyclopes",
+    "name": "키클롭스",
+    "alias": [
+      "외눈박이 거인 삼 형제"
+    ],
+    "faction": "creatures",
+    "oneLine": "이마에 커다란 눈이 하나뿐인 삼 형제, 쇠를 다루는 솜씨가 놀라워요.",
+    "titles": [
+      {
+        "sinceEp": 1,
+        "text": "쇠를 다루는 삼 형제"
+      },
+      {
+        "sinceEp": 5,
+        "text": "번개를 만든 손"
+      }
+    ],
+    "about": "이마 한가운데에 커다란 눈이 하나씩 있는 삼 형제예요. 그을음이 묻은 손으로 늘 화덕 앞에 서 있어요. 생김새 때문에 미움을 받았지만, 쇠를 다루는 솜씨는 세상 어디에도 없는 것이었어요.",
+    "look": "three gentle one-eyed giants with soot-dark skin and a single large glowing eye each, working at a forge",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "uranus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "hecatoncheires",
+        "label": "형제",
+        "kind": "sibling"
+      }
+    ],
+    "firstEp": 1,
+    "timeline": [
+      {
+        "ep": 1,
+        "text": "흉하다는 아버지 우라노스의 말에 땅속 깊은 곳에 갇혔어요."
+      },
+      {
+        "ep": 5,
+        "text": "제우스가 풀어 주자 고마움으로 번개와 삼지창과 보이지 않는 투구를 만들어 주었어요."
+      }
+    ],
+    "portrait": "img/char/cyclopes.jpg",
+    "group": true
+  },
+  {
+    "id": "hecatoncheires",
+    "name": "백수거인",
+    "alias": [
+      "헤카톤케이레스",
+      "백 개의 손을 가진 거인들"
+    ],
+    "faction": "creatures",
+    "oneLine": "팔이 백 개, 머리가 쉰 개인 삼 형제, 세상에서 가장 힘이 세요.",
+    "titles": [
+      {
+        "sinceEp": 1,
+        "text": "백 개의 손"
+      },
+      {
+        "sinceEp": 6,
+        "text": "땅속을 지키는 이들"
+      }
+    ],
+    "about": "팔이 백 개, 머리가 쉰 개인 삼 형제예요. 손을 펼치면 벽처럼 보여요. 세상에서 힘이 가장 세지만 먼저 나서는 일은 없고, 부탁을 받아야 움직여요.",
+    "look": "three towering giants with a hundred arms fanned out like a wall of hands, stone-grey skin",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "uranus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "cyclopes",
+        "label": "형제",
+        "kind": "sibling"
+      }
+    ],
+    "firstEp": 1,
+    "timeline": [
+      {
+        "ep": 1,
+        "text": "키클롭스 형제와 함께 땅속 깊은 곳에 갇혔어요."
+      },
+      {
+        "ep": 5,
+        "text": "제우스가 사슬을 하나하나 끊어 주자 땅 위로 올라와, 던질 바위를 산기슭에 산더미처럼 쌓았어요."
+      },
+      {
+        "ep": 6,
+        "text": "삼백 개의 손으로 한꺼번에 바위를 던져 티탄들을 밀어냈고, 싸움이 끝난 뒤에는 물러난 티탄들을 지키는 일을 맡았어요."
+      }
+    ],
+    "portrait": "img/char/hecatoncheires.jpg",
+    "group": true
+  },
+  {
+    "id": "rhea",
+    "name": "레아",
+    "alias": [
+      "여섯 남매의 어머니"
+    ],
+    "faction": "titans",
+    "oneLine": "아이들을 지키려고 마음을 굳게 먹은 티탄, 크로노스의 짝.",
+    "titles": [
+      {
+        "sinceEp": 2,
+        "text": "아이들의 어머니"
+      }
+    ],
+    "about": "가이아와 우라노스의 딸이자 크로노스의 짝이에요. 밤색 머리를 길게 땋고 부드러운 황토색 숄을 둘렀어요. 목소리를 높이는 일이 없지만, 아이를 지키는 일에서는 누구보다 대담해져요.",
+    "look": "a calm titan mother with long chestnut braided hair and a soft ochre shawl, holding a swaddled bundle",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "uranus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "cronus",
+        "label": "짝",
+        "kind": "spouse"
+      }
+    ],
+    "firstEp": 2,
+    "timeline": [
+      {
+        "ep": 2,
+        "text": "여섯째만은 빼앗기지 않으려고 몰래 낳아 크레타섬에 숨기고, 크로노스에게는 강보에 싼 돌덩이를 건넸어요."
+      },
+      {
+        "ep": 3,
+        "text": "다 자란 제우스를 찾아가 형과 누나들이 아직 아버지 뱃속에 있다는 것을 알려 주었어요."
+      },
+      {
+        "ep": 4,
+        "text": "다섯 아이가 무사히 걸어 나오는 것을 오래 바라보았어요."
+      }
+    ],
+    "portrait": "img/char/rhea.jpg"
+  },
+  {
+    "id": "zeus",
+    "name": "제우스",
+    "alias": [
+      "유피테르는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "크로노스 몰래 태어나 크레타섬 동굴에서 자란 여섯째 아이.",
+    "titles": [
+      {
+        "sinceEp": 4,
+        "text": "형제들을 되찾은 막내"
+      },
+      {
+        "sinceEp": 6,
+        "text": "하늘을 맡은 신들의 왕"
+      }
+    ],
+    "about": "크로노스와 레아의 여섯째로, 크레타섬 동굴에 숨겨져 자랐어요. 손에 쥔 번개는 키클롭스가 만들어 준 것이에요. 겁이 없고 결정을 빨리 내리는데, 그래서 가끔 너무 서두르기도 해요.",
+    "look": "a majestic king of gods with a full white beard and thick silver hair, holding a crackling golden thunderbolt, deep blue and gold robe",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "hera",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 8
+      },
+      {
+        "to": "athena",
+        "label": "머리에서 난 딸",
+        "kind": "child",
+        "sinceEp": 9
+      },
+      {
+        "to": "typhon",
+        "label": "맞선 상대",
+        "kind": "other",
+        "sinceEp": 7
+      },
+      {
+        "to": "leto",
+        "label": "아이들의 어머니",
+        "kind": "spouse",
+        "sinceEp": 10
+      },
+      {
+        "to": "artemis",
+        "label": "델로스섬의 딸",
+        "kind": "child",
+        "sinceEp": 10
+      },
+      {
+        "to": "apollo",
+        "label": "델로스섬의 아들",
+        "kind": "child",
+        "sinceEp": 10
+      },
+      {
+        "to": "hermes",
+        "label": "막내아들",
+        "kind": "child",
+        "sinceEp": 11
+      },
+      {
+        "to": "hephaestus",
+        "label": "대장간을 세운 아들",
+        "kind": "child",
+        "sinceEp": 8
+      },
+      {
+        "to": "ares",
+        "label": "싸움을 맡은 아들",
+        "kind": "child",
+        "sinceEp": 12
+      },
+      {
+        "to": "dionysus",
+        "label": "포도를 심은 아들",
+        "kind": "child",
+        "sinceEp": 14
+      },
+      {
+        "to": "perseus",
+        "label": "탑에서 난 아들",
+        "kind": "child",
+        "sinceEp": 39
+      },
+      {
+        "to": "heracles",
+        "label": "뱀을 누른 아들",
+        "kind": "child",
+        "sinceEp": 43
+      },
+      {
+        "to": "danae",
+        "label": "페르세우스의 어머니",
+        "kind": "spouse",
+        "sinceEp": 39
+      },
+      {
+        "to": "atlas",
+        "label": "맞선 상대",
+        "kind": "other",
+        "sinceEp": 6
+      },
+      {
+        "to": "prometheus",
+        "label": "맞선 상대",
+        "kind": "other",
+        "sinceEp": 16
+      }
+    ],
+    "firstEp": 2,
+    "timeline": [
+      {
+        "ep": 2,
+        "text": "어머니 레아가 크레타섬 동굴에 몰래 숨겨 두어, 아버지에게 삼켜지지 않은 하나가 되었어요."
+      },
+      {
+        "ep": 3,
+        "text": "염소젖과 님프들의 손에서 자라 자기가 누구인지 알게 되고, 산을 내려가기로 마음먹었어요."
+      },
+      {
+        "ep": 4,
+        "text": "약을 써서 아버지가 삼킨 것을 모두 게워 내게 하고, 다섯 형과 누나를 되찾았어요."
+      },
+      {
+        "ep": 5,
+        "text": "땅속 깊은 곳으로 내려가 키클롭스와 백수거인을 풀어 주고, 처음으로 번개를 손에 쥐었어요."
+      },
+      {
+        "ep": 6,
+        "text": "티탄들을 물리치고, 제비를 뽑아 형들과 하늘·바다·저승을 나눠 가졌어요."
+      },
+      {
+        "ep": 7,
+        "text": "모두가 달아난 올림포스에 혼자 남아 티폰과 맞서고, 산 아래에 눌러 가뒀어요."
+      },
+      {
+        "ep": 8,
+        "text": "헤라와 부부가 되고 신들의 자리를 정했어요."
+      },
+      {
+        "ep": 9,
+        "text": "머리가 깨질 듯 아프더니, 갈라진 이마에서 다 자란 아테나가 뛰어나왔어요."
+      },
+      {
+        "ep": 10,
+        "text": "델로스섬으로 내려가 쌍둥이에게 은활과 금활을 하나씩 주었어요."
+      },
+      {
+        "ep": 11,
+        "text": "소를 훔친 막내에게 헤르메스라는 이름을 지어 주고, 신들 사이를 오가는 일을 맡겼어요."
+      },
+      {
+        "ep": 12,
+        "text": "아프로디테에게 올림포스산의 자리를 내어 주고, 본인에게 묻지도 않은 채 헤파이스토스와 짝을 지어 주었어요."
+      },
+      {
+        "ep": 13,
+        "text": "헤르메스에게 죽은 이를 저승 문까지 데려다주는 일을 새로 맡겼어요."
+      },
+      {
+        "ep": 14,
+        "text": "디오니소스를 산으로 불러들이고, 잔치 자리에서 산 아래 사람들을 오래 내려다보았어요."
+      },
+      {
+        "ep": 15,
+        "text": "북쪽에서 내려온 낯선 추위를 보고, 땅 위에 나눠 줄 선물을 프로메테우스 형제에게 맡겼어요."
+      },
+      {
+        "ep": 16,
+        "text": "밤에 산 끝에서 아래를 내려다보다가, 땅 위 여기저기에 켜진 작은 불빛을 보았어요."
+      },
+      {
+        "ep": 17,
+        "text": "프로메테우스를 세상 끝 바위에 묶게 하고, 헤파이스토스에게 사람에게 줄 선물을 만들라고 시켰어요."
+      },
+      {
+        "ep": 18,
+        "text": "헤파이스토스에게 흙으로 사람을 빚게 하고, 열지 말라는 항아리를 들려 땅으로 내려보냈어요."
+      },
+      {
+        "ep": 19,
+        "text": "사나워진 땅 위를 오래 내려다보다가, 손을 들어 서쪽 바다의 구름을 조용히 불러들였어요."
+      },
+      {
+        "ep": 20,
+        "text": "아흐레의 비로 세상을 물에 잠기게 했고, 물이 빠진 뒤에는 비를 다시 부르지 않았어요."
+      },
+      {
+        "ep": 21,
+        "text": "저승을 맡은 형의 부탁에 아무 말도 하지 않았고, 그 침묵이 허락이 되었어요."
+      },
+      {
+        "ep": 22,
+        "text": "연기가 오르지 않는 땅을 오래 내려다보았지만, 그날은 등을 돌린 채 아무 말도 하지 않았어요."
+      },
+      {
+        "ep": 23,
+        "text": "헤르메스를 저승으로 내려보내고, 석류 씨 여섯 알에 여섯 달이라는 답을 내렸어요."
+      },
+      {
+        "ep": 29,
+        "text": "낡은 옷을 입은 나그네가 되어 마을을 돌다가, 문을 열어 준 노부부의 오두막에서 저녁을 대접받았어요."
+      },
+      {
+        "ep": 33,
+        "text": "신들 앞에 선 프시케에게 늙지도 않고 저승으로 내려가지도 않는 잔을 건네주었어요."
+      },
+      {
+        "ep": 38,
+        "text": "하늘길에서 벗어난 해 수레를 번개로 멈춰 세웠어요. 던지기 전에 팔이 아주 잠깐 멈췄지요."
+      },
+      {
+        "ep": 39,
+        "text": "아르고스의 탑 안으로 황금빛 비가 되어 내렸고, 얼마 뒤 페르세우스가 태어났어요."
+      },
+      {
+        "ep": 43,
+        "text": "신들 앞에서 오늘 태어나는 페르세우스의 핏줄이 왕이 될 것이라고 스틱스강에 걸고 맹세했어요."
+      },
+      {
+        "ep": 49,
+        "text": "올림포스산 문 앞으로 올라온 아들의 어깨에 아무 말 없이 손을 오래 얹었어요."
+      },
+      {
+        "ep": 61,
+        "text": "세 여신 가운데 하나를 고르는 일을 스스로 하지 않고, 눈이 좋다는 사람 하나에게 맡겼어요."
+      },
+      {
+        "ep": 77,
+        "text": "아테나의 말을 듣고 헤르메스를 불러, 그 사람을 놓아주라는 말을 전하게 했어요."
+      }
+    ],
+    "portrait": "img/char/zeus.jpg"
+  },
+  {
+    "id": "hestia",
+    "name": "헤스티아",
+    "alias": [
+      "집 안의 불",
+      "베스타는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "가장 먼저 삼켜져 가장 오래 갇혀 있던 맏이.",
+    "titles": [
+      {
+        "sinceEp": 8,
+        "text": "집 안의 불을 지키는 신"
+      }
+    ],
+    "about": "여섯 남매의 맏이예요. 수수한 베일을 쓰고 작은 불씨를 두 손에 받쳐 들고 다녀요. 가장 먼저 삼켜져 가장 오래 갇혀 있었는데도 그 이야기를 한 번도 꺼내지 않아요.",
+    "look": "a gentle goddess with soft brown hair under a simple veil, holding a small steady hearth flame, cream robe",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "막내동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "dionysus",
+        "label": "자리를 받은 이",
+        "kind": "other",
+        "sinceEp": 14
+      }
+    ],
+    "firstEp": 4,
+    "timeline": [
+      {
+        "ep": 4,
+        "text": "맏이답게 맨 먼저 걸어 나와, 궁 안을 한 바퀴 둘러본 뒤 꺼진 화로 앞에 조용히 섰어요."
+      },
+      {
+        "ep": 8,
+        "text": "아무도 맡지 않으려던 화로를 스스로 맡아, 올림포스산 한가운데에 꺼지지 않는 불을 놓았어요."
+      },
+      {
+        "ep": 9,
+        "text": "산꼭대기가 어수선해지자 화로 앞에 앉아 불을 크게 돋우었어요."
+      },
+      {
+        "ep": 14,
+        "text": "열세 번째 손님을 위해 자기 자리에서 조용히 일어나, 화로 앞자리를 택했어요."
+      },
+      {
+        "ep": 15,
+        "text": "올림포스산 화로의 불이 자꾸 한쪽으로 눕는 것을 보고 나뭇가지를 한 개비 더 넣었어요. 여태 없던 찬 바람이 북쪽에서 오고 있었지요."
+      }
+    ],
+    "portrait": "img/char/hestia.jpg"
+  },
+  {
+    "id": "demeter",
+    "name": "데메테르",
+    "alias": [
+      "케레스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "다시 나온 다섯 가운데 하나, 넓은 초록을 처음 보고 입을 가린 누나.",
+    "titles": [
+      {
+        "sinceEp": 14,
+        "text": "곡식과 열매의 여신"
+      }
+    ],
+    "about": "여섯 남매 가운데 하나로, 곡식빛 머리에 이삭을 땋아 넣었어요. 발이 닿는 자리마다 풀이 돋아나요. 사람이든 신이든 배를 곯는 것을 그냥 지나치지 못해요.",
+    "look": "a warm harvest goddess with wheat-gold hair braided with grain stalks, holding a bundle of wheat, amber dress",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "막내동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "helios",
+        "label": "소식을 전해 준 신",
+        "kind": "other",
+        "sinceEp": 22
+      },
+      {
+        "to": "persephone",
+        "label": "딸",
+        "kind": "child",
+        "sinceEp": 21
+      }
+    ],
+    "firstEp": 4,
+    "timeline": [
+      {
+        "ep": 4,
+        "text": "두 번째로 나와 곧장 창가로 달려가, 밖에 펼쳐진 들판을 보고 두 손으로 입을 가렸어요."
+      },
+      {
+        "ep": 9,
+        "text": "머리가 아프다는 제우스에게 잠을 부르는 풀을 달여 왔지만 그것도 듣지 않았어요."
+      },
+      {
+        "ep": 14,
+        "text": "디오니소스가 가져온 포도알을 손바닥에 굴려 보며, 이걸 심을 데가 아주 많겠다고 말했어요."
+      },
+      {
+        "ep": 21,
+        "text": "남쪽 밭에 다녀온 사이 딸이 사라져, 꽃바구니만 남은 들판에서 이름을 두 번 불렀어요."
+      },
+      {
+        "ep": 22,
+        "text": "횃불 두 개를 들고 아흐레를 걸은 끝에 헬리오스에게 소식을 듣고, 그날로 곡식에서 손을 뗐어요."
+      },
+      {
+        "ep": 23,
+        "text": "두 해 만에 딸을 되찾고 다시 땅에 손을 얹자, 마른 들판이 한꺼번에 일어섰어요."
+      }
+    ],
+    "portrait": "img/char/demeter.jpg"
+  },
+  {
+    "id": "hera",
+    "name": "헤라",
+    "alias": [
+      "유노는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "다시 나온 다섯 가운데 하나, 걸음이 곧고 눈매가 또렷한 여신.",
+    "titles": [
+      {
+        "sinceEp": 8,
+        "text": "올림포스의 안주인"
+      }
+    ],
+    "about": "여섯 남매 가운데 하나로, 검은 머리를 높이 땋아 올리고 짙은 붉은 옷을 입어요. 어깨에는 공작 깃털이 하나 놓여 있어요. 걸음이 곧고 눈매가 또렷해서 멀리서도 금방 알아봐요.",
+    "look": "a regal queen with dark hair in a high crown-like braid, a peacock feather at her shoulder, deep crimson gown",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "막내동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "hephaestus",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 8
+      },
+      {
+        "to": "ares",
+        "label": "싸움을 맡은 아들",
+        "kind": "child",
+        "sinceEp": 12
+      },
+      {
+        "to": "echo",
+        "label": "벌을 받은 님프",
+        "kind": "other",
+        "sinceEp": 25
+      },
+      {
+        "to": "heracles",
+        "label": "이름을 가져간 아이",
+        "kind": "other",
+        "sinceEp": 43
+      }
+    ],
+    "firstEp": 4,
+    "timeline": [
+      {
+        "ep": 4,
+        "text": "턱을 들고 똑바로 걸어 나와, 왕좌와 크로노스를 한 번씩 오래 바라보았어요."
+      },
+      {
+        "ep": 8,
+        "text": "제우스와 부부가 되어 올림포스의 안주인이 되었고, 다리를 저는 아들을 산 아래로 보냈어요."
+      },
+      {
+        "ep": 9,
+        "text": "제우스의 머리에서 갑옷을 갖춘 딸이 뛰어나오는 것을 곁에서 말없이 지켜보았어요."
+      },
+      {
+        "ep": 10,
+        "text": "레토가 아이를 낳지 못하도록 해가 비치는 땅 어디에서도 받아 주지 말라고 일렀어요."
+      },
+      {
+        "ep": 12,
+        "text": "산이 시끄러워지자 제우스에게 아프로디테의 짝을 정하라고 했고, 둘째 아들 아레스가 자리를 잡는 것을 말없이 지켜보았어요."
+      },
+      {
+        "ep": 14,
+        "text": "어머니가 사람이라는 디오니소스의 이야기를 듣고 창가로 걸어갔지만, 잔치 자리는 끝까지 지켰어요."
+      },
+      {
+        "ep": 25,
+        "text": "이야기로 자기를 오래 붙잡아 둔 에코에게 먼저 말하지 못하는 벌을 내렸어요."
+      },
+      {
+        "ep": 43,
+        "text": "제우스에게 맹세를 받아 내고 미케네에서 아기가 먼저 태어나게 했어요. 그 뒤 테베의 요람으로 뱀 두 마리를 보냈지요."
+      },
+      {
+        "ep": 44,
+        "text": "올림포스산 난간에서 헤라클레스의 마당을 내려다보다가, 나쁜 마음의 안개를 손바닥에서 풀어 내려보냈어요."
+      },
+      {
+        "ep": 45,
+        "text": "늪에서 헤라클레스를 물러서게 하려고 커다란 게를 보내고, 건너편 바위에 서서 그것을 지켜보았어요."
+      },
+      {
+        "ep": 47,
+        "text": "아마존 사람들 틈에 그 나라 옷을 입고 섞여 들어가, 여왕을 데려간다는 말을 흘려 싸움을 붙였어요. 미케네에서 바친 황소는 받지 않았고요."
+      },
+      {
+        "ep": 49,
+        "text": "올림포스산 문 앞에서 헤라클레스에게 처음으로 고개를 끄덕이고, 그 셈은 자기가 세었다는 말을 남겼어요."
+      },
+      {
+        "ep": 61,
+        "text": "잔칫상에 굴러 들어온 황금 사과에 제일 먼저 손을 뻗었어요. 파리스에게 다스릴 땅을 주겠다고 했다가, 고르지 않자 그 자리에서 돌아섰지요."
+      }
+    ],
+    "portrait": "img/char/hera.jpg"
+  },
+  {
+    "id": "hades",
+    "name": "하데스",
+    "alias": [
+      "플루토는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "말수가 적고 속을 잘 안 보이는 형.",
+    "titles": [
+      {
+        "sinceEp": 6,
+        "text": "땅 밑 세상의 신"
+      }
+    ],
+    "about": "크로노스와 레아의 아들 가운데 하나예요. 잿빛 망토를 두르고 두 갈래 갈퀴 지팡이를 들고 다녀요. 곁에는 키클롭스가 만들어 준 어두운 투구가 늘 놓여 있어요. 화를 내는 일은 드물지만, 한번 정한 것은 좀처럼 바꾸지 않아요.",
+    "look": "a solemn grown man with short straight black hair and a dark trimmed beard, soft dark-grey cloak over a pale tunic, holding a tall dark staff whose head splits into exactly TWO prongs like a two-tined hayfork (absolutely never three prongs, never a trident), a small dark helmet under one arm, warm cream background",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "막내동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "cerberus",
+        "label": "문을 맡은 개",
+        "kind": "other",
+        "sinceEp": 13
+      },
+      {
+        "to": "persephone",
+        "label": "철을 나눠 지내는 사이",
+        "kind": "other",
+        "sinceEp": 23
+      }
+    ],
+    "firstEp": 4,
+    "timeline": [
+      {
+        "ep": 4,
+        "text": "나오자마자 아무 말도 하지 않고 한참을 서 있었어요."
+      },
+      {
+        "ep": 5,
+        "text": "키클롭스가 만들어 준 보이지 않는 투구를 받았어요."
+      },
+      {
+        "ep": 6,
+        "text": "제비를 뽑아 땅 밑 세상을 맡게 되었어요."
+      },
+      {
+        "ep": 13,
+        "text": "저승 문 앞까지 온 첫 사람을 맞아 이 나라의 규칙을 일러 주고, 넓은 들판을 둘러보며 너무 조용하다고 혼잣말을 했어요."
+      },
+      {
+        "ep": 21,
+        "text": "오랜만에 땅 위로 올라갔다가 들판에서 웃는 아이를 보고, 제우스에게만 묻고 페르세포네를 납치해 자기 나라로 데려갔어요."
+      },
+      {
+        "ep": 23,
+        "text": "땅 위가 두 해째 비었다는 말을 듣고 페르세포네를 놓아주면서, 떠나는 손바닥에 반으로 쪼갠 석류를 놓아 주었어요."
+      },
+      {
+        "ep": 35,
+        "text": "산 사람의 노래를 끝까지 듣고, 뒤를 돌아보지 말라는 조건 하나만 걸고 에우리디케를 딸려 보냈어요."
+      },
+      {
+        "ep": 36,
+        "text": "이레째 되는 날 강가까지 걸어 나와, 한 번뿐이었다는 말만 남기고 돌아섰어요."
+      },
+      {
+        "ep": 49,
+        "text": "케르베로스를 데려가되 쇠붙이를 대지 말고 다치게 하지 말고 도로 데려다 놓으라고 했어요. 약속을 지키고 돌아온 헤라클레스를 문 안쪽에 서서 맞았지요."
+      }
+    ],
+    "portrait": "img/char/hades.jpg"
+  },
+  {
+    "id": "poseidon",
+    "name": "포세이돈",
+    "alias": [
+      "넵투누스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "물결처럼 성이 났다 금세 가라앉는 형.",
+    "titles": [
+      {
+        "sinceEp": 6,
+        "text": "바다를 맡은 신"
+      }
+    ],
+    "about": "크로노스와 레아의 아들 가운데 하나예요. 바다빛 머리와 수염에 세 갈래 창을 들었어요. 그 창도 키클롭스가 만들어 준 것이에요. 성이 났다가도 물결처럼 금세 가라앉아요.",
+    "look": "a sea god with wavy sea-green hair and beard, holding a three-pointed trident, teal robe",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "rhea",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "막내동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "athena",
+        "label": "도시를 두고 겨룬 사이",
+        "kind": "other",
+        "sinceEp": 9
+      }
+    ],
+    "firstEp": 4,
+    "timeline": [
+      {
+        "ep": 4,
+        "text": "나오자마자 크게 숨을 들이쉬고, 어디선가 들려오는 파도 소리 쪽으로 고개를 홱 돌렸어요."
+      },
+      {
+        "ep": 5,
+        "text": "키클롭스가 만들어 준 삼지창을 받았어요."
+      },
+      {
+        "ep": 6,
+        "text": "제비를 뽑아 바다를 맡게 되었어요."
+      },
+      {
+        "ep": 9,
+        "text": "한 도시를 두고 아테나와 겨루었지만 사람들이 올리브나무를 골라, 말없이 바다로 돌아갔어요."
+      },
+      {
+        "ep": 14,
+        "text": "잔치에서 포도를 한 알 먹어 보고는 곧바로 두 번째 알로 손을 뻗었어요."
+      }
+    ],
+    "portrait": "img/char/poseidon.jpg"
+  },
+  {
+    "id": "atlas",
+    "name": "아틀라스",
+    "alias": [
+      "하늘을 진 티탄"
+    ],
+    "faction": "titans",
+    "oneLine": "티탄 편에 서서 끝까지 물러서지 않은 힘센 티탄.",
+    "titles": [
+      {
+        "sinceEp": 6,
+        "text": "하늘을 떠받치는 티탄"
+      }
+    ],
+    "about": "어깨가 넓고 살갗이 거친 티탄이에요. 짧고 검은 곱슬머리를 하고 있어요. 티탄 편에 서서 끝까지 물러서지 않았고, 그 때문에 세상 서쪽 끝에서 하늘을 떠받치게 되었어요.",
+    "look": "a broad-shouldered titan kneeling on one knee, a huge starry night sphere resting on his upper back and shoulders, both arms braced up to hold it, short dark curls and a short beard, weathered skin, face turned toward the viewer, warm cream background",
+    "relations": [
+      {
+        "to": "cronus",
+        "label": "같은 편에서 싸운 티탄",
+        "kind": "other"
+      },
+      {
+        "to": "zeus",
+        "label": "맞선 상대",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 6,
+    "timeline": [
+      {
+        "ep": 6,
+        "text": "끝까지 물러서지 않아, 세상 서쪽 끝에서 하늘을 어깨로 떠받치는 일을 맡게 되었어요."
+      },
+      {
+        "ep": 7,
+        "text": "티폰이 올림포스산을 덮치는 동안에도 세상 서쪽 끝에서 하늘을 떠받치고 서 있었어요."
+      },
+      {
+        "ep": 17,
+        "text": "세상 서쪽 끝에서 하늘을 떠받치다가, 사슬에 묶이러 온 아우를 맞고 오랜만에 말을 나눴어요."
+      },
+      {
+        "ep": 48,
+        "text": "사흘 동안 하늘을 헤라클레스에게 맡기고 황금 사과 셋을 따 왔어요. 도로 지지 않으려고 꾀를 부렸다가 사자 가죽 핑계에 넘어가 다시 하늘을 받았지요."
+      }
+    ],
+    "portrait": "img/char/atlas.jpg"
+  },
+  {
+    "id": "typhon",
+    "name": "티폰",
+    "alias": [
+      "폭풍 괴물"
+    ],
+    "faction": "creatures",
+    "oneLine": "가이아가 낳은, 세상에서 가장 크고 무서운 폭풍 괴물.",
+    "titles": [
+      {
+        "sinceEp": 7,
+        "text": "가장 무서운 폭풍 괴물"
+      }
+    ],
+    "about": "가이아가 땅속 깊은 곳에서 낳은, 세상에서 가장 크고 무서운 괴물이에요. 머리에는 검은 연기가 갈기처럼 일렁이고 다리 대신 뱀 같은 것들이 감겨 있어요. 눈에서는 잉걸불 같은 빛이 나요.",
+    "look": "a colossal storm monster with a mane of dark smoke and many serpent coils for legs, glowing ember eyes",
+    "relations": [
+      {
+        "to": "gaia",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "맞선 상대",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 7,
+    "timeline": [
+      {
+        "ep": 7,
+        "text": "올림포스를 덮쳐 신들을 모두 달아나게 했지만, 제우스의 번개에 밀려 산 아래에 눌렸어요. 산 밑에서 새어 나오는 뜨거운 김이 지금도 올라온대요."
+      }
+    ],
+    "portrait": "img/char/typhon.jpg"
+  },
+  {
+    "id": "hephaestus",
+    "name": "헤파이스토스",
+    "alias": [
+      "대장간의 신",
+      "불카누스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "다리를 절어 산 아래로 밀려난 뒤, 바닷가에 자기 대장간을 세운 아들.",
+    "titles": [
+      {
+        "sinceEp": 8,
+        "text": "불과 대장간의 신"
+      }
+    ],
+    "about": "제우스와 헤라의 아들이에요. 그을음이 묻은 갈색 수염에 가죽 앞치마를 두르고 망치를 들었어요. 다리를 절어 산 아래로 밀려났지만, 그곳 바닷가에 자기 대장간을 세웠어요. 손이 아주 좋아서 만들지 못하는 것이 거의 없어요.",
+    "look": "a sturdy smith god with soot-streaked brown beard and a leather smith's cloth tied at the waist over a bare chest, holding a blacksmith hammer, glowing forge sparks",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "hera",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "pandora",
+        "label": "손수 빚은 사람",
+        "kind": "other",
+        "sinceEp": 18
+      },
+      {
+        "to": "ares",
+        "label": "아우",
+        "kind": "sibling",
+        "sinceEp": 12
+      }
+    ],
+    "firstEp": 8,
+    "timeline": [
+      {
+        "ep": 8,
+        "text": "산 아래로 밀려나 바닷가에서 자랐고, 그곳에 대장간을 세워 첫 불꽃을 튀겼어요."
+      },
+      {
+        "ep": 9,
+        "text": "아버지의 부탁을 받고 날이 얇은 도끼를 들고 올라와, 손을 떨지 않고 한 번 내리쳤어요."
+      },
+      {
+        "ep": 12,
+        "text": "사흘 동안 대장간에 틀어박혀 꽃이 새겨진 금띠를 만들었고, 아프로디테와 부부가 되었어요."
+      },
+      {
+        "ep": 14,
+        "text": "자리를 하나 더 깎겠다고 했다가 물러섰고, 잔치에서 오랜만에 소리 내어 웃었어요."
+      },
+      {
+        "ep": 16,
+        "text": "대장간 화덕 앞에서 망치 소리를 한 번 멈추었다가, 아무 말 없이 다시 쇠를 두드렸어요."
+      },
+      {
+        "ep": 17,
+        "text": "끊어지지 않는 사슬을 손수 만들어 프로메테우스를 바위에 묶고, 그 앞에서 오래 고개를 들지 못했어요."
+      },
+      {
+        "ep": 18,
+        "text": "아버지가 시킨 대로 강가 흙으로 사흘 만에 판도라를 빚고, 숨을 불어넣었어요."
+      },
+      {
+        "ep": 69,
+        "text": "하룻밤 만에 방패를 만들며 싸움 대신 밭과 혼인과 춤추는 사람들을 새겨 넣었어요."
+      }
+    ],
+    "portrait": "img/char/hephaestus.jpg"
+  },
+  {
+    "id": "athena",
+    "name": "아테나",
+    "alias": [
+      "미네르바는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "제우스의 머리에서 다 자란 채로 뛰어나온 여신.",
+    "titles": [
+      {
+        "sinceEp": 9,
+        "text": "지혜와 손재주의 여신"
+      }
+    ],
+    "about": "제우스의 이마에서 갑옷을 다 갖춘 채로 뛰어나왔어요. 청동 투구를 쓰고 둥근 방패를 들었어요. 어깨에는 작은 올빼미가 앉아 있어요. 힘으로 밀어붙이기보다 먼저 헤아려 보는 쪽이에요.",
+    "look": "a composed goddess with dark hair under a bronze helmet, a round shield and a small owl on her shoulder, olive-grey robe",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "poseidon",
+        "label": "도시를 두고 겨룬 사이",
+        "kind": "other",
+        "sinceEp": 9
+      },
+      {
+        "to": "arachne",
+        "label": "베 짜기를 겨룬 이",
+        "kind": "other",
+        "sinceEp": 26
+      },
+      {
+        "to": "perseus",
+        "label": "방패를 받은 아이",
+        "kind": "other",
+        "sinceEp": 40
+      }
+    ],
+    "firstEp": 9,
+    "timeline": [
+      {
+        "ep": 9,
+        "text": "갑옷을 다 갖춘 채 아버지의 이마에서 뛰어나왔고, 한 도시에 올리브나무를 내어 사람들의 마음을 얻었어요."
+      },
+      {
+        "ep": 14,
+        "text": "잔치 내내 말을 아끼고, 디오니소스가 들려주는 흙과 바람 이야기를 오래 들었어요."
+      },
+      {
+        "ep": 15,
+        "text": "겨울을 날 채비가 없는 땅 위를 먼저 알아채고, 그 일을 형제에게 맡기자고 말했어요."
+      },
+      {
+        "ep": 16,
+        "text": "한밤중에 문 앞에 서 있다가, 나뭇대를 든 프로메테우스를 보고도 몸을 돌려 아래만 내려다보았어요."
+      },
+      {
+        "ep": 18,
+        "text": "판도라에게 옷과 띠를 지어 입히고, 실 잣고 베 짜는 손재주를 알려 주었어요."
+      },
+      {
+        "ep": 26,
+        "text": "노파의 모습으로 아라크네를 찾아가 타일렀고, 겨루기 끝에 그 천을 찢고 아라크네를 거미로 만들었어요."
+      },
+      {
+        "ep": 40,
+        "text": "서쪽으로 가는 페르세우스에게 거울처럼 닦은 방패를 주며, 보지 말고 비친 것을 보라고 일러 주었어요."
+      },
+      {
+        "ep": 41,
+        "text": "돌들 사이에 나타나 새벽이 오기 바로 전에 셋이 다 잠깐 잠든다는 것을 일러 주고, 자루를 다시 열지 말라고 했어요."
+      },
+      {
+        "ep": 42,
+        "text": "배 위로 찾아와 방패와 자루를 도로 가져가고, 자루 속의 것을 방패 한가운데에 붙였어요."
+      },
+      {
+        "ep": 61,
+        "text": "사과를 두고 헤라와 맞섰고, 파리스에게 어느 자리에 서든 무엇을 해야 하는지 알게 해 주겠다고 했어요."
+      },
+      {
+        "ep": 70,
+        "text": "흙에 박힌 창을 뽑아 아킬레우스의 손에 도로 쥐여 주었어요."
+      },
+      {
+        "ep": 72,
+        "text": "나무 옆을 걸으며 길이를 재고 밑동에 손을 얹어 주었지만, 성이 무너진 밤에는 어디에도 서 있지 않았어요."
+      },
+      {
+        "ep": 77,
+        "text": "신들 앞에서 일어나 아직 돌아가지 못한 사람 이야기를 꺼내고, 그 집 아들이 아버지 얼굴을 모른다고 했어요."
+      },
+      {
+        "ep": 78,
+        "text": "양 치는 젊은이의 모습으로 안개 속에 나타나 여기가 이타카라고 일러 주고, 오디세우스를 늙은 거지로 바꿔 주었어요."
+      },
+      {
+        "ep": 79,
+        "text": "활 겨루기가 벌어지는 동안 위층 페넬로페의 눈꺼풀에 잠을 얹어, 아래층 소리를 하나도 듣지 못하게 했어요."
+      },
+      {
+        "ep": 80,
+        "text": "밤을 붙들어 두어 새벽이 늦게 오게 했어요. 두 사람이 스무 해 이야기를 다 할 수 있게요."
+      }
+    ],
+    "portrait": "img/char/athena.jpg"
+  },
+  {
+    "id": "leto",
+    "name": "레토",
+    "alias": [
+      "라토나는 로마식 이름"
+    ],
+    "faction": "titans",
+    "oneLine": "아이를 낳을 땅을 찾아 온 세상을 걸어 다닌 조용한 티탄.",
+    "titles": [
+      {
+        "sinceEp": 10,
+        "text": "쌍둥이의 어머니"
+      }
+    ],
+    "about": "올림포스산에 올라가지 않고 땅 위를 걸어 다니던 티탄이에요. 검은 물결머리에 흐린 잿빛 베일을 쓰고, 팔에는 종려나무 가지를 안고 있어요. 목소리가 낮고, 문 앞에서 돌아설 때도 좀처럼 화를 내지 않아요.",
+    "look": "a quiet titan woman with dark wavy hair and a pale grey veil, a palm frond in her arm",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아이들의 아버지",
+        "kind": "spouse",
+        "sinceEp": 10
+      },
+      {
+        "to": "artemis",
+        "label": "먼저 낳은 딸",
+        "kind": "child",
+        "sinceEp": 10
+      },
+      {
+        "to": "apollo",
+        "label": "뒤에 낳은 아들",
+        "kind": "child",
+        "sinceEp": 10
+      }
+    ],
+    "firstEp": 10,
+    "timeline": [
+      {
+        "ep": 10,
+        "text": "헤라의 미움을 받아 아이를 낳을 땅을 찾아 떠돌다가, 떠다니는 섬 델로스에서 쌍둥이를 낳았어요."
+      }
+    ],
+    "portrait": "img/char/leto.jpg"
+  },
+  {
+    "id": "artemis",
+    "name": "아르테미스",
+    "alias": [
+      "디아나는 로마식 이름",
+      "다이애나"
+    ],
+    "faction": "olympians",
+    "oneLine": "델로스섬에서 먼저 태어나 어머니 곁을 지킨 쌍둥이 누이.",
+    "titles": [
+      {
+        "sinceEp": 10,
+        "text": "산과 숲의 여신"
+      }
+    ],
+    "about": "레토의 딸이고 아폴론과 쌍둥이예요. 검은 머리를 뒤로 묶고 초승달 모양 장식을 달았어요. 은빛 활을 들고 숲을 달리는 것을 좋아하고, 맨발이 바위에 긁혀도 아랑곳하지 않아요.",
+    "look": "a swift young goddess with dark hair tied back and a crescent moon clasp, carrying a silver bow, forest-green tunic",
+    "relations": [
+      {
+        "to": "leto",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "apollo",
+        "label": "쌍둥이 동생",
+        "kind": "sibling"
+      }
+    ],
+    "firstEp": 10,
+    "timeline": [
+      {
+        "ep": 10,
+        "text": "델로스섬에서 먼저 태어나 어머니 곁에 서서 동생이 나오는 것을 지켜보았고, 제우스에게 은활을 받았어요."
+      },
+      {
+        "ep": 14,
+        "text": "기둥에 기대선 채로 그게 무슨 열매냐고 물었고, 잔치에서도 앉지 않고 서서 먹었어요."
+      },
+      {
+        "ep": 46,
+        "text": "자기 사슴을 잡아 든 헤라클레스를 여울에서 막아 세우고, 보여만 주고 놓아주라는 조건으로 데려가게 했어요."
+      },
+      {
+        "ep": 64,
+        "text": "숲에서 기르던 사슴을 잃은 뒤로 아울리스의 바람을 붙들어 두었고, 제단 위의 이피게네이아를 사슴으로 바꿔 데려가 살려 주었어요."
+      }
+    ],
+    "portrait": "img/char/artemis.jpg"
+  },
+  {
+    "id": "apollo",
+    "name": "아폴론",
+    "alias": [
+      "아폴로는 로마식 이름",
+      "포이보스"
+    ],
+    "faction": "olympians",
+    "oneLine": "델로스섬에서 태어나 금빛 활을 받은 쌍둥이 동생.",
+    "titles": [
+      {
+        "sinceEp": 10,
+        "text": "빛과 참말의 신"
+      }
+    ],
+    "about": "레토의 아들이고 아르테미스와 쌍둥이예요. 햇빛 같은 금빛 곱슬머리에 월계관을 썼어요. 하늘빛이 바뀌는 것을 하루 종일 앉아서 보는 아이였고, 거짓말을 아주 싫어해요.",
+    "look": "a youthful god with sunlit golden curls and a laurel wreath, holding a golden lyre, white and gold tunic",
+    "relations": [
+      {
+        "to": "leto",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "artemis",
+        "label": "쌍둥이 누이",
+        "kind": "sibling"
+      },
+      {
+        "to": "hermes",
+        "label": "리라를 준 동생",
+        "kind": "sibling",
+        "sinceEp": 11
+      },
+      {
+        "to": "eros",
+        "label": "활을 두고 겨룬 사이",
+        "kind": "other",
+        "sinceEp": 24
+      },
+      {
+        "to": "daphne",
+        "label": "월계수가 된 님프",
+        "kind": "other",
+        "sinceEp": 24
+      },
+      {
+        "to": "orpheus",
+        "label": "리라를 받은 아이",
+        "kind": "other",
+        "sinceEp": 34
+      }
+    ],
+    "firstEp": 10,
+    "timeline": [
+      {
+        "ep": 10,
+        "text": "델로스섬에서 태어나 제우스에게 금빛 활을 받고, 자기 자리로 삼을 델포이 골짜기로 걸어 올라갔어요."
+      },
+      {
+        "ep": 11,
+        "text": "하룻밤 사이에 소 쉰 마리를 잃었다가 되찾았고, 거북 등딱지로 만든 리라와 그 소들을 바꾸었어요."
+      },
+      {
+        "ep": 14,
+        "text": "하나쯤 더 놓아도 괜찮다며 디오니소스 편을 들었고, 잔치에서 리라를 꺼냈어요."
+      },
+      {
+        "ep": 24,
+        "text": "델포이에서 에로스의 작은 활을 우습게 보았다가 금 화살을 맞았고, 싫다는 다프네를 강가까지 뒤쫓았어요. 월계수가 된 그 나무 앞에서 미안하다고 하고, 가지를 꺾어 머리에 둘렀지요."
+      },
+      {
+        "ep": 28,
+        "text": "산에서 열린 음악 겨루기에서 이겼는데, 산의 신 편을 든 미다스에게 당나귀 귀를 붙여 주었어요."
+      },
+      {
+        "ep": 34,
+        "text": "산길에서 염소를 치던 아이에게 줄이 일곱인 리라를 깎아 주고, 소리는 손으로 내는 게 아니라고 일러 주었어요."
+      },
+      {
+        "ep": 36,
+        "text": "강 하구까지 걸어 내려가 떠내려온 리라를 건져 올렸고, 끊긴 줄은 다시 걸지 않은 채 하늘로 던져 올렸어요."
+      },
+      {
+        "ep": 44,
+        "text": "델포이를 찾아온 헤라클레스에게 미케네의 왕이 시키는 일을 열두 번 해내라고 일러 주었어요."
+      },
+      {
+        "ep": 68,
+        "text": "성벽을 오르려는 파트로클로스를 밀어내고 여기까지라고 일렀어요."
+      },
+      {
+        "ep": 70,
+        "text": "그날 아침까지 헥토르 곁에 서 있다가, 아무 말 없이 물러났어요."
+      }
+    ],
+    "portrait": "img/char/apollo.jpg"
+  },
+  {
+    "id": "hermes",
+    "name": "헤르메스",
+    "alias": [
+      "메르쿠리우스는 로마식 이름",
+      "머큐리"
+    ],
+    "faction": "olympians",
+    "oneLine": "태어난 날 밤에 벌써 요람 밖으로 걸어 나간 막내.",
+    "titles": [
+      {
+        "sinceEp": 11,
+        "text": "신들의 심부름꾼"
+      },
+      {
+        "sinceEp": 13,
+        "text": "길을 아는 안내자"
+      }
+    ],
+    "about": "산속 동굴에서 태어난 제우스의 막내아들이에요. 헝클어진 밝은 갈색 머리에, 발목과 모자에 작은 날개가 달려 있어요. 손이 빠르고 말은 더 빨라서, 곁에 있으면 지루할 틈이 없어요.",
+    "look": "a quick young god with tousled light-brown hair, small winged sandals and a winged cap, holding a slender staff entwined with two snakes",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "apollo",
+        "label": "소를 준 형",
+        "kind": "sibling",
+        "sinceEp": 11
+      },
+      {
+        "to": "perseus",
+        "label": "신발을 받은 아이",
+        "kind": "other",
+        "sinceEp": 40
+      },
+      {
+        "to": "paris",
+        "label": "산에서 만난 이",
+        "kind": "other",
+        "sinceEp": 61
+      }
+    ],
+    "firstEp": 11,
+    "timeline": [
+      {
+        "ep": 11,
+        "text": "태어난 날 거북 등딱지로 리라를 만들고 아폴론의 소를 뒤로 몰아 감췄다가, 그 재주로 심부름꾼 자리를 맡았어요."
+      },
+      {
+        "ep": 13,
+        "text": "제우스에게 새 일을 맡아, 첫 사람을 스틱스강 건너 저승 문 앞까지 안내했어요."
+      },
+      {
+        "ep": 14,
+        "text": "산 아래에서 포도 이야기를 물고 올라와 전했고, 산꼭대기의 열두 자리를 소리 내어 세었어요."
+      },
+      {
+        "ep": 17,
+        "text": "제우스의 말을 들고 세상 끝까지 날아가, 사과하면 풀어 주겠다는 말을 전하고 뜻밖의 대답을 들고 돌아왔어요."
+      },
+      {
+        "ep": 18,
+        "text": "판도라라는 이름을 붙여 주고, 땅으로 내려가는 길을 언덕 아래까지 데려다주었어요."
+      },
+      {
+        "ep": 23,
+        "text": "처음으로 저승에서 누군가를 데리고 올라왔고, 올라오는 길에 석류 알이 빠진 자리를 여섯까지 세었어요."
+      },
+      {
+        "ep": 29,
+        "text": "제우스와 함께 나그네가 되어 스물세 집에서 거절당하고, 언덕 위 오두막에서 두 노인의 손님이 되었어요."
+      },
+      {
+        "ep": 34,
+        "text": "풀밭에서 세상을 떠난 에우리디케를 앞세우고 저녁 무렵 언덕 뒤 골짜기로 내려갔어요. 발소리는 하나만 났지요."
+      },
+      {
+        "ep": 40,
+        "text": "페르세우스에게 날개 달린 신발과 가죽 자루와 굽은 칼을 빌려주고, 세 노파는 순순히 말해 주지 않을 거라고 알려 주었어요."
+      },
+      {
+        "ep": 61,
+        "text": "잔치 초대를 돌리면서 한 집 앞을 그냥 지나갔어요. 뒷날 세 여신을 산 중턱으로 데려가 파리스의 손에 사과를 놓아 주었지요."
+      },
+      {
+        "ep": 71,
+        "text": "밤길에 나타나 수레를 진영 끝까지 데려다주고, 어른 셋이 여는 빗장을 한 손으로 밀어 올린 뒤 사라졌어요."
+      },
+      {
+        "ep": 75,
+        "text": "숲길에 서서 오디세우스를 세우고, 뿌리가 검고 꽃이 흰 풀을 뽑아 주었어요. 약속을 받기 전에는 상도 물도 받지 말라고 일렀지요."
+      },
+      {
+        "ep": 77,
+        "text": "바다 위를 아주 오래 날아 먼 섬에 닿아, 그 사람을 놓아주라는 제우스의 말을 전했어요."
+      }
+    ],
+    "portrait": "img/char/hermes.jpg"
+  },
+  {
+    "id": "aphrodite",
+    "name": "아프로디테",
+    "alias": [
+      "베누스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "어느 날 바다 거품 속에서 다 자란 모습으로 뭍에 올라온 여신.",
+    "titles": [
+      {
+        "sinceEp": 12,
+        "text": "사랑과 아름다움의 여신"
+      }
+    ],
+    "about": "어디에서 왔는지는 이야기마다 조금씩 달라요. 이 이야기에서는 바다 거품 속에서 다 자란 모습으로 태어나 조개껍데기를 타고 뭍으로 올라왔지요. 긴 장밋빛 머리에 어깨에는 진주빛 조개 무늬가 있어요. 걸어간 자리마다 꽃이 피어나요.",
+    "look": "a graceful goddess with long rose-gold waving hair, a pearl-white shell motif at her shoulder, soft pink flowing gown",
+    "relations": [
+      {
+        "to": "hephaestus",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 12
+      },
+      {
+        "to": "pygmalion",
+        "label": "소원을 빈 사람",
+        "kind": "other",
+        "sinceEp": 30
+      },
+      {
+        "to": "psyche",
+        "label": "시험을 치른 사람",
+        "kind": "other",
+        "sinceEp": 33
+      },
+      {
+        "to": "paris",
+        "label": "사과를 준 사람",
+        "kind": "other",
+        "sinceEp": 61
+      },
+      {
+        "to": "eros",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 24
+      },
+      {
+        "to": "ares",
+        "label": "마음이 간 사람",
+        "kind": "other",
+        "sinceEp": 12
+      }
+    ],
+    "firstEp": 12,
+    "timeline": [
+      {
+        "ep": 12,
+        "text": "바다 거품에서 태어나 올림포스산에 자리를 얻었고, 제우스가 정한 대로 헤파이스토스와 부부가 되었어요. 아무도 자기에게 묻지 않은 것을 그 자리에서 물었고, 그해 여름 아레스에게 마음이 갔지요."
+      },
+      {
+        "ep": 14,
+        "text": "열두 신이 처음으로 자리를 다 채운 잔치에서 디오니소스가 가져온 포도를 함께 먹었어요."
+      },
+      {
+        "ep": 18,
+        "text": "흙에서 나온 사람의 머리에 들꽃으로 엮은 관을 씌워 주었어요."
+      },
+      {
+        "ep": 24,
+        "text": "화가 나서 찾아온 아들에게 두 가지 화살을 보여 주며, 한번 떠난 화살은 되돌릴 수 없다고 일러 주었어요."
+      },
+      {
+        "ep": 25,
+        "text": "나르키소스에게 마음을 주었다가 돌아선 젊은 사냥꾼의 무거운 소원을 들어주었어요."
+      },
+      {
+        "ep": 30,
+        "text": "축제에서 소리 내지 못한 피그말리온의 소원을 듣고, 상아 조각상에 온기를 보내 주었어요."
+      },
+      {
+        "ep": 31,
+        "text": "신전에 발길이 끊기자 에로스를 불러, 프시케가 세상에서 가장 하찮은 것을 사랑하게 만들라고 시켰어요."
+      },
+      {
+        "ep": 32,
+        "text": "아들의 화살이 한 대도 줄지 않은 것을 세어 보고, 문지기에게 누가 문을 두드려도 한 번에 열어 주지 말라고 일렀어요."
+      },
+      {
+        "ep": 33,
+        "text": "프시케에게 씨앗 고르기와 금빛 털과 저승 심부름을 차례로 시켰고, 잔을 받는 자리에서는 끝내 눈을 마주치지 않았어요."
+      },
+      {
+        "ep": 56,
+        "text": "강으로 들어가는 아르고호를 난간에서 내려다보다가, 금으로 된 공을 주겠다며 에로스를 콜키스로 내려보냈어요."
+      },
+      {
+        "ep": 60,
+        "text": "달라고 하지 않은 소원 하나를 듣고, 마당의 나무에서 딴 황금 사과 세 알을 신전 앞에 놓아 주었어요."
+      },
+      {
+        "ep": 61,
+        "text": "혼인 잔치에 굴러 들어온 황금 사과를 두고 헤라·아테나와 맞섰고, 파리스에게 세상에서 가장 아름다운 여인을 약속하고 그 사과를 받았어요."
+      },
+      {
+        "ep": 62,
+        "text": "그 계절에 없는 장미 냄새와 함께 헬레네 앞에 나타나, 자기가 한 약속을 지키러 왔다고 했어요. 안 가겠다는 헬레네의 이마에 손을 얹어, 그 밤이 지나기 전에 마음을 돌려놓았지요."
+      }
+    ],
+    "portrait": "img/char/aphrodite.jpg"
+  },
+  {
+    "id": "ares",
+    "name": "아레스",
+    "alias": [
+      "마르스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "스스로 싸움을 맡겠다고 나선 제우스와 헤라의 아들.",
+    "titles": [
+      {
+        "sinceEp": 12,
+        "text": "싸움을 맡은 신"
+      }
+    ],
+    "about": "제우스와 헤라의 아들이에요. 검은 머리를 짧게 자르고 볏이 달린 청동 투구를 썼어요. 한 손에는 창, 다른 손에는 둥근 방패를 들고 다니지요. 걸을 때마다 쇠가 부딪히는 소리가 나고, 지나간 자리에는 아무것도 자라지 않아요.",
+    "look": "a fierce god with cropped black hair and a crested bronze helmet, holding a spear and round shield, iron-red cloak",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "hera",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "hephaestus",
+        "label": "형",
+        "kind": "sibling"
+      },
+      {
+        "to": "aphrodite",
+        "label": "마음이 간 사람",
+        "kind": "other",
+        "sinceEp": 12
+      }
+    ],
+    "firstEp": 12,
+    "timeline": [
+      {
+        "ep": 12,
+        "text": "싸움을 맡겠다고 스스로 말해 올림포스산에 자리를 얻었어요. 그해 여름 좁은 산길에서 아프로디테와 마주쳤지요."
+      },
+      {
+        "ep": 14,
+        "text": "자리는 열둘이어야 한다며 열세 번째 손님을 끝까지 반기지 않았어요."
+      },
+      {
+        "ep": 47,
+        "text": "아마존 물가에서 싸움이 끝난 뒤에 나타나, 자기가 준 띠를 가져가라며 오늘은 네가 고맙다고 했어요."
+      }
+    ],
+    "portrait": "img/char/ares.jpg"
+  },
+  {
+    "id": "cerberus",
+    "name": "케르베로스",
+    "alias": [
+      "저승 문을 지키는 개"
+    ],
+    "faction": "creatures",
+    "oneLine": "저승 문 앞에 엎드려 있는 머리가 셋인 커다란 개.",
+    "titles": [
+      {
+        "sinceEp": 13,
+        "text": "저승 문을 지키는 개"
+      }
+    ],
+    "about": "숯빛 털에 목덜미에는 검은 연기 같은 갈기가 있어요. 머리가 셋이고 눈은 여섯 개 다 호박빛이지요. 들어오는 이에게는 꼬리를 흔들지만, 나가려는 이 앞에서는 세 머리가 한꺼번에 일어나요.",
+    "look": "a huge three-headed dog with charcoal fur and a mane of dark smoke, glowing amber eyes",
+    "relations": [
+      {
+        "to": "hades",
+        "label": "문을 맡긴 이",
+        "kind": "other",
+        "sinceEp": 13
+      }
+    ],
+    "firstEp": 13,
+    "timeline": [
+      {
+        "ep": 13,
+        "text": "처음 온 사람의 손등에 코를 대고 냄새를 맡은 뒤 문 옆으로 비켜서 주었고, 헤르메스가 던져 준 빵 한 조각을 받아먹었어요."
+      },
+      {
+        "ep": 33,
+        "text": "던져 준 빵 한 조각을 두고 머리끼리 다투는 사이에, 산 사람 하나가 문 안으로 들어갔어요."
+      },
+      {
+        "ep": 35,
+        "text": "오르페우스의 줄 소리에 세 머리가 차례로 내려앉았고, 나가는 두 사람에게는 눈을 뜨지 않았어요."
+      },
+      {
+        "ep": 49,
+        "text": "사자 가죽을 쓰고 들어온 헤라클레스에게 세 목이 모이는 자리를 붙들려 뭍으로 올라갔다가, 처음 본 밝은 빛에 떨었어요. 미케네에서 한 번 짖고는 도로 제자리로 돌아와 엎드렸지요."
+      }
+    ],
+    "portrait": "img/char/cerberus.jpg"
+  },
+  {
+    "id": "dionysus",
+    "name": "디오니소스",
+    "alias": [
+      "바쿠스는 로마식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "마른 언덕에 포도 덩굴을 심고 다닌 젊은이.",
+    "titles": [
+      {
+        "sinceEp": 14,
+        "text": "포도와 마른 땅의 신"
+      }
+    ],
+    "about": "제우스의 아들인데 어머니는 사람이었어요. 그래서 신들 가운데 혼자만 사람의 마을에서 자랐지요. 검은 곱슬머리에 포도 덩굴을 감아 쓰고, 솔방울이 달린 나무 지팡이를 들고 다녀요. 값을 받지 않고 마른 땅에 덩굴을 심어 줘요.",
+    "look": "a smiling young god with dark curls crowned by grape vines, holding a wooden staff topped with a pinecone, purple sash",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "hestia",
+        "label": "자리를 내어 준 분",
+        "kind": "other",
+        "sinceEp": 14
+      },
+      {
+        "to": "midas",
+        "label": "소원을 빈 왕",
+        "kind": "other",
+        "sinceEp": 27
+      },
+      {
+        "to": "ariadne",
+        "label": "섬에서 만난 이",
+        "kind": "other",
+        "sinceEp": 53
+      }
+    ],
+    "firstEp": 14,
+    "timeline": [
+      {
+        "ep": 14,
+        "text": "마른 언덕에 포도 덩굴을 심어 마을을 살렸고, 헤스티아가 내어 준 자리에 앉아 열두 신의 하나가 되었어요."
+      },
+      {
+        "ep": 27,
+        "text": "길 잃은 늙은 스승을 열흘 동안 돌봐 준 미다스에게 소원 하나를 들어주었어요."
+      },
+      {
+        "ep": 28,
+        "text": "미다스에게 강물의 첫머리에서 손을 씻으라고 일러 주어, 금이 되는 손을 도로 거두어 갔어요."
+      },
+      {
+        "ep": 37,
+        "text": "배에 붙잡혀 갔다가 돛대에 포도 덩굴을 올려 뱃사람들을 물러나게 하고, 혼자 남은 키잡이를 곁에 두었어요."
+      },
+      {
+        "ep": 53,
+        "text": "마른 가지를 지고 섬에 들어와 포도를 심었어요. 혼자 남은 아리아드네에게 이름을 묻고, 머리에 감았던 덩굴을 하늘로 던져 올려 별로 걸어 두었지요."
+      }
+    ],
+    "portrait": "img/char/dionysus.jpg"
+  },
+  {
+    "id": "prometheus",
+    "name": "프로메테우스",
+    "alias": [
+      "먼저 생각하는 사람"
+    ],
+    "faction": "titans",
+    "oneLine": "무슨 일이든 먼저 앞을 내다보고 헤아리는 티탄 형.",
+    "titles": [
+      {
+        "sinceEp": 15,
+        "text": "먼저 생각하는 티탄"
+      },
+      {
+        "sinceEp": 16,
+        "text": "사람에게 불을 준 티탄"
+      }
+    ],
+    "about": "제우스와 싸우지 않고 조용히 지낸 티탄이에요. 검은 곱슬머리에 흙빛 옷을 입고, 한 손에 작은 불꽃을 들고 있어요. 이름부터 먼저 생각하는 사람이라는 뜻이라, 손을 대기 전에 오래 들여다보고 앞일을 가늠하는 쪽이에요.",
+    "look": "a thoughtful titan with dark curly hair and a small flame held in one hand, earthy robe",
+    "relations": [
+      {
+        "to": "epimetheus",
+        "label": "동생",
+        "kind": "sibling"
+      },
+      {
+        "to": "atlas",
+        "label": "맏형",
+        "kind": "sibling",
+        "sinceEp": 17
+      },
+      {
+        "to": "zeus",
+        "label": "맞선 상대",
+        "kind": "other",
+        "sinceEp": 16
+      },
+      {
+        "to": "deucalion",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 20
+      }
+    ],
+    "firstEp": 15,
+    "timeline": [
+      {
+        "ep": 15,
+        "text": "동생과 함께 땅 위에 나눠 줄 선물을 맡았는데, 마지막 차례인 사람에게 줄 것이 하나도 남지 않았어요."
+      },
+      {
+        "ep": 16,
+        "text": "속이 빈 나뭇대에 올림포스의 불씨를 숨겨 내려가, 사람들에게 처음으로 불을 건넸어요."
+      },
+      {
+        "ep": 17,
+        "text": "세상 끝 바위에 묶여 날마다 제우스가 보낸 독수리에게 쪼였지만 사과하지 않고, 제우스에게 언젠가 이 자리를 걱정하게 될 거라는 말을 남겼어요."
+      },
+      {
+        "ep": 19,
+        "text": "바위에 묶인 채로 검은 것들이 땅 위로 퍼져 나가는 것을 보았고, 뒤이어 따라 나온 작은 빛도 보았어요."
+      },
+      {
+        "ep": 20,
+        "text": "찾아온 아들 부부에게 큰 물이 올 것을 알려 배를 만들게 하고, 돌에서 사람이 일어서는 것을 눈을 감지 않고 지켜보았어요."
+      },
+      {
+        "ep": 48,
+        "text": "헤라클레스가 바위를 깨 준 덕분에 오랜 벌이 끝났어요. 제우스에게 그 걱정을 거두시라 전해 달라 부탁하고, 사과나무가 있는 곳을 일러 준 뒤 동쪽으로 걸어갔지요."
+      }
+    ],
+    "portrait": "img/char/prometheus.jpg"
+  },
+  {
+    "id": "epimetheus",
+    "name": "에피메테우스",
+    "alias": [
+      "나중에 생각하는 사람"
+    ],
+    "faction": "titans",
+    "oneLine": "선물 자루를 메고 신이 나서 앞장선 티탄 동생.",
+    "titles": [
+      {
+        "sinceEp": 15,
+        "text": "나중에 생각하는 티탄"
+      }
+    ],
+    "about": "프로메테우스의 동생이에요. 헝클어진 모래빛 머리에 선물이 든 넓은 가죽 자루를 메고 다녀요. 이름은 나중에 생각하는 사람이라는 뜻인데, 정말로 마음이 앞서서 일부터 저지르고 나중에 아차 하는 쪽이에요. 형과 달리 남을 아주 잘 믿어요.",
+    "look": "a cheerful young titan with messy sandy hair and a wide leather satchel of gifts, simple tunic",
+    "relations": [
+      {
+        "to": "prometheus",
+        "label": "형",
+        "kind": "sibling"
+      },
+      {
+        "to": "atlas",
+        "label": "맏형",
+        "kind": "sibling",
+        "sinceEp": 17
+      }
+    ],
+    "firstEp": 15,
+    "timeline": [
+      {
+        "ep": 15,
+        "text": "자루를 열고 발톱과 날개와 두꺼운 털을 신이 나서 다 나눠 주는 바람에, 사람 차례에 자루가 텅 비었어요."
+      },
+      {
+        "ep": 18,
+        "text": "형이 전한 경고를 기억하면서도 문 앞에 선 판도라를 반갑게 맞아들이고, 항아리를 볕 잘 드는 자리에 놓았어요."
+      },
+      {
+        "ep": 19,
+        "text": "항아리가 열린 뒤 집으로 돌아왔고, 흩어진 것들을 보고도 판도라를 나무라지 않았어요."
+      }
+    ],
+    "portrait": "img/char/epimetheus.jpg"
+  },
+  {
+    "id": "pandora",
+    "name": "판도라",
+    "alias": [
+      "모든 선물"
+    ],
+    "faction": "mortals",
+    "oneLine": "신들이 흙으로 빚어, 저마다 선물을 하나씩 준 사람.",
+    "titles": [
+      {
+        "sinceEp": 18,
+        "text": "신들이 빚어 보낸 사람"
+      }
+    ],
+    "about": "헤파이스토스가 강가 흙으로 빚고, 신들이 저마다 선물을 하나씩 준 사람이에요. 검은 물결머리에 들꽃으로 엮은 관을 쓰고, 뚜껑을 밀랍으로 봉한 작은 항아리를 안고 있어요. 궁금한 것을 그냥 지나치지 못하는 성격이에요.",
+    "look": "a curious young woman with dark wavy hair and a simple flower crown, holding a small sealed clay jar, pale linen dress",
+    "relations": [
+      {
+        "to": "hephaestus",
+        "label": "빚어 준 이",
+        "kind": "other"
+      },
+      {
+        "to": "epimetheus",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 18
+      }
+    ],
+    "firstEp": 18,
+    "timeline": [
+      {
+        "ep": 18,
+        "text": "흙에서 눈을 뜨고 신들에게 옷과 손재주와 말을 하나씩 받았고, 제우스가 준 항아리를 안고 땅으로 내려갔어요."
+      },
+      {
+        "ep": 19,
+        "text": "혼자 남은 오후에 끝내 뚜껑을 열었고, 다 빠져나간 뒤 바닥에 남은 하나를 손바닥에 올려 두었어요."
+      }
+    ],
+    "portrait": "img/char/pandora.jpg"
+  },
+  {
+    "id": "deucalion",
+    "name": "데우칼리온",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "산기슭에 배를 지어 놓고 사람들의 웃음을 견딘 사람.",
+    "titles": [
+      {
+        "sinceEp": 20,
+        "text": "큰 물을 건넌 사람"
+      }
+    ],
+    "about": "프로메테우스의 아들이에요. 희끗희끗한 갈색 머리에 수수한 여행용 망토를 걸치고, 손에는 매끈하고 둥근 돌 하나를 쥐고 있어요. 말수가 적은 대신, 한번 믿은 것은 남이 웃어도 끝까지 하는 사람이에요.",
+    "look": "a weathered older man with grey-streaked brown hair and a plain travel cloak, holding a smooth round stone",
+    "relations": [
+      {
+        "to": "prometheus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "pyrrha",
+        "label": "짝",
+        "kind": "spouse"
+      }
+    ],
+    "firstEp": 20,
+    "timeline": [
+      {
+        "ep": 20,
+        "text": "아버지의 말을 믿고 궤짝 같은 배를 만들어 아흐레의 큰 물을 건넜고, 신탁의 수수께끼를 풀어 돌을 등 뒤로 던졌어요."
+      }
+    ],
+    "portrait": "img/char/deucalion.jpg"
+  },
+  {
+    "id": "pyrrha",
+    "name": "피라",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "남들이 웃는 동안 밤늦게까지 널빤지를 다듬은 사람.",
+    "titles": [
+      {
+        "sinceEp": 20,
+        "text": "큰 물을 건넌 사람"
+      }
+    ],
+    "about": "큰 물이 오기 전에 데우칼리온과 함께 궤짝을 만든 사람이에요. 붉은빛 도는 머리를 한쪽 어깨로 땋아 내리고 모래빛 옷을 입었어요. 겁이 없지는 않은데, 해야 할 일 앞에서는 손을 멈추지 않아요.",
+    "look": "a steady woman with auburn hair braided over one shoulder, holding a smooth round stone, simple sand-colored dress",
+    "relations": [
+      {
+        "to": "epimetheus",
+        "label": "집안 어른",
+        "kind": "parent"
+      },
+      {
+        "to": "deucalion",
+        "label": "짝",
+        "kind": "spouse"
+      }
+    ],
+    "firstEp": 20,
+    "timeline": [
+      {
+        "ep": 20,
+        "text": "물집이 잡히도록 널빤지를 다듬어 배를 함께 만들었고, 못 하겠다던 일을 끝내 해내 돌을 던졌어요."
+      }
+    ],
+    "portrait": "img/char/pyrrha.jpg"
+  },
+  {
+    "id": "narcissus",
+    "name": "나르키소스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "누구에게도 마음을 주지 않는 아름다운 젊은이.",
+    "titles": [
+      {
+        "sinceEp": 25,
+        "text": "샘가에 핀 하얀 꽃"
+      }
+    ],
+    "about": "산 아래 마을에 사는 젊은이예요. 부드러운 밤빛 곱슬머리를 하고 있어요. 보는 사람마다 걸음을 멈출 만큼 아름답지만, 누가 다가와도 눈길 한 번 주지 않지요.",
+    "look": "a beautiful youth with soft chestnut curls, leaning over still water, a white narcissus flower at his feet",
+    "relations": [
+      {
+        "to": "echo",
+        "label": "마음을 준 님프",
+        "kind": "other",
+        "sinceEp": 25
+      }
+    ],
+    "firstEp": 25,
+    "timeline": [
+      {
+        "ep": 25,
+        "text": "숲속 샘물에 비친 얼굴에서 눈을 떼지 못하다가, 그 자리에 하얀 꽃 한 송이를 남겼어요."
+      }
+    ],
+    "portrait": "img/char/narcissus.jpg"
+  },
+  {
+    "id": "arachne",
+    "name": "아라크네",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "베틀 앞에 앉으면 아무도 따라가지 못하는 젊은 베 짜는 사람.",
+    "titles": [
+      {
+        "sinceEp": 26,
+        "text": "실을 뽑는 작은 거미"
+      }
+    ],
+    "about": "양털을 물들이는 아버지 밑에서 자란 젊은 베 짜는 사람이에요. 검은 머리를 위로 틀어 올리고 북을 쥐면 손이 보이지 않을 만큼 빨라요. 열 살 적부터 베틀 앞에 앉았고, 자기 솜씨를 조금도 낮춰 말하지 않지요.",
+    "look": "a proud young weaver with dark hair pinned up, holding a shuttle and a length of shimmering woven cloth",
+    "relations": [
+      {
+        "to": "athena",
+        "label": "베 짜기를 겨룬 신",
+        "kind": "other",
+        "sinceEp": 26
+      }
+    ],
+    "firstEp": 26,
+    "timeline": [
+      {
+        "ep": 26,
+        "text": "아테나와 베 짜기를 겨루어 조금도 뒤지지 않았고, 천이 찢긴 뒤 처마 밑에서 그물을 짜는 거미가 되었어요."
+      }
+    ],
+    "portrait": "img/char/arachne.jpg"
+  },
+  {
+    "id": "midas",
+    "name": "미다스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "장미 예순 가지가 피는 뜰과 금이 가득한 창고를 가진 왕.",
+    "titles": [
+      {
+        "sinceEp": 27,
+        "text": "만지면 금이 되는 손"
+      }
+    ],
+    "about": "산 하나 너머 작은 나라의 왕이에요. 짧은 금갈색 수염에 묵직한 금관을 쓰고 다녀요. 아침마다 뜰의 장미를 세고, 사흘에 한 번씩 창고에 내려가 금붙이를 둘러보지요. 좋은 것을 보면 하나라도 더 갖고 싶어 하는 사람이에요.",
+    "look": "a plump king with a short golden-brown beard and a plain gold circlet on his head, a saffron cloak pinned at one shoulder, everything he touches edged in gold",
+    "relations": [
+      {
+        "to": "dionysus",
+        "label": "소원을 들어준 신",
+        "kind": "other",
+        "sinceEp": 27
+      }
+    ],
+    "firstEp": 27,
+    "timeline": [
+      {
+        "ep": 27,
+        "text": "길 잃은 늙은 스승을 열흘 동안 대접하고, 손에 닿는 것마다 금이 되게 해 달라고 빌었어요."
+      },
+      {
+        "ep": 28,
+        "text": "강물의 첫머리에 손을 씻어 소원을 되돌렸지만, 음악 겨루기에서 산의 신 편을 들었다가 당나귀 귀를 얻었어요."
+      }
+    ],
+    "portrait": "img/char/midas.jpg"
+  },
+  {
+    "id": "persephone",
+    "name": "페르세포네",
+    "alias": [
+      "프로세르피나는 로마식 이름",
+      "코레"
+    ],
+    "faction": "olympians",
+    "oneLine": "들판의 꽃마다 제 손으로 이름을 붙여 주는 데메테르의 딸.",
+    "titles": [
+      {
+        "sinceEp": 23,
+        "text": "봄을 데리고 오는 이"
+      }
+    ],
+    "about": "데메테르의 딸이에요. 밤색 머리에 봄꽃을 땋아 넣고 다니지요. 어머니가 이삭을 보는 동안 밭두렁에 앉아 꽃을 보고, 이름이 없는 꽃에는 제가 지은 이름을 붙여 줘요.",
+    "look": "a young goddess with chestnut hair braided with spring flowers, holding a bright pomegranate, dress that shades from green to deep violet",
+    "relations": [
+      {
+        "to": "demeter",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "hades",
+        "label": "철을 나눠 지내는 사이",
+        "kind": "other",
+        "sinceEp": 23
+      }
+    ],
+    "firstEp": 21,
+    "timeline": [
+      {
+        "ep": 21,
+        "text": "들판 한가운데 처음 보는 꽃을 당기는 순간 땅이 갈라졌고, 아무도 묻지 않은 채 저승으로 납치되었어요."
+      },
+      {
+        "ep": 23,
+        "text": "두 해 만에 어머니에게 돌아오는 길에 석류 씨 여섯 알을 먹었고, 한 해 가운데 여섯 달을 아래에서 지내게 되었어요."
+      },
+      {
+        "ep": 33,
+        "text": "심부름을 온 산 사람에게 먹을 것을 권했다가 거두었고, 상자를 채워 주며 볕 좋은 날 들판에 가 보라고 했어요."
+      },
+      {
+        "ep": 35,
+        "text": "오르페우스의 노래를 듣고 하데스 앞에 나서서, 자기도 한 번 뒤를 돌아본 적이 있다며 보내 주자고 했어요."
+      }
+    ],
+    "portrait": "img/char/persephone.jpg"
+  },
+  {
+    "id": "helios",
+    "name": "헬리오스",
+    "alias": [
+      "솔은 로마식 이름"
+    ],
+    "faction": "titans",
+    "oneLine": "날마다 하늘을 가로질러 해를 몰고 가는 티탄.",
+    "titles": [
+      {
+        "sinceEp": 22,
+        "text": "해를 모는 이"
+      }
+    ],
+    "about": "네 마리 말이 끄는 수레를 몰고 아침에 동쪽에서 올라와 저녁에 서쪽으로 내려가는 티탄이에요. 금빛으로 길게 흘러내리는 머리 위에 둥근 해가 얹혀 있지요. 하루도 늦은 적이 없고, 그래서 땅 위의 일을 하나도 빠짐없이 내려다봐요.",
+    "look": "a bright titan with golden flowing hair crowned by a sun disc, holding reins of a chariot",
+    "relations": [
+      {
+        "to": "demeter",
+        "label": "소식을 전한 사이",
+        "kind": "other",
+        "sinceEp": 22
+      },
+      {
+        "to": "phaethon",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 38
+      }
+    ],
+    "firstEp": 22,
+    "timeline": [
+      {
+        "ep": 22,
+        "text": "수레 앞을 막아선 데메테르에게 그날 본 것을 말해 주었어요. 하데스가 데려갔고, 제우스가 허락했다고요."
+      },
+      {
+        "ep": 38,
+        "text": "스틱스강에 걸고 한 맹세 때문에 아들에게 하루 동안 해 수레를 내주었고, 그다음 날은 동쪽 문을 열지 않았어요."
+      }
+    ],
+    "portrait": "img/char/helios.jpg"
+  },
+  {
+    "id": "eros",
+    "name": "에로스",
+    "alias": [
+      "쿠피도는 로마식 이름",
+      "큐피드는 영어식 이름"
+    ],
+    "faction": "olympians",
+    "oneLine": "팔뚝보다 짧은 활을 들고 다니는 어린 신.",
+    "titles": [
+      {
+        "sinceEp": 24,
+        "text": "사랑의 화살을 쏘는 신"
+      }
+    ],
+    "about": "아프로디테의 아들이에요. 금빛 곱슬머리에 옅은 파란 날개가 돋아 있고, 끝이 장밋빛인 화살이 담긴 화살통을 메고 다녀요. 몸집은 작지만 한번 겨눈 것은 놓치는 법이 없지요.",
+    "look": "a small winged boy god with soft golden curls, carrying a tiny bow and a quiver of rose-tipped arrows, pale blue wings",
+    "relations": [
+      {
+        "to": "aphrodite",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "apollo",
+        "label": "활을 두고 겨룬 사이",
+        "kind": "other",
+        "sinceEp": 24
+      }
+    ],
+    "firstEp": 24,
+    "timeline": [
+      {
+        "ep": 24,
+        "text": "활을 우습게 본 아폴론에게 금 화살을, 강가의 다프네에게 납 화살을 쏘았어요."
+      },
+      {
+        "ep": 30,
+        "text": "축제 마당 올리브나무에 앉아 사람들의 소원을 듣다가, 말이 끊긴 소원 하나를 어머니에게 옮겨 주었어요."
+      },
+      {
+        "ep": 31,
+        "text": "어머니가 시킨 심부름으로 프시케에게 갔다가 제 화살촉에 손을 스쳤고, 닷새 밤을 창턱에 앉아 있다 그냥 돌아왔어요."
+      },
+      {
+        "ep": 32,
+        "text": "등잔불에 얼굴을 들키고 어깨에 뜨거운 기름 한 방울을 맞은 뒤, 사흘만 더 있었으면 됐다는 말을 남기고 창밖으로 날아갔어요."
+      },
+      {
+        "ep": 33,
+        "text": "풀밭에 쓰러진 프시케를 찾아내 저승의 잠을 손으로 걷어 냈고, 신들 앞에서 이 사람과 살겠다고 했어요."
+      },
+      {
+        "ep": 56,
+        "text": "어머니가 약속한 금 공을 받기로 하고 콜키스의 궁 지붕에 내려앉아, 기둥 뒤에 선 작은딸에게 화살을 놓았어요."
+      },
+      {
+        "ep": 60,
+        "text": "콜키스에 다녀온 값으로 금 공을 받았고, 어머니가 시킨 대로 나무에 올라가 금빛 열매 세 알을 따 왔어요."
+      }
+    ],
+    "portrait": "img/char/eros.jpg"
+  },
+  {
+    "id": "daphne",
+    "name": "다프네",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "숲을 돌아다니는 것이 세상에서 제일 좋은 강가의 님프.",
+    "titles": [
+      {
+        "sinceEp": 24,
+        "text": "월계수가 된 님프"
+      }
+    ],
+    "about": "강가에서 나고 자란 님프예요. 아버지는 그 강이지요. 초록빛이 도는 긴 머리를 아무렇게나 묶고, 하루 종일 숲에서 사슴 발자국을 따라다녀요. 지금 그대로가 좋아서 아무것도 바꾸고 싶어 하지 않아요.",
+    "look": "a river nymph with long green-tinted hair, her arms turning into laurel branches with fresh leaves",
+    "relations": [
+      {
+        "to": "apollo",
+        "label": "뒤쫓아 온 신",
+        "kind": "other",
+        "sinceEp": 24
+      }
+    ],
+    "firstEp": 24,
+    "timeline": [
+      {
+        "ep": 24,
+        "text": "에로스의 납 화살을 맞고 아폴론에게서 달아나다가, 강가에서 월계수가 되었어요."
+      }
+    ],
+    "portrait": "img/char/daphne.jpg"
+  },
+  {
+    "id": "echo",
+    "name": "에코",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "한번 이야기를 시작하면 좀처럼 멈추지 못하는 산의 님프.",
+    "titles": [
+      {
+        "sinceEp": 25,
+        "text": "끝말만 되돌리는 목소리"
+      }
+    ],
+    "about": "산에 사는 님프예요. 바람에 흩날리는 옅은 빛 머리에 회청색 옷을 걸치고 다녀요. 이야기가 어찌나 재미있는지, 물을 길러 나온 님프들이 항아리를 내려놓고 해가 기울도록 듣곤 하지요.",
+    "look": "a fading mountain nymph with pale wind-blown hair and a translucent grey-blue robe, half dissolving into mist",
+    "relations": [
+      {
+        "to": "hera",
+        "label": "벌을 내린 여신",
+        "kind": "other",
+        "sinceEp": 25
+      },
+      {
+        "to": "narcissus",
+        "label": "마음을 준 사람",
+        "kind": "other",
+        "sinceEp": 25
+      }
+    ],
+    "firstEp": 25,
+    "timeline": [
+      {
+        "ep": 25,
+        "text": "헤라를 이야기로 붙잡아 두었다가 먼저 말하지 못하는 벌을 받았고, 나르키소스에게 다가갔다가 목소리만 남았어요."
+      }
+    ],
+    "portrait": "img/char/echo.jpg"
+  },
+  {
+    "id": "philemon",
+    "name": "필레몬",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "낯선 나그네에게 먼저 문을 열어 준 언덕 위 오두막의 할아버지.",
+    "titles": [
+      {
+        "sinceEp": 29,
+        "text": "문을 열어 준 노인"
+      }
+    ],
+    "about": "언덕 중턱 오두막에서 바우키스와 함께 늙은 할아버지예요. 흰 머리가 몇 가닥 남지 않았고, 손에는 늘 흙으로 빚은 물병이 들려 있지요. 가진 것은 적은데 이야기하기를 좋아하고, 문 두드리는 소리가 나면 누구인지 묻기 전에 먼저 문을 열어요.",
+    "look": "a kind old man with thin white hair and a short white beard, holding a clay water jug, patched brown tunic",
+    "relations": [
+      {
+        "to": "baucis",
+        "label": "함께 늙은 짝",
+        "kind": "spouse"
+      }
+    ],
+    "firstEp": 29,
+    "timeline": [
+      {
+        "ep": 29,
+        "text": "문을 두드린 두 나그네를 맞아 집에 있는 것을 다 내어놓았고, 밤에 언덕 위에서 소원 두 가지를 빌었어요. 이 집을 지키게 해 달라는 것과, 아내와 같은 날 함께 눈을 감게 해 달라는 것이었지요."
+      }
+    ],
+    "portrait": "img/char/philemon.jpg"
+  },
+  {
+    "id": "baucis",
+    "name": "바우키스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "남은 것을 다 내어 손님을 먹인 오두막의 할머니.",
+    "titles": [
+      {
+        "sinceEp": 29,
+        "text": "함께 문을 연 노인"
+      }
+    ],
+    "about": "필레몬과 아주 어렸을 때 혼인해 그 오두막에서만 살아온 할머니예요. 은빛 머리를 수건으로 감싸고 바랜 초록 숄을 어깨에 두르고 다니지요. 잿더미에서 불씨를 살리는 손이 빠르고, 손님 앞에서는 아끼는 것이 없지요.",
+    "look": "a kind old woman with silver hair under a simple headscarf, holding a wooden bowl of olives, faded green shawl",
+    "relations": [
+      {
+        "to": "philemon",
+        "label": "함께 늙은 짝",
+        "kind": "spouse"
+      }
+    ],
+    "firstEp": 29,
+    "timeline": [
+      {
+        "ep": 29,
+        "text": "줄지 않는 포도주 항아리를 보고 손님이 누구인지 알아챘고, 마을 사람들을 벌하지 말아 달라고 했어요."
+      }
+    ],
+    "portrait": "img/char/baucis.jpg"
+  },
+  {
+    "id": "pygmalion",
+    "name": "피그말리온",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "혼자 작업실에 앉아 상아를 깎는 조각가.",
+    "titles": [
+      {
+        "sinceEp": 30,
+        "text": "상아를 깎는 조각가"
+      }
+    ],
+    "about": "바닷가 마을 언덕에 혼자 사는 조각가예요. 검은 물결머리가 늘 돌가루를 뒤집어써서 하얗게 세어 보이고, 손에서 작은 끌을 놓는 일이 드물지요. 사람들 사이에서는 말수가 적지만, 돌 안에 이미 사람이 들어 있고 자기는 둘레만 걷어 낸다고 믿는 사람이에요.",
+    "look": "a quiet sculptor with dark wavy hair dusted white with marble powder, holding a small chisel, a plain tunic with an ivory-grey cloth tied at the waist",
+    "relations": [
+      {
+        "to": "aphrodite",
+        "label": "소원을 들은 신",
+        "kind": "other",
+        "sinceEp": 30
+      }
+    ],
+    "firstEp": 30,
+    "timeline": [
+      {
+        "ep": 30,
+        "text": "상아를 깎아 조각상을 만들고, 축제에서 차마 다 말하지 못한 소원을 빌고 돌아왔어요."
+      }
+    ],
+    "portrait": "img/char/pygmalion.jpg"
+  },
+  {
+    "id": "psyche",
+    "name": "프시케",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "담 앞에 사람들이 모여 구경하고 가는 왕의 막내딸.",
+    "titles": [
+      {
+        "sinceEp": 31,
+        "text": "왕의 막내딸"
+      },
+      {
+        "sinceEp": 33,
+        "text": "신들의 잔을 받은 사람"
+      }
+    ],
+    "about": "어느 나라 왕의 막내딸이에요. 옅은 갈색 머리에 하얀 옷을 입고 다니는데, 사람들이 담 밖에 모여 구경하고 갈 만큼 곱다는 말을 듣지요. 정작 본인은 그 말이 반갑지 않아서, 사람 소리가 나면 마당 안쪽으로 들어가 앉는 날이 많아요.",
+    "look": "a lovely young woman with light brown hair and small butterfly wings, holding a tiny oil lamp, soft ivory dress",
+    "relations": [
+      {
+        "to": "eros",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 32
+      },
+      {
+        "to": "aphrodite",
+        "label": "일을 시킨 신",
+        "kind": "other",
+        "sinceEp": 33
+      }
+    ],
+    "firstEp": 31,
+    "timeline": [
+      {
+        "ep": 31,
+        "text": "신탁이 시킨 대로 산꼭대기 바위에 혼자 남겨졌다가 바람에 실려 내려가, 얼굴을 볼 수 없는 남편과 어두운 집에서 지내게 되었어요."
+      },
+      {
+        "ep": 32,
+        "text": "등잔을 들어 잠든 남편의 얼굴을 보았고, 떨어진 기름 한 방울에 에로스가 깨어 창밖으로 날아가 버렸어요."
+      },
+      {
+        "ep": 33,
+        "text": "아프로디테가 시킨 일을 차례로 해내고 저승에서 상자를 받아 왔지만, 열지 말라던 뚜껑을 열고 깊은 잠에 빠졌지요."
+      }
+    ],
+    "portrait": "img/char/psyche.jpg"
+  },
+  {
+    "id": "danae",
+    "name": "다나에",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "하늘이 네모나게만 보이는 탑에 갇혔던 아르고스의 공주.",
+    "titles": [
+      {
+        "sinceEp": 39,
+        "text": "탑에 갇힌 딸"
+      }
+    ],
+    "about": "아르고스 왕의 외동딸이에요. 아버지가 델포이에서 들은 한 마디 때문에 창문 없는 탑 꼭대기 방에 갇혀 지냈지요. 긴 검은 머리에 옅은 금빛 숄을 두르고 있어요. 무서운 일을 겪어도 소리를 지르는 대신 조용해지는 쪽이고요.",
+    "look": "a quiet young mother with long black hair and a pale gold shawl, holding a baby wrapped in cloth",
+    "relations": [
+      {
+        "to": "perseus",
+        "label": "아들",
+        "kind": "child"
+      },
+      {
+        "to": "zeus",
+        "label": "페르세우스의 아버지",
+        "kind": "spouse",
+        "sinceEp": 39
+      }
+    ],
+    "firstEp": 39,
+    "timeline": [
+      {
+        "ep": 39,
+        "text": "아버지에게 탑에 갇혔다가 페르세우스를 낳고, 아기와 함께 나무 상자에 실려 어느 섬 모래밭에 닿았어요."
+      },
+      {
+        "ep": 40,
+        "text": "섬의 왕이 아내로 삼으려 하자 거절했고, 잔칫날 일이 벌어진 뒤 자루를 싸서 아들을 배웅했어요."
+      },
+      {
+        "ep": 42,
+        "text": "신전 기둥 뒤에서 나흘을 버티다 아들을 다시 만났어요. 배 위에서 탑에서 짠 천 조각과 아르고스의 신탁 이야기를 아들에게 했지요."
+      }
+    ],
+    "portrait": "img/char/danae.jpg"
+  },
+  {
+    "id": "perseus",
+    "name": "페르세우스",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "탑 안에서 태어나 어머니와 함께 바다를 건너온 아이.",
+    "titles": [
+      {
+        "sinceEp": 40,
+        "text": "괴물을 찾아 떠난 젊은이"
+      }
+    ],
+    "about": "아르고스 왕의 딸 다나에가 탑 꼭대기 방에서 낳은 아들이에요. 태어난 지 다섯 달 만에 어머니와 함께 나무 상자에 실려 바다를 건넜지요. 짧고 검은 머리에, 자라면서 그물을 만져 손이 거칠어요. 겁이 나도 한 걸음 앞으로 나서는 쪽이고요.",
+    "look": "a brave young hero with short dark hair, winged sandals and a curved bronze sword, mirror-bright round shield",
+    "relations": [
+      {
+        "to": "danae",
+        "label": "어머니",
+        "kind": "parent"
+      },
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent",
+        "sinceEp": 39
+      },
+      {
+        "to": "athena",
+        "label": "방패를 준 신",
+        "kind": "other",
+        "sinceEp": 40
+      },
+      {
+        "to": "hermes",
+        "label": "신발을 준 신",
+        "kind": "other",
+        "sinceEp": 40
+      },
+      {
+        "to": "medusa",
+        "label": "찾아간 상대",
+        "kind": "other",
+        "sinceEp": 41
+      },
+      {
+        "to": "andromeda",
+        "label": "함께 떠난 사람",
+        "kind": "other",
+        "sinceEp": 42
+      },
+      {
+        "to": "heracles",
+        "label": "증손자",
+        "kind": "other",
+        "sinceEp": 43
+      }
+    ],
+    "firstEp": 39,
+    "timeline": [
+      {
+        "ep": 39,
+        "text": "탑 안에서 태어나 다섯 달을 숨어 지내다가, 어머니와 함께 나무 상자에 실려 바다를 건너 어느 섬에 닿았어요."
+      },
+      {
+        "ep": 40,
+        "text": "어머니를 지키려다 섬의 왕에게 무엇이든 가져오겠다고 말해 버리고, 방패와 날개 달린 신발을 받아 서쪽으로 떠났어요."
+      },
+      {
+        "ep": 41,
+        "text": "돌이 된 사람들 사이에서 사흘을 기다렸다가, 방패에 비친 모습만 보면서 메두사의 머리를 베고 하늘로 달아났어요."
+      },
+      {
+        "ep": 42,
+        "text": "바다 괴물에게서 안드로메다를 구하고 섬으로 돌아가 어머니를 구했어요. 배 위에서 어머니에게 아르고스의 신탁을 처음으로 들었지요."
+      }
+    ],
+    "portrait": "img/char/perseus.jpg"
+  },
+  {
+    "id": "phaethon",
+    "name": "파에톤",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "아버지가 해를 모는 이라고 믿는 아이.",
+    "titles": [
+      {
+        "sinceEp": 38,
+        "text": "해를 모는 이의 아들"
+      }
+    ],
+    "about": "남쪽 어느 마을에서 어머니와 둘이 사는 아이예요. 아버지가 헬리오스라는 말을 아주 어릴 때부터 들었지만 그 얼굴은 한 번도 본 적이 없지요. 그 말이 정말인지 확인하려고 세상의 동쪽 끝까지 걸어가요.",
+    "look": "a bright-eyed teenage boy with sun-bleached tousled hair gripping golden reins, small sun emblem on his tunic",
+    "relations": [
+      {
+        "to": "helios",
+        "label": "아버지",
+        "kind": "parent",
+        "sinceEp": 38
+      }
+    ],
+    "firstEp": 38,
+    "timeline": [
+      {
+        "ep": 38,
+        "text": "세상의 동쪽 끝까지 걸어가 아버지에게 확인을 받고, 하루만 해 수레를 몰게 해 달라고 졸랐어요. 말들이 길에서 벗어나는 바람에 하늘에서 미끄러졌지요."
+      }
+    ],
+    "portrait": "img/char/phaethon.jpg"
+  },
+  {
+    "id": "orpheus",
+    "name": "오르페우스",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "리라를 켜면 짐승도 나무도 걸음을 멈추는 사람.",
+    "titles": [
+      {
+        "sinceEp": 34,
+        "text": "노래로 짐승을 세운 사람"
+      },
+      {
+        "sinceEp": 35,
+        "text": "저승 문을 연 사람"
+      }
+    ],
+    "about": "북쪽 산골에서 염소를 몰며 자란 사람이에요. 어깨까지 내려온 머리에 월계수 잎을 귀 뒤에 꽂고, 나무로 깎은 작은 리라를 안고 다녀요. 그가 줄을 튕기면 밭 갈던 소도, 서로 피하던 여우와 노루도 걸음을 멈추고 그 자리에 앉아요.",
+    "look": "a young MAN of about twenty-five, clearly male with a flat chest, broad square shoulders and light stubble along his jaw, dark hair falling just to his jaw, a laurel sprig behind one ear, a muted blue cloak over a plain tunic, holding a small wooden harp that is an OPEN FRAME of three pieces: a flat base bar, two slender curved arms rising from its ends like ox horns, and one straight bar joining their tips, with empty air and only thin strings between them (never a lute or mandolin, no neck, no frets, no round belly)",
+    "relations": [
+      {
+        "to": "eurydice",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 34
+      },
+      {
+        "to": "apollo",
+        "label": "리라를 깎아 준 신",
+        "kind": "other",
+        "sinceEp": 34
+      }
+    ],
+    "firstEp": 34,
+    "timeline": [
+      {
+        "ep": 34,
+        "text": "리라 소리로 짐승과 나무를 멈춰 세웠고, 에우리디케와 혼례를 치렀어요. 며칠 뒤 아내를 잃고 리라 하나만 들고 저승 길목에 섰지요."
+      },
+      {
+        "ep": 35,
+        "text": "노래로 사공의 배를 돌려세우고 케르베로스를 잠재운 뒤, 하데스 앞에서 뒤를 돌아보지 않는다는 조건을 받았어요."
+      },
+      {
+        "ep": 36,
+        "text": "햇빛이 보이는 곳에서 끝내 뒤를 돌아보았어요. 그 뒤로는 아무 데도 가지 않고 노래만 부르다 세상을 떠났지요."
+      }
+    ],
+    "portrait": "img/char/orpheus.jpg"
+  },
+  {
+    "id": "eurydice",
+    "name": "에우리디케",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "언덕 아래 세 번째 집에 살며 들꽃 화관을 엮던 사람.",
+    "titles": [
+      {
+        "sinceEp": 34,
+        "text": "화관을 엮는 사람"
+      }
+    ],
+    "about": "언덕 아래 세 번째 집에 살고, 아침이면 물을 길으러 나오는 사람이에요. 오르페우스의 노래를 들으러 와서는 늘 가장 나중에 갔고, 갈 때마다 엮어 놓은 들꽃 화관을 바위 위에 두고 갔어요. 손이 심심한 것을 못 견디는 사람이에요.",
+    "look": "a gentle young woman with soft brown hair and a wildflower wreath, pale green dress fading at the hem",
+    "relations": [
+      {
+        "to": "orpheus",
+        "label": "짝",
+        "kind": "spouse",
+        "sinceEp": 34
+      }
+    ],
+    "firstEp": 34,
+    "timeline": [
+      {
+        "ep": 34,
+        "text": "오르페우스에게 화관을 엮어 주다가 부부가 되었고, 며칠 뒤 꽃을 꺾으러 나간 풀밭에서 발목을 물려 세상을 떠났어요."
+      },
+      {
+        "ep": 35,
+        "text": "저승에서 페르세포네가 다가와 낮게 일러 주는 말을 듣고 고개를 끄덕였어요."
+      },
+      {
+        "ep": 36,
+        "text": "한 걸음을 남기고 어둠으로 물러났어요. 마지막에 입을 움직였지만 오르페우스는 알아듣지 못했지요."
+      }
+    ],
+    "portrait": "img/char/eurydice.jpg"
+  },
+  {
+    "id": "medusa",
+    "name": "메두사",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "눈을 검은 천으로 가리고 돌들 사이를 걸어 다니는 이.",
+    "titles": [
+      {
+        "sinceEp": 41,
+        "text": "돌들 사이에 사는 이"
+      }
+    ],
+    "about": "물이 끝나고 돌이 시작되는 곳에서 언니 둘과 함께 살아요. 머리에서 초록색 뱀들이 천천히 움직이고, 눈은 늘 해진 검은 천으로 가려 두지요. 가리지 않으면 눈이 마주친 것이 그 자리에서 돌이 되거든요. 밤이면 돌이 된 사람들 어깨에 쌓인 모래를 손으로 쓸어 줘요.",
+    "look": "a sorrowful gorgon with living green snakes for hair and pale jade skin, downcast eyes, dark tattered veil",
+    "relations": [
+      {
+        "to": "perseus",
+        "label": "찾아온 사람",
+        "kind": "other",
+        "sinceEp": 41
+      },
+      {
+        "to": "pegasus",
+        "label": "여기서 솟은 말",
+        "kind": "other",
+        "sinceEp": 41
+      }
+    ],
+    "firstEp": 41,
+    "timeline": [
+      {
+        "ep": 41,
+        "text": "돌들 사이에서 밤마다 모래를 쓸다가, 새벽에 잠든 사이 방패에 비친 모습만 보고 다가온 페르세우스에게 머리를 베였어요."
+      }
+    ],
+    "portrait": "img/char/medusa.jpg"
+  },
+  {
+    "id": "pegasus",
+    "name": "페가수스",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "메두사가 있던 자리에서 솟아오른 날개 달린 하얀 말.",
+    "titles": [
+      {
+        "sinceEp": 41,
+        "text": "날개 달린 하얀 말"
+      }
+    ],
+    "about": "돌밭 한가운데에서 한꺼번에 솟아오른 하얀 말이에요. 은빛 갈기가 길게 흐르고, 등에는 커다란 깃털 날개가 접혀 있지요. 한 번 하늘로 오르면 아무도 붙잡지 못해요.",
+    "look": "a pure white winged horse with a silvery flowing mane and broad feathered wings",
+    "relations": [
+      {
+        "to": "medusa",
+        "label": "솟아오른 자리",
+        "kind": "other",
+        "sinceEp": 41
+      }
+    ],
+    "firstEp": 41,
+    "timeline": [
+      {
+        "ep": 41,
+        "text": "메두사가 있던 자리에서 솟아올라 돌밭 위를 한 바퀴 돌고 북쪽으로 갔어요."
+      }
+    ],
+    "portrait": "img/char/pegasus.jpg"
+  },
+  {
+    "id": "andromeda",
+    "name": "안드로메다",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "바다 괴물의 제물로 바위에 묶였던 왕과 왕비의 딸.",
+    "titles": [
+      {
+        "sinceEp": 42,
+        "text": "바위에 묶였던 사람"
+      }
+    ],
+    "about": "바다 건너 어느 나라 왕과 왕비의 딸이에요. 검고 굽슬굽슬한 머리에 붉은 산호 목걸이를 걸고 흰 옷을 입고 있어요. 무서운 일을 겪으면서도 소리를 지르는 대신 앞에 있는 것을 똑바로 보는 쪽이지요.",
+    "look": "a brave princess with dark curly hair and coral-red jewelry, standing by a sea rock, flowing white dress",
+    "relations": [
+      {
+        "to": "perseus",
+        "label": "함께 떠난 사람",
+        "kind": "other",
+        "sinceEp": 42
+      }
+    ],
+    "firstEp": 42,
+    "timeline": [
+      {
+        "ep": 42,
+        "text": "바다 괴물의 제물로 바위에 묶여 있다가 페르세우스에게 풀려났어요. 붉은 목걸이를 어머니 손에 쥐여 주고 그 배에 함께 올랐지요."
+      }
+    ],
+    "portrait": "img/char/andromeda.jpg"
+  },
+  {
+    "id": "heracles",
+    "name": "헤라클레스",
+    "alias": [
+      "헤르쿨레스는 로마식 이름",
+      "허큘리스는 영어식 이름"
+    ],
+    "faction": "heroes",
+    "oneLine": "요람에 들어온 뱀 두 마리를 두 손으로 눌러 버린 아기.",
+    "titles": [
+      {
+        "sinceEp": 43,
+        "text": "요람에서 뱀을 누른 아기"
+      },
+      {
+        "sinceEp": 44,
+        "text": "사자 가죽을 걸친 사람"
+      },
+      {
+        "sinceEp": 49,
+        "text": "열두 가지 일을 마친 이"
+      }
+    ],
+    "about": "테베의 한 집에서 태어났어요. 두툼한 갈색 곱슬머리에 어깨가 아주 넓고, 자기 힘이 얼마나 센지 아직 자기도 몰라요. 활은 첫해에 스승이 더 가르칠 것이 없다고 했지만 리라는 끝내 배우지 못했지요.",
+    "look": "a mighty hero with thick brown curls and a beard, wearing a golden lion skin over his shoulders, holding a heavy wooden club",
+    "relations": [
+      {
+        "to": "zeus",
+        "label": "아버지",
+        "kind": "parent",
+        "sinceEp": 43
+      },
+      {
+        "to": "hera",
+        "label": "이름을 빌린 신",
+        "kind": "other",
+        "sinceEp": 43
+      },
+      {
+        "to": "chiron",
+        "label": "산속의 스승",
+        "kind": "other",
+        "sinceEp": 43
+      },
+      {
+        "to": "perseus",
+        "label": "증조할아버지",
+        "kind": "other",
+        "sinceEp": 43
+      },
+      {
+        "to": "eurystheus",
+        "label": "일을 시키는 사람",
+        "kind": "other",
+        "sinceEp": 44
+      },
+      {
+        "to": "hydra",
+        "label": "늪의 뱀",
+        "kind": "other",
+        "sinceEp": 45
+      }
+    ],
+    "firstEp": 43,
+    "timeline": [
+      {
+        "ep": 43,
+        "text": "요람에 들어온 뱀 두 마리를 두 손으로 눌렀어요. 자라서 리라를 부러뜨린 뒤 산으로 보내졌고, 거기서 케이론에게 활과 약초와 참는 법을 배웠지요."
+      },
+      {
+        "ep": 44,
+        "text": "헤라가 보낸 나쁜 마음의 안개에 휩싸여 가족을 해치고, 델포이에서 들은 대로 미케네의 왕에게 가서 열두 가지 일을 맡았어요. 첫 번째 일로 네메아 골짜기의 사자를 이기고 그 가죽을 걸쳤지요."
+      },
+      {
+        "ep": 45,
+        "text": "조카와 함께 늪으로 가서, 자른 자리를 횃불로 지지는 방법을 찾아내 히드라를 이겼어요."
+      },
+      {
+        "ep": 46,
+        "text": "뿔이 금인 사슴을 일 년 만에 사로잡고, 멧돼지를 눈밭으로 몰고, 청동 깃털 새 떼를 날려 보내고, 강 두 줄기를 돌려 외양간을 하루 만에 씻어 냈어요."
+      },
+      {
+        "ep": 47,
+        "text": "크레타섬의 사나운 황소를 등에 타고 바다를 건너오고, 사람을 무는 말 떼를 밀물로 가두어 풀을 먹였어요. 아마존 여왕에게서 띠를 받았지만 헤라가 헛싸움을 붙였고, 세상 서쪽 끝에서 붉은 소 떼까지 몰고 왔지요."
+      },
+      {
+        "ep": 48,
+        "text": "세상 끝에서 바위를 깨어 프로메테우스를 풀어 주고, 아틀라스 대신 사흘 동안 하늘을 졌어요. 하늘을 도로 받으라는 꾀를 더 좋은 꾀로 되받아쳐 황금 사과 셋을 얻었지요."
+      },
+      {
+        "ep": 49,
+        "text": "하데스에게 허락을 받고 사자 가죽만 걸친 채 케르베로스를 붙잡아 데려왔고, 그렇게 열두 가지 일이 다 채워졌어요. 그러고도 스스로를 용서하지 못한 채 오랜 세월을 살다가 신들 곁으로 올라갔지요."
+      }
+    ],
+    "portrait": "img/char/heracles.jpg"
+  },
+  {
+    "id": "chiron",
+    "name": "케이론",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "산속 동굴에서 활과 약초와 참는 법을 가르치는 켄타우로스.",
+    "titles": [
+      {
+        "sinceEp": 43,
+        "text": "산속의 스승"
+      }
+    ],
+    "about": "허리 위는 사람이고 허리 아래는 말인 켄타우로스예요. 하얗게 센 수염에 등에는 활을 메고, 옆구리에는 늘 약초 한 묶음을 매달고 다녀요. 산속 동굴에서 맡겨진 아이들을 가르치는데, 아무나 받아 주지는 않지요.",
+    "look": "a wise centaur with a kind grey-bearded face and a chestnut horse body, carrying a bow and a bundle of healing herbs",
+    "relations": [
+      {
+        "to": "heracles",
+        "label": "산에서 가르친 아이",
+        "kind": "other",
+        "sinceEp": 43
+      },
+      {
+        "to": "jason",
+        "label": "산에서 기른 아이",
+        "kind": "other",
+        "sinceEp": 55
+      }
+    ],
+    "firstEp": 43,
+    "timeline": [
+      {
+        "ep": 43,
+        "text": "산길에서 헤라클레스를 데려가 활과 약초를 가르쳤어요. 떠나는 등 뒤에 대고 힘보다 마음이 더 걱정이라고 중얼거렸지요."
+      },
+      {
+        "ep": 55,
+        "text": "스무 해 기른 이아손을 산길 어귀까지 배웅했어요. 약초 한 묶음을 자루에 넣어 주고, 길에서 만나는 사람을 잘 보라고 일렀지요."
+      }
+    ],
+    "portrait": "img/char/chiron.jpg"
+  },
+  {
+    "id": "eurystheus",
+    "name": "에우리스테우스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "큰 청동 항아리를 왕좌 옆에 두고 지내는 미케네의 왕.",
+    "titles": [
+      {
+        "sinceEp": 44,
+        "text": "미케네의 왕"
+      }
+    ],
+    "about": "미케네를 다스리는 왕이에요. 몸집이 작고 수염이 성글어서 금관이 자꾸 흘러내리지요. 헤라클레스가 태어나던 날 미케네에서 달을 다 채우지 못하고 나왔고, 그날 아침 올림포스산에서 오간 맹세 하나 때문에 왕이 되었어요. 겨울에 곡식을 넣어 두는 큰 청동 항아리를 왕좌 옆에 두고 지내요.",
+    "look": "a small nervous king with a thin sandy beard and an oversized gold crown, peering out from behind a large bronze storage jar",
+    "relations": [
+      {
+        "to": "heracles",
+        "label": "일을 시키는 사람",
+        "kind": "other",
+        "sinceEp": 44
+      }
+    ],
+    "firstEp": 44,
+    "timeline": [
+      {
+        "ep": 44,
+        "text": "델포이에서 보내온 헤라클레스에게 열두 가지 일을 시키기로 하고, 첫 번째로 네메아 골짜기의 사자를 가져오라고 했어요. 사자 가죽을 걸친 헤라클레스가 돌아오자 청동 항아리 속으로 숨었지요."
+      },
+      {
+        "ep": 45,
+        "text": "히드라를 이기고 온 헤라클레스에게 혼자 한 것이 아니라며 그 일은 셈에 넣지 않겠다고 했어요."
+      },
+      {
+        "ep": 46,
+        "text": "사슴과 멧돼지와 새 떼와 외양간까지 잇달아 시키고는, 항아리 뚜껑 틈으로 다음 명령을 적은 쪽지를 내밀었어요."
+      },
+      {
+        "ep": 47,
+        "text": "바다 건너의 네 가지 일을 시키고, 끌려온 황소는 헤라께 바치라고 했어요. 셈은 이번에도 적어 주지 않았지요."
+      },
+      {
+        "ep": 49,
+        "text": "문 앞의 개가 짖자 항아리 안에서 도로 데려가라고 소리쳤고, 셈을 묻는 말에 늪의 것까지 적으라고 해서 열둘이 채워졌어요."
+      }
+    ],
+    "portrait": "img/char/eurystheus.jpg"
+  },
+  {
+    "id": "hydra",
+    "name": "히드라",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "목을 하나 자르면 그 자리에서 두 개가 돋아나는 늪의 뱀.",
+    "titles": [
+      {
+        "sinceEp": 45,
+        "text": "머리가 아홉인 것"
+      }
+    ],
+    "about": "샘이 솟는 늪 한가운데에 사는 커다란 뱀이에요. 목이 아홉 개인데 저마다 따로 움직이고, 머리마다 작은 가시 같은 것이 돋아 있지요. 숨이 닿은 자리에는 갈대가 눕고 다시 서지 않아요. 그 늪에는 사람도 짐승도 물을 마시러 가지 않았고요.",
+    "look": "a swamp serpent with nine long green snake-heads on separate necks rising from one dark coiled body, each head crowned with a small spiny crest, dripping water and reeds",
+    "relations": [
+      {
+        "to": "heracles",
+        "label": "늪으로 온 사람",
+        "kind": "other",
+        "sinceEp": 45
+      }
+    ],
+    "firstEp": 45,
+    "timeline": [
+      {
+        "ep": 45,
+        "text": "목을 자를 때마다 두 개가 돋아나며 헤라클레스를 물러서게 했지만, 자른 자리를 횃불로 지지는 방법에 무너졌어요. 끝내 잘리지 않던 마지막 목 하나는 큰 바위 아래에 묻혔지요."
+      }
+    ],
+    "portrait": "img/char/hydra.jpg"
+  },
+  {
+    "id": "theseus",
+    "name": "테세우스",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "아버지가 바위 밑에 묻어 둔 칼을 찾아 아테네로 걸어간 젊은이.",
+    "titles": [
+      {
+        "sinceEp": 50,
+        "text": "바위를 밀어낸 사람"
+      },
+      {
+        "sinceEp": 51,
+        "text": "아테네 왕의 아들"
+      },
+      {
+        "sinceEp": 53,
+        "text": "아테네의 왕"
+      }
+    ],
+    "about": "남쪽 바닷가 작은 나라에서 어머니와 단둘이 자란 아들이에요. 아버지가 누구인지는 열여섯 살이 되어서야 알았지요. 검은 머리가 물결지고 웃옷은 흰 무명이에요. 힘으로 안 되는 일은 밑을 파서 되게 하는 쪽이고요.",
+    "look": "a determined young hero with wavy black hair, a short sword in one hand and a ball of red thread in the other, simple white tunic",
+    "relations": [
+      {
+        "to": "aegeus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "ariadne",
+        "label": "실을 준 사람",
+        "kind": "other",
+        "sinceEp": 51
+      }
+    ],
+    "firstEp": 50,
+    "timeline": [
+      {
+        "ep": 50,
+        "text": "열여섯 해 만에 바위를 밀어내 아버지가 묻어 둔 칼과 신발을 찾았어요. 뱃길 대신 위험한 땅길을 골라 엿새를 걸어 아테네 성문 앞에 닿았지요."
+      },
+      {
+        "ep": 51,
+        "text": "칼을 상 위에 올려놓아 아이게우스에게 자기를 알렸어요. 제비에 뽑힌 제일 어린 사람을 대신해 크레타섬으로 가는 배에 올랐고요."
+      },
+      {
+        "ep": 52,
+        "text": "실 끝을 문설주에 묶고 혼자 미로로 들어가 미노타우로스를 이겼어요. 돌아 나오다 끊어진 실을 바닥에서 더듬어 찾아 이어 묶었지요."
+      },
+      {
+        "ep": 53,
+        "text": "물을 실으러 든 섬에 아리아드네를 두고 새벽에 배를 밀어냈어요. 흰 천을 무릎에 얹은 채 돌아오는 내내 지나온 물만 보다가, 검은 돛을 그대로 두고 아테네에 닿았지요."
+      }
+    ],
+    "portrait": "img/char/theseus.jpg"
+  },
+  {
+    "id": "aegeus",
+    "name": "아이게우스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "아들이 오거든 알아볼 수 있게 바위 밑에 칼을 묻어 둔 아테네의 왕.",
+    "titles": [
+      {
+        "sinceEp": 50,
+        "text": "아테네의 왕"
+      }
+    ],
+    "about": "아테네를 다스리는 왕이에요. 긴 수염이 세었고 머리에는 올리브 가지를 둘렀지요. 젊을 때 남쪽 바닷가의 작은 나라에 손님으로 갔다가, 떠나면서 바위 밑에 칼과 신발을 묻어 두었어요. 자기 자리를 기다리는 조카가 쉰 명이라 늘 조심하며 삽니다.",
+    "look": "an aging Athenian king with a long grey beard and a simple olive wreath, a worn sword and sandals at his feet, sea-blue robe",
+    "relations": [
+      {
+        "to": "theseus",
+        "label": "아들",
+        "kind": "child"
+      }
+    ],
+    "firstEp": 50,
+    "timeline": [
+      {
+        "ep": 50,
+        "text": "남쪽 바닷가 작은 나라를 떠나면서 바위 밑에 칼과 신발을 묻고, 그것을 혼자 밀어낼 수 있는 아이가 오거든 자기 아들이라고 했어요."
+      },
+      {
+        "ep": 51,
+        "text": "칼과 신발을 보고 아들을 알아보았어요. 배에 오르겠다는 아들을 말리지 못하고, 흰 천을 손수 개어 뱃사람에게 맡기며 살아 돌아오거든 그것을 올리라고 했지요."
+      },
+      {
+        "ep": 53,
+        "text": "날마다 물가로 조금씩 더 걸어 내려가 아들의 배를 기다렸어요. 검은 돛을 보고 바다 쪽으로 걸어 들어갔고, 사람들은 그 바다를 에게해라 불렀지요."
+      }
+    ],
+    "portrait": "img/char/aegeus.jpg"
+  },
+  {
+    "id": "minos",
+    "name": "미노스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "아홉 해마다 아테네에서 오는 젊은이 열넷을 손수 세는 크레타섬의 왕.",
+    "titles": [
+      {
+        "sinceEp": 51,
+        "text": "크레타섬의 왕"
+      }
+    ],
+    "about": "크레타섬을 다스리는 왕이에요. 쇠빛 수염을 기르고, 왕관에는 소의 뿔 무늬가 새겨져 있지요. 짙은 자줏빛 옷을 입고요. 아들 하나를 아테네에서 잃은 뒤로, 아홉 해에 한 번씩 아테네에서 오는 배를 부두에 나가 손수 셉니다.",
+    "look": "a stern king with an iron-grey beard, a plain gold circlet with a small bull-horn motif, dark purple cloak pinned at one shoulder",
+    "relations": [
+      {
+        "to": "ariadne",
+        "label": "딸",
+        "kind": "child"
+      },
+      {
+        "to": "minotaur",
+        "label": "미로에 가둔 것",
+        "kind": "other",
+        "sinceEp": 52
+      },
+      {
+        "to": "daedalus",
+        "label": "탑에 가둔 사람",
+        "kind": "other",
+        "sinceEp": 54
+      }
+    ],
+    "firstEp": 51,
+    "timeline": [
+      {
+        "ep": 51,
+        "text": "부두에 나와 아테네에서 온 열넷을 나무판에 짚어 가며 셌어요. 열넷째에서 손이 멈췄지요. 판에 없는 얼굴이었거든요."
+      },
+      {
+        "ep": 54,
+        "text": "미로 문설주에 붙은 실 한 오라기를 떼어 들고 다이달로스를 찾아갔어요. 그 길의 안쪽을 다 잊을 때까지라며 다이달로스와 그 아들을 바닷가 탑에 두었지요."
+      }
+    ],
+    "portrait": "img/char/minos.jpg"
+  },
+  {
+    "id": "ariadne",
+    "name": "아리아드네",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "밤중에 실타래 하나를 손에 쥐여 준 크레타섬의 공주.",
+    "titles": [
+      {
+        "sinceEp": 51,
+        "text": "크레타섬의 공주"
+      }
+    ],
+    "about": "크레타섬 왕의 딸이에요. 긴 검은 머리에 은빛 머리띠를 두르고 바다빛 옷을 입지요. 손에는 붉은 실타래를 들고 다녀요. 아홉 해마다 궁 아래로 내려가는 사람들을 부두에서부터 지켜보며 자랐고요.",
+    "look": "a thoughtful princess with long dark hair and a silver circlet, holding a ball of red thread, sea-blue dress",
+    "relations": [
+      {
+        "to": "minos",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "dionysus",
+        "label": "덩굴을 심어 준 이",
+        "kind": "other",
+        "sinceEp": 53
+      },
+      {
+        "to": "theseus",
+        "label": "실을 받은 사람",
+        "kind": "other",
+        "sinceEp": 51
+      }
+    ],
+    "firstEp": 51,
+    "timeline": [
+      {
+        "ep": 51,
+        "text": "부두에서 내리는 사람들의 발을 하나씩 보았고, 그날 밤 테세우스에게 실타래를 건네며 입구에 묶으라고 했어요."
+      },
+      {
+        "ep": 52,
+        "text": "청동 문 옆 기둥 뒤에서 기다렸다가, 열셋과 테세우스를 뒷길로 데리고 나가 함께 배를 밀어내고 섬을 떠났어요."
+      },
+      {
+        "ep": 53,
+        "text": "혼자 남은 모래밭에서 배가 점이 될 때까지 이름을 불렀어요. 그 섬에 덩굴을 심으러 온 디오니소스가 던져 올린 관이 하늘에 별로 걸렸고요."
+      }
+    ],
+    "portrait": "img/char/ariadne.jpg"
+  },
+  {
+    "id": "minotaur",
+    "name": "미노타우로스",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "미로 한가운데 어둠 속에서만 살아온, 소의 머리를 한 것.",
+    "titles": [
+      {
+        "sinceEp": 52,
+        "text": "미로 한가운데의 것"
+      }
+    ],
+    "about": "크레타섬 궁 아래 미로 한가운데에 사는 존재예요. 몸은 사람인데 목 위는 소이고, 털이 검고 텁수룩하지요. 한쪽 뿔에는 아주 어릴 때 끼운 청동 고리가 그대로 박혀 있어요. 바닥에 손톱으로 줄을 그어 무언가를 세면서 지냈고요.",
+    "look": "a lonely giant with a bull's head and dark shaggy fur, heavy bronze ring on one horn, standing in stone corridor shadow",
+    "relations": [
+      {
+        "to": "minos",
+        "label": "미로에 가둔 왕",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 52,
+    "timeline": [
+      {
+        "ep": 52,
+        "text": "미로 한가운데 바닥에 새 줄을 하나 긋고 일어섰다가, 혼자 걸어 들어온 테세우스에게 졌어요."
+      }
+    ],
+    "portrait": "img/char/minotaur.jpg"
+  },
+  {
+    "id": "daedalus",
+    "name": "다이달로스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "궁 아래에 나오는 길 없는 돌길을 지은 늙은 장인.",
+    "titles": [
+      {
+        "sinceEp": 54,
+        "text": "미로를 지은 사람"
+      }
+    ],
+    "about": "크레타섬 궁에서 온갖 것을 만들고 고치며 사는 늙은 장인이에요. 흰 머리가 사방으로 뻗치고 짧은 수염을 길렀으며, 허리에는 늘 연장띠를 차고 있지요. 궁 아래의 그 돌길도 이 사람이 지었어요.",
+    "look": "an inventive old craftsman with wild grey hair and a short beard, holding a wing of wax and feathers, a plain tunic with a leather cord at the waist",
+    "relations": [
+      {
+        "to": "icarus",
+        "label": "아들",
+        "kind": "child"
+      },
+      {
+        "to": "minos",
+        "label": "탑에 가둔 왕",
+        "kind": "other",
+        "sinceEp": 54
+      }
+    ],
+    "firstEp": 54,
+    "timeline": [
+      {
+        "ep": 54,
+        "text": "미로의 안쪽을 안다는 이유로 아들과 함께 바닷가 탑에 갇혔어요. 창틀에서 모은 깃털을 실과 밀랍으로 붙여 날개를 만들고 창으로 빠져나갔지요."
+      }
+    ],
+    "portrait": "img/char/daedalus.jpg"
+  },
+  {
+    "id": "icarus",
+    "name": "이카로스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "탑 창가에서 깃털을 크기대로 늘어놓던 열두 살 아이.",
+    "titles": [
+      {
+        "sinceEp": 54,
+        "text": "깃털을 모은 아이"
+      }
+    ],
+    "about": "다이달로스의 아들이에요. 열두 살이고, 부스스한 밝은 갈색 머리에 짧은 흰옷을 입었지요. 탑에 갇힌 동안 계단 구석까지 뒤져 깃털을 모았고, 그것을 크기대로 늘어놓고 세는 것을 좋아했어요.",
+    "look": "an eager boy with tousled light-brown hair and large feathered wings strapped to his arms, a sleeveless white linen tunic pinned at one shoulder",
+    "relations": [
+      {
+        "to": "daedalus",
+        "label": "아버지",
+        "kind": "parent"
+      }
+    ],
+    "firstEp": 54,
+    "timeline": [
+      {
+        "ep": 54,
+        "text": "아버지와 함께 날개를 묶고 탑 창을 넘었어요. 바람이 밑에서 올라오는 자리마다 조금씩 더 높이 올라갔고, 밀랍이 물러져 바다에 떨어졌어요. 다시 올라오지는 못했지요."
+      }
+    ],
+    "portrait": "img/char/icarus.jpg"
+  },
+  {
+    "id": "jason",
+    "name": "이아손",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "신발 한 짝을 잃은 채 산에서 내려온 젊은이.",
+    "titles": [
+      {
+        "sinceEp": 55,
+        "text": "아르고호의 우두머리"
+      }
+    ],
+    "about": "이올코스 왕의 아들인데 갓난아기 때 산으로 옮겨져 케이론의 동굴에서 자랐어요. 모래빛 머리가 어깨까지 오고, 강을 건너다 한 짝을 잃어 신발을 한 짝만 신고 다니지요. 달라고 해 보고 나서 정하겠다고 말하는 쪽이에요.",
+    "look": "a confident young captain with sandy shoulder-length hair, one sandal missing, holding a golden fleece over his arm",
+    "relations": [
+      {
+        "to": "chiron",
+        "label": "산에서 기른 분",
+        "kind": "other"
+      },
+      {
+        "to": "atalanta",
+        "label": "같은 배에 탄 이",
+        "kind": "other",
+        "sinceEp": 55
+      },
+      {
+        "to": "medea",
+        "label": "몰래 도운 이",
+        "kind": "other",
+        "sinceEp": 56
+      }
+    ],
+    "firstEp": 55,
+    "timeline": [
+      {
+        "ep": 55,
+        "text": "노파를 업고 강을 건너다 신발 한 짝을 잃었어요. 한 짝만 신은 발을 본 왕이 황금 양털을 가져오라 했고, 겨울 내내 아르고호를 지어 쉰 사람과 함께 떠났지요."
+      },
+      {
+        "ep": 56,
+        "text": "부딪히는 두 바위 사이를 지나 콜키스에 닿았고, 몰래 걷어 오자는 말을 물리치고 임자에게 먼저 묻겠다며 왕 앞에 섰어요."
+      },
+      {
+        "ep": 57,
+        "text": "몸에 약을 바르고 불을 뿜는 소 두 마리에 멍에를 씌워 밭 네 이랑을 갈았고, 밭에서 올라온 사람들 한가운데로 돌 하나를 던졌어요."
+      },
+      {
+        "ep": 58,
+        "text": "잠든 것 옆을 지나 나무에 올라가 황금 양털을 걷어 냈고, 돌아오는 배 위에서 메데이아에게 제 옆이 당신 자리라고 말했어요."
+      },
+      {
+        "ep": 59,
+        "text": "고향 왕이 자리를 내주지 않아 바다 건너 도시로 옮겨 가 배를 지어 주며 살았어요. 그 도시 왕의 딸과 혼인하기로 한 날, 마당에 혼자 남아 낡아 가는 아르고호에 올라가 나무판에서 제 이름을 찾았지요."
+      }
+    ],
+    "portrait": "img/char/jason.jpg"
+  },
+  {
+    "id": "atalanta",
+    "name": "아탈란테",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "닷새 걸리는 길을 사흘에 걸어와 배에 이름을 적은 사냥꾼.",
+    "titles": [
+      {
+        "sinceEp": 55,
+        "text": "발이 빠른 사냥꾼"
+      }
+    ],
+    "about": "숲에서 자란 사냥꾼이에요. 구릿빛 머리를 달리기 좋게 땋아 올리고 등에는 활을 메고 다니지요. 짧은 초록빛 웃옷을 입었고, 누가 웃어도 물러서지 않는 쪽이에요.",
+    "look": "a fleet-footed huntress with copper hair tied in a running braid, carrying a bow and three golden apples, short green tunic",
+    "relations": [
+      {
+        "to": "jason",
+        "label": "이름을 적어 준 이",
+        "kind": "other",
+        "sinceEp": 55
+      }
+    ],
+    "firstEp": 55,
+    "timeline": [
+      {
+        "ep": 55,
+        "text": "부두에 걸린 나무판에 이름을 적고 아르고호에 올랐어요. 이튿날 아침에는 아무도 시키지 않았는데 자리에 앉아 노를 저어 보였지요."
+      },
+      {
+        "ep": 56,
+        "text": "부딪히는 두 바위 앞에서 비둘기를 손에서 날려 보냈고, 몰래 가져가면 도둑이 된다는 말을 듣고 더 묻지 않았어요."
+      },
+      {
+        "ep": 58,
+        "text": "숲 어귀에서 뒤를 지켰고, 빛이 새어 나오는 양털 위에 겉옷을 덮어 발자국을 감췄어요."
+      },
+      {
+        "ep": 60,
+        "text": "저를 이기는 사람과만 혼인하겠다며 마당에 금을 긋고 열두 번을 달렸어요. 굴러온 황금 사과 세 알을 세 번 다 주웠고, 결승선에는 세 걸음 뒤에 들어왔지요."
+      }
+    ],
+    "portrait": "img/char/atalanta.jpg"
+  },
+  {
+    "id": "medea",
+    "name": "메데이아",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "궁 사람들이 아프면 왕이 아니라 이 사람에게 가는, 콜키스 왕의 작은딸.",
+    "titles": [
+      {
+        "sinceEp": 56,
+        "text": "약을 아는 공주"
+      }
+    ],
+    "about": "황금 양털을 지키는 콜키스 왕의 작은딸이에요. 검은 머리가 길고 보랏빛 겉옷을 걸치고 다니지요. 마른 풀과 뿌리와 작은 병들이 든 나무 상자를 늘 곁에 두는데, 어떤 뿌리가 피를 멎게 하는지 어릴 때부터 배웠거든요.",
+    "look": "a striking young sorceress-princess with long raven hair and a violet cloak, holding a small vial of green potion",
+    "relations": [
+      {
+        "to": "jason",
+        "label": "몰래 도운 이",
+        "kind": "other",
+        "sinceEp": 56
+      }
+    ],
+    "firstEp": 56,
+    "timeline": [
+      {
+        "ep": 56,
+        "text": "기둥 뒤에서 아버지가 내건 세 가지를 다 듣다가 에로스의 화살을 맞았고, 그날 밤 상자를 열었다 닫기를 되풀이하다 새벽에 이아손에게 작은 병을 건넸어요."
+      },
+      {
+        "ep": 57,
+        "text": "밭에 나가지 않고 아버지 옆자리에 앉아 있었고, 밤에 벽 너머로 배부터 태우라는 말을 듣고 강가로 달려갔어요."
+      },
+      {
+        "ep": 58,
+        "text": "노래로 잠들지 않는 것을 재우고, 어릴 때 조개를 캐던 갈대밭 물길로 아르고호를 빼내 주었어요."
+      },
+      {
+        "ep": 59,
+        "text": "낯선 도시에서 아픈 사람들을 고쳐 주며 여러 해를 살았어요. 이아손이 다른 혼인을 하려 하자 상자를 비워 다 나눠 주고, 용이 끄는 수레를 타고 하늘 저편으로 떠났지요."
+      }
+    ],
+    "portrait": "img/char/medea.jpg"
+  },
+  {
+    "id": "paris",
+    "name": "파리스",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "산에서 양을 치며 자란 트로이 왕의 아들.",
+    "titles": [
+      {
+        "sinceEp": 61,
+        "text": "트로이의 왕자"
+      }
+    ],
+    "about": "트로이 왕의 아들인데 어릴 때 산으로 보내져 양을 치며 자랐어요. 검은 곱슬머리에 부드러운 모자를 쓰고, 붉은빛과 금빛 무늬가 있는 웃옷을 입지요. 소 두 마리를 나란히 놓고 더 나은 쪽을 고르는 눈으로 이름이 났어요.",
+    "look": "a handsome young prince with dark curls and a soft Phrygian cap, holding a golden apple, patterned red-and-gold tunic",
+    "relations": [
+      {
+        "to": "aphrodite",
+        "label": "사과를 준 상대",
+        "kind": "other",
+        "sinceEp": 61
+      },
+      {
+        "to": "hermes",
+        "label": "산으로 온 이",
+        "kind": "other",
+        "sinceEp": 61
+      },
+      {
+        "to": "priam",
+        "label": "아버지",
+        "kind": "parent",
+        "sinceEp": 66
+      },
+      {
+        "to": "hector",
+        "label": "형",
+        "kind": "sibling",
+        "sinceEp": 66
+      }
+    ],
+    "firstEp": 61,
+    "timeline": [
+      {
+        "ep": 61,
+        "text": "산 중턱에서 세 여신을 만나 아프로디테에게 황금 사과를 주었어요. 그날 지팡이를 바위에 세워 두고 산을 내려가, 며칠 뒤 배를 타고 바다 건너로 떠났지요."
+      },
+      {
+        "ep": 62,
+        "text": "스파르타의 손님으로 들어가 잔을 받고, 왕이 배를 타고 떠난 사이 헬레네와 함께 트로이로 가는 배에 올랐어요."
+      },
+      {
+        "ep": 66,
+        "text": "성 안에서 활시위를 손보고 있었어요. 아홉 해 전 자기가 배를 타고 돌아온 일을 앞에 놓고 말하는 사람은 없었어요. 뒤에 놓고는 다들 했고요."
+      },
+      {
+        "ep": 72,
+        "text": "성벽 위에서 오래 겨눈 끝에 화살 하나로 아킬레우스를 쓰러뜨렸어요. 쏘고 나서는 시위에 손을 얹은 채 한참 서 있었지요."
+      }
+    ],
+    "portrait": "img/char/paris.jpg"
+  },
+  {
+    "id": "thetis",
+    "name": "테티스",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "뭍에서 온 사람과 혼인한 바다의 님프.",
+    "titles": [
+      {
+        "sinceEp": 61,
+        "text": "바다에서 온 신부"
+      }
+    ],
+    "about": "바다에 사는 님프예요. 은빛이 도는 푸른 머리가 등까지 내려오고, 관자놀이에 물방울 같은 것이 맺혀 있는데 마르지 않아요. 뭍에서 온 사람과 혼인해 바닷가 모래밭에 상을 차렸지요.",
+    "look": "a sea nymph mother with long silver-blue flowing hair and pearl droplets at her temples, a shimmering wave-patterned veil",
+    "relations": [
+      {
+        "to": "achilles",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 63
+      }
+    ],
+    "firstEp": 61,
+    "timeline": [
+      {
+        "ep": 61,
+        "text": "바닷가에 상을 차리고 뭍에서 온 사람과 혼인했어요. 잔치 끝에 굴러 들어온 사과를 상에서 치우려다, 세 손이 그 위에 있는 것을 보고 손을 뻗은 채로 멈췄지요."
+      },
+      {
+        "ep": 63,
+        "text": "밤 물가로 아들을 불러내 짧게 말하고, 손을 뻗어 발목을 한 번 잡았다가 놓았어요."
+      },
+      {
+        "ep": 68,
+        "text": "아들의 소리를 바닷속에서 듣고 물살을 가르며 올라와, 갑옷을 구하러 물가를 따라 떠났어요."
+      },
+      {
+        "ep": 69,
+        "text": "밤새 물가를 걸어 바닷가 대장간에 닿았고, 새 갑옷과 방패를 받아 왔어요."
+      }
+    ],
+    "portrait": "img/char/thetis.jpg"
+  },
+  {
+    "id": "patroclus",
+    "name": "파트로클로스",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "진영에서 아침마다 남의 창을 갈아 주는 아킬레우스의 오랜 벗.",
+    "titles": [
+      {
+        "sinceEp": 65,
+        "text": "창을 갈아 주는 사람"
+      }
+    ],
+    "about": "아주 어릴 때 아킬레우스네 집에 맡겨져 그 집에서 함께 자란 사람이에요. 아킬레우스보다 나이가 위지요. 몸에 좀 큰 갑옷을 입고 무늬 없는 둥근 방패를 들고 다녀요. 말수가 적고, 남이 시키지 않은 일을 먼저 하는 사람이고요.",
+    "look": "a warm-faced young warrior with light brown wavy hair, wearing armor slightly too large for him, holding a plain round shield",
+    "relations": [
+      {
+        "to": "achilles",
+        "label": "함께 자란 벗",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 65,
+    "timeline": [
+      {
+        "ep": 65,
+        "text": "아홉 해째 아침에도 남의 창을 갈고 있었고, 아가멤논의 전령이 왔을 때 천막 안에서 사람을 데리고 나왔어요."
+      },
+      {
+        "ep": 67,
+        "text": "다리를 저는 병사를 만나고 돌아와, 갑옷만 빌려 달라고 해서 아킬레우스의 갑옷을 입고 들판으로 나갔어요."
+      },
+      {
+        "ep": 68,
+        "text": "아킬레우스의 갑옷을 입고 성벽 아래까지 나아갔다가, 헥토르의 창에 쓰러져 돌아오지 못했어요."
+      }
+    ],
+    "portrait": "img/char/patroclus.jpg"
+  },
+  {
+    "id": "hector",
+    "name": "헥토르",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "성문이 열리지 않게 지키고 서 있는 트로이의 맏아들.",
+    "titles": [
+      {
+        "sinceEp": 66,
+        "text": "트로이의 맏아들"
+      }
+    ],
+    "about": "트로이 왕 프리아모스의 맏아들이에요. 어깨까지 오는 검은 머리에, 꼭대기에 말총이 달린 투구를 쓰고 다니지요. 옆구리에는 긴 방패를 걸고요. 트로이 군사를 이끄는 사람이고, 성 안에 아내와 어린 아기가 있어요.",
+    "look": "a noble Trojan prince with dark shoulder-length hair and a plumed helmet under his arm, a long shield at his side",
+    "relations": [
+      {
+        "to": "priam",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "paris",
+        "label": "아우",
+        "kind": "sibling"
+      }
+    ],
+    "firstEp": 66,
+    "timeline": [
+      {
+        "ep": 66,
+        "text": "방에 있던 파리스를 불러내고, 성문 앞에서 투구를 벗어 아기를 웃긴 뒤 들판으로 나갔어요. 그날 밤 군사를 성으로 들이지 않고 들판에서 재웠지요."
+      },
+      {
+        "ep": 68,
+        "text": "성문 앞에서 파트로클로스를 쓰러뜨렸고, 투구가 벗겨진 얼굴을 본 뒤 그 갑옷을 벗겨 자기 어깨에 걸쳤어요."
+      },
+      {
+        "ep": 70,
+        "text": "성문 밖에 혼자 남아 아킬레우스와 마주 섰고, 아킬레우스의 창에 쓰러졌어요."
+      },
+      {
+        "ep": 71,
+        "text": "아버지가 몰고 온 수레에 실려 성으로 돌아왔고, 성 밖 언덕에서 열이틀 만에 장례를 치렀어요."
+      }
+    ],
+    "portrait": "img/char/hector.jpg"
+  },
+  {
+    "id": "priam",
+    "name": "프리아모스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "아침마다 성벽에 올라와 들판을 내려다보는 트로이의 늙은 왕.",
+    "titles": [
+      {
+        "sinceEp": 66,
+        "text": "트로이의 왕"
+      }
+    ],
+    "about": "트로이의 왕이고 이 성에서 제일 나이가 많은 사람이에요. 긴 흰 수염에 얇은 금테를 두르고, 조각한 지팡이를 짚고 다니지요. 아들이 아주 많았는데 성이 에워싸인 뒤로 그 방들이 하나씩 비었어요. 눈이 침침해서 들판의 사람을 알아보지 못하고요.",
+    "look": "a very old king with a long white beard and a simple gold circlet, leaning on a carved staff, grey-blue robe",
+    "relations": [
+      {
+        "to": "hector",
+        "label": "맏아들",
+        "kind": "child"
+      },
+      {
+        "to": "paris",
+        "label": "아들",
+        "kind": "child"
+      }
+    ],
+    "firstEp": 66,
+    "timeline": [
+      {
+        "ep": 66,
+        "text": "성벽 위에서 헬레네에게 들판의 사람들 이름을 묻고, 네 탓이 아니라고 말해 주었어요. 밤에는 들판의 불을 세어 보라고 했지요."
+      },
+      {
+        "ep": 70,
+        "text": "성벽 위에서 아들에게 들어오라고 외쳤고, 그 밤에 계단을 내려가 성문을 열라고 했어요."
+      },
+      {
+        "ep": 71,
+        "text": "밤중에 짐수레를 몰고 혼자 들판을 건너가 아킬레우스 앞에 무릎을 꿇고, 아들을 데려와 열이틀 동안 장례를 치렀어요."
+      },
+      {
+        "ep": 72,
+        "text": "바닷가에 남은 나무 말 앞에 서서 성 안에 들이라고 했고, 성문 위쪽을 헐게 했어요."
+      }
+    ],
+    "portrait": "img/char/priam.jpg"
+  },
+  {
+    "id": "helen",
+    "name": "헬레네",
+    "alias": [
+      "헬렌은 영어식 이름"
+    ],
+    "faction": "mortals",
+    "oneLine": "손님이 하는 말에서 앞뒤가 안 맞는 데를 짚어 내는 스파르타의 왕비.",
+    "titles": [
+      {
+        "sinceEp": 62,
+        "text": "스파르타의 왕비"
+      }
+    ],
+    "about": "스파르타의 왕비예요. 꿀빛 긴 머리에 가는 금 테를 두르고 아이보리색 옷에 노란 띠를 매지요. 안뜰 베틀 앞에 오래 앉아 있고, 곳간 자물쇠와 밀 자루 수를 직접 세는 사람이에요.",
+    "look": "a beautiful queen with long honey-blonde hair and a delicate gold diadem, soft ivory gown with a saffron sash",
+    "relations": [
+      {
+        "to": "menelaus",
+        "label": "스파르타의 짝",
+        "kind": "spouse",
+        "sinceEp": 62
+      }
+    ],
+    "firstEp": 62,
+    "timeline": [
+      {
+        "ep": 62,
+        "text": "손님에게 물을 어디서 실었는지 물었고, 실이 네 번 끊긴 밤에 그 계절에 없는 장미 냄새를 맡았어요. 「저는 안 갑니다」라고 했지만 아프로디테의 손이 이마에 닿은 뒤, 딸이 자는 방 앞에서 신을 벗었다 다시 신고 배에 올랐지요."
+      },
+      {
+        "ep": 66,
+        "text": "성벽 위에 올라가 들판을 내려다보았어요. 아홉 해 전 배를 탔던 사람이 그 자리에 서 있었지요."
+      },
+      {
+        "ep": 72,
+        "text": "아홉 해 동안 짜던 천을 다 짜지 못한 채 베틀에 두고, 문간에서 한 번 돌아본 뒤 언덕길을 내려갔어요."
+      }
+    ],
+    "portrait": "img/char/helen.jpg"
+  },
+  {
+    "id": "menelaus",
+    "name": "메넬라오스",
+    "alias": [
+      "메넬라우스는 라틴식 이름"
+    ],
+    "faction": "heroes",
+    "oneLine": "손님이 오면 이름을 묻기 전에 물부터 손수 붓는 스파르타의 왕.",
+    "titles": [
+      {
+        "sinceEp": 62,
+        "text": "스파르타의 왕"
+      }
+    ],
+    "about": "스파르타의 왕이에요. 수염이 붉고 넓은 청동 투구를 쓰며 무거운 창을 들지요. 손님을 맞는 법을 무엇보다 지키는 사람이라, 손님에게 언제 가느냐고 묻는 법이 없어요.",
+    "look": "a red-bearded Spartan king with a broad bronze helmet and a heavy spear, deep russet cloak",
+    "relations": [
+      {
+        "to": "agamemnon",
+        "label": "형",
+        "kind": "sibling",
+        "sinceEp": 63
+      }
+    ],
+    "firstEp": 62,
+    "timeline": [
+      {
+        "ep": 62,
+        "text": "손님 물을 손수 부어 파리스를 맞았다가, 크레타섬에 다녀온 사이에 빈 방을 보고 밤에 형에게 보낼 전갈을 새기기 시작했어요."
+      },
+      {
+        "ep": 63,
+        "text": "밤길로 미케네에 가서 형에게 밀랍판을 건넸고, 스파르타 마당에서 마흔셋이 한 맹세 이야기를 다시 꺼냈어요."
+      },
+      {
+        "ep": 64,
+        "text": "형에게 그만두시라고 세 번 말했고, 안개가 차오른 숲에서 형의 팔에 손을 얹고 서 있었어요."
+      },
+      {
+        "ep": 72,
+        "text": "횃불을 들고 문지방 앞에 서서 다 짰느냐고만 묻고, 두고 가자고 했어요. 딸이 아직 조개껍데기를 갖고 있다고 말했지요."
+      }
+    ],
+    "portrait": "img/char/menelaus.jpg"
+  },
+  {
+    "id": "agamemnon",
+    "name": "아가멤논",
+    "alias": [],
+    "faction": "heroes",
+    "oneLine": "지도 위에 조약돌을 놓아 배를 세는 미케네의 왕.",
+    "titles": [
+      {
+        "sinceEp": 63,
+        "text": "미케네의 왕"
+      }
+    ],
+    "about": "미케네의 왕이자 메넬라오스의 형이에요. 검은 수염이 짙고 금 띠를 두른 투구를 쓰며 진홍색 겉옷을 걸치지요. 무엇이든 수로 세는 버릇이 있어서 앞에 지도가 놓이면 조약돌부터 집어요.",
+    "look": "a broad commanding king with a heavy dark beard and a gold-banded helmet, deep crimson war cloak",
+    "relations": [
+      {
+        "to": "iphigenia",
+        "label": "큰딸",
+        "kind": "child",
+        "sinceEp": 64
+      },
+      {
+        "to": "menelaus",
+        "label": "아우",
+        "kind": "sibling",
+        "sinceEp": 63
+      }
+    ],
+    "firstEp": 63,
+    "timeline": [
+      {
+        "ep": 63,
+        "text": "지도 위에 조약돌을 놓아 배를 세었고, 스파르타 마당의 맹세를 들어 그리스 곳곳에서 천 척을 불러 모았어요."
+      },
+      {
+        "ep": 64,
+        "text": "스무날 전 사냥에서 한 말이 화근이라는 말을 듣고, 밀랍판을 세 번 지운 끝에 딸을 항구로 보내라는 전갈을 미케네에 띄웠어요. 왜 보내라는지는 끝내 쓰지 않았지요."
+      },
+      {
+        "ep": 65,
+        "text": "딸을 찾으러 온 아폴론의 사제를 빈손으로 돌려보냈고, 그 뒤 모래밭 한가운데에서 아킬레우스와 마주 섰어요."
+      },
+      {
+        "ep": 67,
+        "text": "천막 앞에 쌓은 물건을 세다가 두 번 틀렸어요. 세 번째에는 손가락을 접어 가며 셌지요."
+      },
+      {
+        "ep": 72,
+        "text": "말을 만들자는 말을 듣고 조약돌을 모래에 내려놓았고, 돌아가는 배 위에서 배를 세다가 두 번 틀렸어요."
+      }
+    ],
+    "portrait": "img/char/agamemnon.jpg"
+  },
+  {
+    "id": "odysseus",
+    "name": "오디세우스",
+    "alias": [
+      "율리시스는 영어식 이름",
+      "울릭세스는 로마식 이름"
+    ],
+    "faction": "heroes",
+    "oneLine": "힘으로 안 되는 자리에 꾀를 하나 놓아 보는 이타카 사람.",
+    "titles": [
+      {
+        "sinceEp": 63,
+        "text": "이타카에서 온 사람"
+      }
+    ],
+    "about": "서쪽 바다의 작은 섬 이타카 사람이에요. 짧은 곱슬수염에 붉은 고깔모자를 쓰고 감아 놓은 밧줄과 활을 들고 다니지요. 밀어붙이기 전에 먼저 묻고 세어 보는 사람이라, 남들이 힘으로 밀 자리에서 꾀를 하나 꺼내 놓아요.",
+    "look": "a clever weathered hero with a short curly dark beard and a red conical cap, holding a coiled rope and a bow",
+    "relations": [
+      {
+        "to": "achilles",
+        "label": "찾아낸 사람",
+        "kind": "other",
+        "sinceEp": 63
+      },
+      {
+        "to": "polyphemus",
+        "label": "동굴의 주인",
+        "kind": "other",
+        "sinceEp": 73
+      },
+      {
+        "to": "eumaeus",
+        "label": "집을 지킨 사람",
+        "kind": "other",
+        "sinceEp": 78
+      },
+      {
+        "to": "circe",
+        "label": "잔을 내민 사람",
+        "kind": "other",
+        "sinceEp": 75
+      },
+      {
+        "to": "sirens",
+        "label": "노래하는 바위",
+        "kind": "other",
+        "sinceEp": 76
+      },
+      {
+        "to": "calypso",
+        "label": "물에서 건진 이",
+        "kind": "other",
+        "sinceEp": 77
+      },
+      {
+        "to": "telemachus",
+        "label": "아들",
+        "kind": "child",
+        "sinceEp": 78
+      }
+    ],
+    "firstEp": 63,
+    "timeline": [
+      {
+        "ep": 63,
+        "text": "가지 않으려고 모래밭에 소금을 뿌리며 쟁기를 밀다 고랑에 놓인 아기 앞에서 들켰고, 장사꾼으로 꾸며 스키로스섬에서 아킬레우스를 찾아냈어요."
+      },
+      {
+        "ep": 64,
+        "text": "사흘 동안 진영을 돌며 노만으로 갈 뱃길을 찾아보았지만, 지도 위에 손을 얹은 채로 아무 길도 내지 못했어요."
+      },
+      {
+        "ep": 65,
+        "text": "두 사람 사이에 일어서서 오늘은 여기까지 하자고 했어요. 둘 다 옳은 말을 하고 있는 것이 제일 나쁘다고 했지요."
+      },
+      {
+        "ep": 67,
+        "text": "사절로 가서 물건이 모자라지 않다고 했어요. 필요한 것은 잘못했다는 말 한마디라고 했지요."
+      },
+      {
+        "ep": 72,
+        "text": "모래밭에 누워 있던 큰 나무로 속이 빈 말을 만들자고 했고, 자기가 맨 나중에 그 안으로 들어갔어요."
+      },
+      {
+        "ep": 73,
+        "text": "낯선 섬 동굴에서 주인을 기다렸다가 바위에 갇혔고, 올리브나무를 깎아 마른 풀 밑에 감췄어요."
+      },
+      {
+        "ep": 74,
+        "text": "자기 이름을 아무도 아니다라고 말해 이웃 거인들을 돌려보내고, 양 떼 배 밑에 매달려 동굴을 빠져나왔어요. 배가 멀어질 때 참지 못하고 진짜 이름을 외쳤지요."
+      },
+      {
+        "ep": 75,
+        "text": "고향이 보이는 자리에서 바람 자루가 열려 도로 밀려났어요. 헤르메스가 준 풀을 쥐고 마법사의 상 앞에 앉아, 잔을 마시고도 서 있는 채로 사람들을 돌려받았지요."
+      },
+      {
+        "ep": 76,
+        "text": "사람들 귀를 밀랍으로 막고 자기 몸은 돛대에 묶어 노래를 견뎠어요. 좁은 물길에서는 앞에 무엇이 있는지 말하지 않은 채로 지나갔지요."
+      },
+      {
+        "ep": 77,
+        "text": "일곱 해 동안 아침마다 같은 바위에 앉아 나무를 모았고, 늙지 않게 해 주겠다는 그릇은 도로 밀어 놓았어요. 나흘 만에 뗏목을 엮어 바다로 나섰지요."
+      },
+      {
+        "ep": 78,
+        "text": "이타카 바닷가에 내려놓아진 채로 깨어났고, 아테나가 늙은 거지의 모습으로 바꿔 주자 돼지 치는 집에 손님으로 묵었어요. 아들에게만 자기를 밝혔지요."
+      },
+      {
+        "ep": 79,
+        "text": "벌레가 먹었을지 모른다며 활을 살펴본 뒤 단번에 시위를 걸고, 화살 하나로 도끼 열두 자루를 꿰었어요. 그러고는 활을 들어 구혼자들을 모두 물리쳤지요."
+      },
+      {
+        "ep": 80,
+        "text": "옮길 수 없는 침대 이야기로 아내에게 자기를 밝혔고, 밤이 새도록 스무 해 이야기를 나누었어요."
+      }
+    ],
+    "portrait": "img/char/odysseus.jpg"
+  },
+  {
+    "id": "achilles",
+    "name": "아킬레우스",
+    "alias": [
+      "아킬레스는 영어식 이름"
+    ],
+    "faction": "heroes",
+    "oneLine": "여자들 사이에 숨어 있다가 창을 집어 든 열다섯 살.",
+    "titles": [
+      {
+        "sinceEp": 63,
+        "text": "바다 님프의 아들"
+      }
+    ],
+    "about": "바다의 님프 테티스의 아들이에요. 금발에 볏이 높은 투구를 쓰고 청동 정강이받이를 차지요. 열다섯 살인데 그 아이가 나서면 이긴다는 말이 그리스 곳곳에 돌아요.",
+    "look": "a golden-haired young warrior with a tall crested helmet and a gleaming spear, bronze greaves on his legs",
+    "relations": [
+      {
+        "to": "patroclus",
+        "label": "함께 자란 벗",
+        "kind": "other",
+        "sinceEp": 65
+      },
+      {
+        "to": "odysseus",
+        "label": "찾아낸 사람",
+        "kind": "other",
+        "sinceEp": 63
+      },
+      {
+        "to": "thetis",
+        "label": "어머니",
+        "kind": "parent",
+        "sinceEp": 63
+      }
+    ],
+    "firstEp": 63,
+    "timeline": [
+      {
+        "ep": 63,
+        "text": "여자들 사이에 섞여 있다가 뿔피리 소리에 창을 집어 들어 들켰고, 그날 밤 물가에서 어머니와 이야기하고 이튿날 배에 올랐어요."
+      },
+      {
+        "ep": 65,
+        "text": "아홉 해째 아침에도 성벽 앞에 섰다가, 모래밭에 사람들을 모아 아가멤논 앞에 마주 섰어요. 창자루로 간 손이 멈춘 채 한참 있었지요."
+      },
+      {
+        "ep": 67,
+        "text": "천막 안에서 리라를 뜯다가 수레바퀴 소리에 손을 멈췄어요. 사절 셋이 들고 온 것을 받지 않았지요."
+      },
+      {
+        "ep": 68,
+        "text": "천막 앞에서 자기 갑옷이 성문 안으로 들어가는 것을 보았고, 모래를 머리에 얹고 소리를 냈어요."
+      },
+      {
+        "ep": 69,
+        "text": "어머니가 가져온 새 갑옷을 입고 들판으로 걸어 나갔어요."
+      },
+      {
+        "ep": 70,
+        "text": "성문 앞에서 헥토르를 쓰러뜨렸고, 몸을 돌려 달라는 부탁을 물리치고 전차 뒤에 매어 성 둘레를 돌았어요. 그 밤에는 아무것도 먹지 않고 모래밭을 왔다 갔다 했지요."
+      },
+      {
+        "ep": 71,
+        "text": "천막에 들어온 늙은 왕의 손을 잡고 함께 울었고, 밥을 나눠 먹은 뒤 열이틀 동안 아무도 나가지 않겠다고 약속했어요."
+      },
+      {
+        "ep": 72,
+        "text": "열이틀이 끝난 아침에 스스로 창을 갈아 들판으로 나갔다가 화살 하나에 쓰러졌고, 파트로클로스가 누운 무덤에 함께 묻혔어요."
+      }
+    ],
+    "portrait": "img/char/achilles.jpg"
+  },
+  {
+    "id": "iphigenia",
+    "name": "이피게네이아",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "배를 세다 스물에서 그만두는 아가멤논의 큰딸.",
+    "titles": [
+      {
+        "sinceEp": 64,
+        "text": "미케네의 큰딸"
+      }
+    ],
+    "about": "미케네 왕 아가멤논의 큰딸이에요. 검은 머리를 하나로 땋아 내리고 흰 천을 어깨에 걸치지요. 열넷이고, 궁금한 것이 있으면 어른한테도 그 자리에서 되물어요.",
+    "look": "a calm young woman with long dark braided hair and a white veil, a small deer beside her",
+    "relations": [
+      {
+        "to": "agamemnon",
+        "label": "아버지",
+        "kind": "parent",
+        "sinceEp": 64
+      }
+    ],
+    "firstEp": 64,
+    "timeline": [
+      {
+        "ep": 64,
+        "text": "아버지가 부른 대로 항구에 와서 배를 세다 스물에서 그만두었고, 안개가 걷힌 제단 위에서 사라졌어요. 아르테미스가 데려가 살려 준 것이지요."
+      }
+    ],
+    "portrait": "img/char/iphigenia.jpg"
+  },
+  {
+    "id": "polyphemus",
+    "name": "폴리페모스",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "섬 안쪽 동굴에서 혼자 양을 치는 외눈박이 거인.",
+    "titles": [
+      {
+        "sinceEp": 73,
+        "text": "양을 치는 거인"
+      }
+    ],
+    "about": "섬 안쪽 동굴에 혼자 사는 외눈박이 거인이에요. 헝클어진 머리에 눈이 하나뿐이고, 양가죽을 걸치고 사람 키보다 긴 나무 지팡이를 짚고 다니지요. 아침이면 양 떼를 몰고 나가고 저녁이면 돌아와 동굴 입구를 바위로 막아요.",
+    "look": "a huge shaggy-haired one-eyed shepherd giant with a single eye and a great wooden staff, sheepskin garment",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "동굴에 든 손님",
+        "kind": "other",
+        "sinceEp": 73
+      }
+    ],
+    "firstEp": 73,
+    "timeline": [
+      {
+        "ep": 73,
+        "text": "양 떼를 몰고 돌아와 동굴 입구를 바위로 막고, 손님을 맞는 법은 누가 만들었느냐고 물었어요."
+      },
+      {
+        "ep": 74,
+        "text": "이름이 아무도 아니다라는 손님에게 술을 얻어 마시고 잠들었다가 하나뿐인 눈을 잃었어요. 이웃 거인들이 그냥 돌아간 뒤, 물가에 무릎을 꿇고 아버지를 불렀지요."
+      }
+    ],
+    "portrait": "img/char/polyphemus.jpg"
+  },
+  {
+    "id": "eumaeus",
+    "name": "에우마이오스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "돌아오지 않는 주인 몫을 스무 해째 세어 두는 돼지치기.",
+    "titles": [
+      {
+        "sinceEp": 78,
+        "text": "돼지를 치는 사람"
+      }
+    ],
+    "about": "이타카에서 돼지를 치는 늙은 사람이에요. 볕에 그은 얼굴에 잿빛 수염이 났고, 기운 양가죽 옷을 입고 손잡이를 깎은 지팡이를 짚지요. 주인이 스무 해째 안 돌아오는데도 날마다 우리를 세어요.",
+    "look": "a kind old swineherd with a weathered face and a grey beard, wearing a patched sheepskin cloak, a carved staff in hand",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "섬기는 주인",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 78,
+    "timeline": [
+      {
+        "ep": 78,
+        "text": "개에게 쫓기던 늙은 손님을 구해 자기 자리에 앉히고, 제일 좋은 고기와 자기 겉옷을 내주었어요."
+      },
+      {
+        "ep": 79,
+        "text": "고함이 오가는 마루를 가로질러 활을 늙은 손님의 손에 놓았고, 위층으로 올라가 주인이 오셨다고 알렸어요."
+      },
+      {
+        "ep": 80,
+        "text": "돼지를 올려 보내면서 막대기에 금을 긋지 않았고, 늙은 개를 볕이 드는 쪽으로 옮겨 주었어요."
+      }
+    ],
+    "portrait": "img/char/eumaeus.jpg"
+  },
+  {
+    "id": "telemachus",
+    "name": "텔레마코스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "아버지 얼굴을 모르는 채로 아버지를 찾으러 나갔던 아들.",
+    "titles": [
+      {
+        "sinceEp": 78,
+        "text": "오디세우스의 아들"
+      }
+    ],
+    "about": "오디세우스와 페넬로페의 아들이에요. 아버지를 닮은 검은 곱슬머리에, 아직 자기 키보다 긴 창을 들고 다니지요. 아버지 얼굴을 모르는 채로 스무 해를 살았고, 아버지를 찾겠다고 배를 타고 나갔다 온 참이에요.",
+    "look": "a serious young man with dark wavy hair like his father's, holding a spear too big for him, plain travel cloak",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "아버지",
+        "kind": "parent"
+      },
+      {
+        "to": "penelope",
+        "label": "어머니",
+        "kind": "parent",
+        "sinceEp": 78
+      }
+    ],
+    "firstEp": 78,
+    "timeline": [
+      {
+        "ep": 78,
+        "text": "아버지를 찾다 돌아와 돼지 치는 집에서 아버지를 만났고, 아무한테도 말하지 않기로 했어요."
+      },
+      {
+        "ep": 79,
+        "text": "도끼 열두 자루를 손수 고랑에 세웠고, 활에 시위를 걸 뻔했다가 아버지의 눈짓을 보고 손을 놓았어요."
+      },
+      {
+        "ep": 80,
+        "text": "아버지라고 소리 내어 불렀고, 아침에 마루의 고랑을 메웠어요. 마지막 도끼 한 자루는 그냥 두었지요."
+      }
+    ],
+    "portrait": "img/char/telemachus.jpg"
+  },
+  {
+    "id": "penelope",
+    "name": "페넬로페",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "밤마다 낮에 짠 것을 도로 푸는 이타카의 왕비.",
+    "titles": [
+      {
+        "sinceEp": 78,
+        "text": "이타카의 왕비"
+      }
+    ],
+    "about": "이타카의 왕비예요. 검은 머리를 낮게 틀어 올리고, 키 큰 베틀 앞에 앉아 아직 다 짜지 않은 천을 만지고 있지요. 묻는 말에 바로 대답하는 법이 없고, 대답 대신 하나를 더 물어요.",
+    "look": "a patient queen with dark hair in a low knot, seated at a tall loom with unfinished cloth, muted indigo dress",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "기다린 짝",
+        "kind": "spouse"
+      },
+      {
+        "to": "telemachus",
+        "label": "아들",
+        "kind": "child"
+      },
+      {
+        "to": "antinous",
+        "label": "혼인을 조른 쪽",
+        "kind": "other",
+        "sinceEp": 78
+      }
+    ],
+    "firstEp": 78,
+    "timeline": [
+      {
+        "ep": 78,
+        "text": "밤마다 낮에 짠 천을 도로 풀어 혼인을 미뤄 왔는데, 그 일이 들켜 이제는 정해야 하게 되었어요."
+      },
+      {
+        "ep": 79,
+        "text": "곳간에서 주인의 활을 꺼내 와 겨루기를 걸었고, 늙은 손님에게도 드려 보라고 했어요. 위층에서 잠든 사이에 아래층 일이 끝났지요."
+      },
+      {
+        "ep": 80,
+        "text": "옮길 수 없는 침대를 옮겨 두라고 해서 상대를 시험했고, 그 말에 걸음을 멈춘 사람을 알아보았어요."
+      }
+    ],
+    "portrait": "img/char/penelope.jpg"
+  },
+  {
+    "id": "antinous",
+    "name": "안티노오스",
+    "alias": [],
+    "faction": "mortals",
+    "oneLine": "남의 집 마루에서 제일 큰 소리로 웃는 젊은 사람.",
+    "titles": [
+      {
+        "sinceEp": 78,
+        "text": "구혼자들의 우두머리"
+      }
+    ],
+    "about": "이타카 가까운 집안의 젊은 사람이에요. 검은 머리를 매끈하게 넘기고 팔에는 보석 박힌 금 팔찌를 찼지요. 남의 집 마루에 누워 술잔을 들고 있으면서도 자기를 손님이라고 불러요.",
+    "look": "an arrogant young nobleman with sleek black hair and a jeweled gold armband, lounging with a shallow two-handled clay cup (never a stemmed glass), rich purple tunic",
+    "relations": [
+      {
+        "to": "penelope",
+        "label": "혼인을 조른 쪽",
+        "kind": "other"
+      }
+    ],
+    "firstEp": 78,
+    "timeline": [
+      {
+        "ep": 78,
+        "text": "천을 풀어 온 것을 벌써 알고 있었다고 하면서 이제 정하라고 했어요. 아드님은 언제 오느냐고도 물었지요."
+      },
+      {
+        "ep": 79,
+        "text": "활을 화롯가에서 제일 오래 데우고도 시위를 걸지 못했고, 늙은 손님에게 발판을 던졌어요."
+      }
+    ],
+    "portrait": "img/char/antinous.jpg"
+  },
+  {
+    "id": "circe",
+    "name": "키르케",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "숲 한가운데 집에서 상을 차려 놓고 손님을 기다리는 마법사.",
+    "titles": [
+      {
+        "sinceEp": 75,
+        "text": "섬에 사는 마법사"
+      }
+    ],
+    "about": "바다 한가운데, 나무가 빽빽한 섬에 혼자 사는 마법사예요. 구릿빛이 도는 긴 머리를 늘어뜨리고 한 손에 금빛 지팡이를, 다른 손에 작은 잔을 들고 있어요. 마당에는 늑대와 사자가 개처럼 누워 있고, 집 안에서는 늘 베틀 북이 오가는 소리가 나지요.",
+    "look": "an elegant enchantress with long copper hair and a slender plain gold rod (a straight staff, never a star-tipped wand), a shallow clay cup in her other hand, amber gown",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "잔을 내민 사람",
+        "kind": "other",
+        "sinceEp": 75
+      }
+    ],
+    "firstEp": 75,
+    "timeline": [
+      {
+        "ep": 75,
+        "text": "숲속 집에서 상을 차리고 노란 그릇을 돌렸어요. 마시고도 그대로 서 있는 사람 앞에서 지팡이를 떨어뜨렸고, 약속을 한 뒤 마당의 것들을 도로 사람으로 돌려놓았지요."
+      },
+      {
+        "ep": 76,
+        "text": "떠나는 배에 밀랍을 내주고, 좁은 물길에서는 창을 들지도 말고 사람들에게 말하지도 말라고 일렀어요. 배가 떠날 때 물가에 오래 서 있었지요."
+      }
+    ],
+    "portrait": "img/char/circe.jpg"
+  },
+  {
+    "id": "sirens",
+    "name": "세이렌",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "바다 가운데 흰 바위에 앉아 지나가는 배를 향해 노래하는 둘.",
+    "titles": [
+      {
+        "sinceEp": 76,
+        "text": "노래하는 두 자매"
+      }
+    ],
+    "about": "풀 한 포기 없는 흰 바위에 앉아 노래하는 둘이에요. 얼굴은 사람이고 몸은 새이며, 검고 긴 머리가 접은 날개 위로 흘러내리지요. 그 바위 둘레의 바다에는 물고기도 새도 보이지 않아요.",
+    "look": "two bird-bodied singers with women's faces and long dark hair, perched on a sea rock, wide feathered wings",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "노래를 들은 이",
+        "kind": "other",
+        "sinceEp": 76
+      }
+    ],
+    "firstEp": 76,
+    "timeline": [
+      {
+        "ep": 76,
+        "text": "지나가는 배를 향해 트로이 들판의 일을 다 안다며 노래를 불렀지만, 귀를 막은 사람들이 그대로 노를 저어 갔어요."
+      }
+    ],
+    "portrait": "img/char/sirens.jpg",
+    "group": true
+  },
+  {
+    "id": "calypso",
+    "name": "칼립소",
+    "alias": [],
+    "faction": "creatures",
+    "oneLine": "바다 한가운데 섬에서 혼자 사는 님프.",
+    "titles": [
+      {
+        "sinceEp": 77,
+        "text": "혼자 사는 바다 님프"
+      }
+    ],
+    "about": "뭍에서 아주 먼 섬에 혼자 사는 님프예요. 검은 곱슬머리에 아주 작은 조개껍데기들을 꿰어 넣고 동굴 앞에 서 있지요. 샘이 네 군데에서 솟고 화로에서는 늘 삼나무가 타는 섬이라, 그 냄새가 바닷가까지 내려와요.",
+    "look": "a sea nymph with long dark curls threaded with tiny shells, standing before a cave mouth, sea-foam white dress",
+    "relations": [
+      {
+        "to": "odysseus",
+        "label": "물에서 건진 이",
+        "kind": "other",
+        "sinceEp": 77
+      }
+    ],
+    "firstEp": 77,
+    "timeline": [
+      {
+        "ep": 77,
+        "text": "판자에 매달려 떠내려온 사람을 물에서 건져 일곱 해 동안 섬에 두었어요. 늙지 않게 해 주겠다는 말이 받아들여지지 않았고, 전갈이 온 날에는 연장을 내주고 돛을 지어 주었지요."
+      }
+    ],
+    "portrait": "img/char/calypso.jpg"
+  }
+]
