@@ -1,0 +1,686 @@
+/* assets/styles.css: 전역 토큰·테마·공통 UI + 책/목록/도감. 인쇄는 print.css.
+   디자인 방향: 시안 D2 "유물·석판" (DECISIONS 2026-08-23)
+   글꼴 3층: 제목 Hahmlet / 본문 Gowun Batang 19px·1.95 / UI Pretendard / 숫자 Cormorant Garamond
+   세로 예산: 상단 바 44 + 읽기 바 46. 지면이 남는 세로를 전부 가져간다. */
+
+:root{
+  /* 색 */
+  --papyrus:#EAE0CA; --page:#F8F3E6; --page-2:#FCF8EE; --sunk:#E4DAC2;
+  --stone:#2A2F28; --stone-2:#3A413A;
+  --ink:#1F1B15; --ink-2:#4A4237; --ink-3:#7B7161;
+  --bronze:#94702F; --bronze-lt:#C8A25A; --olive:#4F6135; --terra:#AC4526; --terra-dark:#8A3A20;
+  --line:#D6C8AB; --line-2:#CFC2A6;
+  /* 글꼴 */
+  --title:"Hahmlet","Noto Serif KR",serif;
+  --sans:"Pretendard Variable",Pretendard,system-ui,-apple-system,sans-serif;
+  --serif:"Gowun Batang","Nanum Myeongjo","Noto Serif KR",serif;
+  --num:"Cormorant Garamond","Hahmlet",serif;
+  /* 치수 */
+  --bar-h:44px; --nav-h:46px; --wrap:1320px;
+  /* 본문 크기를 화면 높이에 연동한다. 교실 TV에서는 21px로 커져 뒷자리도 읽고,
+     노트북에서는 17px로 줄어 한 쪽이 화면에 들어간다(DECISIONS 2026-08-23). */
+  /* 본문 크기는 화면 높이에 붙인다. 그래도 쪽이 안 들어가면 읽기 화면에서 --fit이
+     한 단계씩 줄여 맞춘다(아래 .paper.reading). 어느 기기에서든 한 쪽이 한 화면이다. */
+  --fit:1; --body-base:clamp(17px, 2.2vh, 21px); --body-size:var(--body-base); --body-lh:1.95;
+  --meander:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cpath d='M0 11H16M2.2 11V2.2H13V8H6V5H10' fill='none' stroke='%2394702F' stroke-width='1.3' stroke-linecap='square'/%3E%3C/svg%3E");
+}
+/* 큰 글씨 토글: 본문만 키운다(UI는 그대로). 넘치면 안전장치가 받는다. */
+.bigfont{ --body-base:clamp(20px, 2.7vh, 26px); --body-lh:2.0; }
+
+*{ box-sizing:border-box; }
+body{
+  margin:0; font-family:var(--sans); font-size:16px; line-height:1.6; color:var(--ink);
+  background:#3E4238; word-break:keep-all; -webkit-font-smoothing:antialiased;
+}
+.skip-link{ position:absolute; left:-9999px; top:0; z-index:99; background:var(--stone); color:#F2E9D3;
+  padding:10px 16px; font-weight:700; }
+.skip-link:focus{ left:0; }
+.loading{ min-height:100vh; display:flex; align-items:center; justify-content:center;
+  color:var(--ink-3); font-weight:600; background:var(--papyrus); margin:0; }
+
+/* 파피루스 판: 모든 화면의 바탕 */
+.paper{
+  position:relative; min-height:100vh; padding:0 0 34px;
+  background-color:var(--papyrus);
+  background-image:
+    repeating-linear-gradient(90deg, rgba(120,98,60,.028) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(0deg,  rgba(120,98,60,.020) 0 1px, transparent 1px 4px),
+    radial-gradient(110% 70% at 18% 0%, rgba(255,253,246,.7), transparent 62%),
+    radial-gradient(100% 70% at 92% 100%, rgba(140,112,70,.12), transparent 58%);
+}
+.speckle{ position:absolute; inset:0; pointer-events:none; opacity:.16; z-index:0; }
+
+/* ── 석판 상단 바 ─────────────────────────────────────────── */
+.topbar{
+  position:sticky; top:0; z-index:20; height:var(--bar-h);
+  display:flex; align-items:center; gap:14px; padding:0 16px; color:#EFE7D2;
+  background-color:var(--stone);
+  background-image:
+    repeating-linear-gradient(112deg, rgba(255,255,255,.02) 0 2px, transparent 2px 6px),
+    linear-gradient(180deg,#3A413A 0%, #272C26 100%);
+  box-shadow:0 2px 0 rgba(148,112,47,.9), 0 3px 12px rgba(0,0,0,.22);
+}
+.brand{ font-family:var(--title); font-weight:600; font-size:15px; letter-spacing:.03em;
+  color:#F2E9D3; white-space:nowrap; }
+/* 브랜드는 어느 화면에서든 처음 화면으로 돌아가는 문이다: 읽다가 길을 잃지 않게. */
+button.brand{ border:0; background:none; padding:0; cursor:pointer; }
+button.brand:hover{ color:#fff; text-decoration:underline; text-underline-offset:4px;
+  text-decoration-thickness:1px; text-decoration-color:var(--bronze-lt); }
+button.brand:focus-visible{ outline:2px solid var(--bronze-lt); outline-offset:3px; }
+.brand-meta{ font-family:var(--sans); font-weight:500; font-size:12.5px; color:#B6AB92;
+  margin-left:10px; padding-left:10px; border-left:1px solid rgba(226,214,186,.24); }
+.brand-meta .credit{ color:var(--bronze-lt); font-weight:600; }
+.bar-title{
+  flex:1; min-width:0; text-align:center; font-family:var(--title); font-weight:500;
+  font-size:16px; color:#F5EDD9; text-wrap:balance;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.bar-title em{ font-style:normal; font-family:var(--num); font-size:18px; font-weight:600;
+  color:var(--bronze-lt); margin-right:4px; }
+.bar-title small{ font-family:var(--sans); font-size:12.5px; color:#A99E85; margin-left:9px; }
+.controls{ display:flex; gap:7px; align-items:center; margin-left:auto; }
+.tbtn{
+  height:32px; padding:0 12px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;
+  font:500 13px var(--sans); color:#E5D9BC; cursor:pointer;
+  background:rgba(240,228,200,.06); border:1px solid rgba(200,162,90,.5); border-radius:0;
+}
+.tbtn:hover{ background:rgba(200,162,90,.18); color:#FFF4DA; }
+.tbtn[aria-pressed="true"], .tbtn.on{ background:rgba(200,162,90,.26); border-color:var(--bronze-lt); color:#FFF6E0; }
+.tbtn:focus-visible, .btn:focus-visible, .nav-btn:focus-visible{ outline:3px solid #F0D28A; outline-offset:2px; }
+
+/* ── 공통 버튼 ─────────────────────────────────────────── */
+.btn{
+  font:500 15px var(--sans); border:1px solid var(--line); background:var(--page-2); color:var(--ink-2);
+  padding:0 18px; min-height:44px; cursor:pointer; border-radius:0;
+}
+.btn:hover{ border-color:var(--bronze); color:var(--ink); }
+.btn.primary{
+  font-family:var(--title); font-weight:500; font-size:16px; letter-spacing:.02em;
+  background:var(--terra); color:#FFF4EA; border-color:var(--terra-dark); box-shadow:0 3px 0 var(--terra-dark);
+}
+.btn.primary:hover{ background:#C0522F; }
+.btn.primary:disabled{ opacity:1; box-shadow:none; cursor:not-allowed;
+  background:rgba(28,32,26,.78); color:#BFB396; border-color:rgba(200,162,90,.5); }
+/* 배너 위에 놓이는 버튼은 명패와 같은 돌빛으로 맞춘다. 회색 판 하나만 떠 보이면 안 된다. */
+.hero .btn.primary{ box-shadow:0 6px 22px rgba(30,26,16,.28); }
+.btn.primary:focus-visible{ outline:3px solid var(--stone); outline-offset:3px; }
+
+/* ══ 책 읽기 ══════════════════════════════════════════════
+   읽는 동안에는 화면 전체를 쓴다. 지면이 남는 세로를 전부 가져가고
+   읽기 바는 절대 화면 밖으로 밀려나지 않는다. */
+.paper.reading{
+  height:100dvh; min-height:0; padding:0; overflow:hidden;
+  display:flex; flex-direction:column;
+  /* --fit은 book.js가 이 요소에 직접 건다. 여기서 다시 계산해야 값이 먹는다. */
+  --body-size:calc(var(--body-base) * var(--fit));
+}
+.paper.reading .book{ flex:1; min-height:0; display:flex; flex-direction:column; position:relative; z-index:6; }
+.book-stage{
+  flex:1; min-height:0; display:flex; gap:22px; padding:16px 20px 0; position:relative;
+  justify-content:center;
+  background:linear-gradient(180deg, rgba(80,64,38,.09), transparent 80px);
+}
+.sheet{
+  flex:1 1 0; min-width:0; max-width:calc(34 * var(--body-size) + 72px);
+  overflow:auto; overscroll-behavior:contain;
+  display:flex; flex-direction:column; padding:24px 34px 10px;
+  background-color:var(--page);
+  background-image:repeating-linear-gradient(90deg, rgba(120,98,60,.016) 0 1px, transparent 1px 4px);
+  box-shadow:0 0 0 1px #DDCFB1, 0 10px 24px rgba(40,32,16,.20);
+  scrollbar-width:thin;
+}
+.book-stage.two .sheet:first-of-type{ box-shadow:0 0 0 1px #DDCFB1, inset -22px 0 22px -22px rgba(74,58,32,.28), 0 10px 24px rgba(40,32,16,.20); }
+.book-stage.two .sheet:last-of-type{  box-shadow:0 0 0 1px #DDCFB1, inset  22px 0 22px -22px rgba(74,58,32,.28), 0 10px 24px rgba(40,32,16,.20); }
+.book-stage.two{ gap:20px; }
+.book-stage.one .sheet{ flex:0 1 calc(34 * var(--body-size) + 96px); }
+
+.folio{
+  display:flex; align-items:center; gap:11px; flex:none;
+  font-family:var(--num); font-size:15px; color:var(--bronze); letter-spacing:.14em; margin-bottom:10px;
+}
+.folio .rule{ flex:1; height:1px; background:linear-gradient(90deg,rgba(148,112,47,.42),rgba(148,112,47,.05)); }
+.book-stage.two .sheet:last-of-type .folio{ flex-direction:row-reverse; }
+.book-stage.two .sheet:last-of-type .folio .rule{ background:linear-gradient(270deg,rgba(148,112,47,.42),rgba(148,112,47,.05)); }
+.meander{ flex:none; height:12px; background-image:var(--meander); background-repeat:repeat-x;
+  opacity:.8; margin-bottom:14px; }
+
+/* 본문 덩어리를 지면 세로 가운데로. 쪽마다 분량이 달라도 아래만 뻥 비지 않는다. */
+.folio + *{ margin-top:auto; }
+.p-head{
+  font-family:var(--title); font-weight:600; font-size:25px; letter-spacing:.01em; color:var(--stone);
+  text-wrap:balance; margin:0 0 16px;
+}
+/* 머리글 아래 붉은 밑줄은 뺐다(Matto, 2026-09-03). 메안더 띠가 이미 절의 시작을 알린다. */
+/* 한 줄 34자로 고정. 지면이 넓어져도 줄이 길어지지 않아, 쪽에 몇 줄이 들어갈지가 기기와 무관해진다. */
+.p-body{ font-family:var(--serif); font-size:var(--body-size); line-height:var(--body-lh);
+  color:var(--ink); text-align:left; max-width:34em; margin-inline:auto; width:100%; }
+.p-body p{ margin:0 0 .55em; }
+/* 대사가 이어지면 간격을 좁힌다: 책의 대화 조판이고, 줄 수도 아낀다 */
+.p-body p.say + p.say{ margin-top:-.2em; }
+/* 지면 아래 그러데이션은 쓰지 않는다: 스크롤 0을 지면이 정직하게 말해야 한다(DECISIONS 2026-08-23). */
+.leafend{ flex:none; margin-top:auto; padding-top:12px; display:flex; justify-content:center; }
+.leafend i{ display:block; width:5px; height:5px; background:rgba(148,112,47,.5); transform:rotate(45deg); }
+
+/* 넘침 안전장치: 화면이 작아 쪽이 잘릴 때만 나타난다 */
+.more-hint{
+  position:sticky; bottom:-10px; z-index:3; flex:none; margin:6px -34px -10px;
+  padding:9px 34px 12px; display:flex; align-items:center; justify-content:center; gap:8px;
+  font:600 13.5px var(--sans); color:#FFF3E9; background:var(--terra);
+  box-shadow:0 -8px 14px rgba(248,243,230,.9);
+}
+.more-hint svg{ animation:nudge 1.4s ease-in-out infinite; }
+@keyframes nudge{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(3px) } }
+@media (prefers-reduced-motion:reduce){ .more-hint svg{ animation:none } }
+
+/* 표지: 세로 중앙 정렬(아침신문 계승 규칙) */
+/* 도판은 글 속에 떠 있다(Matto, 2026-09-03. 잡지 지면 참조. 앞의 "면 전체 액자" 판형을 뒤집었다).
+   한 면을 통째로 쓰면 그림과 그 대목이 다른 화면에 있어 서로 이어지지 않았다.
+   세로 2:3 원본을 그대로 쓰므로 **자르는 데가 없다.**
+   바깥 끝선은 글줄 끝선과 정확히 같은 선에 선다: 지면 밖으로 물리지 않는다(물리면 잘려 보인다).
+   좌우는 회차 안에서 번갈아(첫 장 오른쪽, 둘째 장 왼쪽) — book.js platesOf. */
+.cut{ margin:0; width:42%; }
+.cut img{ display:block; width:100%; height:auto; aspect-ratio:2/3; object-fit:cover;
+  box-shadow:0 0 0 1px rgba(74,58,32,.20); }
+.cut-r{ float:right; margin:.35em 0 .7em 1.5em; }
+/* 문단 하나가 지면보다 클 때만 붙는다(book.js paginate). 글을 못 쪼개니 그림이 양보한다. */
+.cut.tight{ width:30%; }
+.cut-l{ float:left;  margin:.35em 1.5em .7em 0; }
+/* 띄운 그림이 지면 아래로 삐져나가지 않게 본문 끝에서 흐름을 닫는다. */
+.p-body::after{ content:""; display:block; clear:both; }
+/* 폰 세로: 글줄이 17자밖에 안 되므로 그림 옆에 글을 흘리면 8자짜리 줄이 된다. 띄우지 않고
+   가운데에 세운다. **비율은 2:3 그대로** — 여기서 3:2로 자르면 인물의 머리와 발이 날아간다. */
+@media (max-width:560px){
+  /* 폭은 **반드시 확정값**이어야 한다. auto로 두면 그림을 재기 전(로딩 전)에 높이가 0으로 잡혀
+     쪽 나누기가 그림 자리를 안 비워 두고, 그린 뒤에 235px씩 넘쳤다(1·35·74회). */
+  .cut{ float:none; width:62%; margin:.7em auto .9em; }
+  /* 높이 상한은 폭으로 건다: 2:3이라 높이 = 폭 x 1.5. 25vh로 묶으면 높이가 38vh를 안 넘는다.
+     상한이 없으면 「머리글 + 긴 문단 하나 + 그림」이 한 쪽에 안 들어간다(74회 11쪽 43px). */
+  .cut{ max-width:25vh; }
+  .cut.tight{ width:42%; }
+}
+/* 표지 그림은 **자르지 않는다** (Matto 2026-09-23 「표지 머리가 잘린다」). 확인: _qa/cover-sweep.sh
+   전에는 틀 높이를 32vh 로 묶어서 노트북(1264x677)에서 틀이 2.4:1 가로 띠가 되고 object-fit:cover 가 위아래를
+   19%씩 잘랐다 — 그림의 62%만 보였다. 이제 틀은 늘 그림과 같은 3:2 이고 **높이 상한은 폭으로 건다**(폭 48vh = 높이 32vh).
+   자리가 모자라면 그림이 작아질 뿐 잘리지 않는다.
+   세로 가운데는 justify-content:center 가 아니라 auto 여백으로 잡는다. 가운데 정렬은 넘친 절반을 **위로** 밀어
+   스크롤로도 못 닿게 해서 그림 머리가 한 번 더 잘렸다(긴 「지난 이야기」). auto 여백은 넘치면 0 이 되어 위부터 보인다. */
+.sheet.cover{ text-align:center; align-items:center; }
+.sheet.cover > :first-child{ margin-top:auto; }
+.sheet.cover > :last-child{ margin-bottom:auto; }
+.sheet.cover img{ width:min(100%, 520px, 48vh); aspect-ratio:3/2; object-fit:cover; margin-bottom:14px; flex:none;
+  box-shadow:0 0 0 1px #D3C2A0, 0 8px 18px rgba(40,32,16,.2); }
+.sheet.cover .cover-txt{ display:flex; flex-direction:column; align-items:center; width:100%; }
+/* 두 쪽 화면에서 표지는 늘 혼자 한 화면이다(book.js spreadsOf). 지면 한 장 폭만 쓰면 양옆은 비는데 그림은 눌린다.
+   → 두 쪽 폭을 다 쓰고 **그림은 왼쪽, 회차·제목·지난 이야기는 오른쪽** — 책의 장 첫 펼침면이다 (Matto 2026-09-23 확정).
+   그림 폭은 지면의 56%까지, 높이는 지면 높이(100cqh)까지. 1264x677 에서 647x432 (전에는 520x217 로 잘림) */
+.book-stage.two .sheet.cover{ max-width:calc(2 * (34 * var(--body-size) + 72px) + 20px); flex-direction:row;
+  justify-content:center; gap:clamp(28px, 3.2vw, 56px); container-type:size; }
+.book-stage.two .sheet.cover > *{ margin-block:auto; }
+.book-stage.two .sheet.cover img{ width:min(56%, 100cqh * 1.5); }
+.book-stage.two .sheet.cover .cover-txt{ flex:1 1 0; min-width:0; }
+.sheet.cover .ep-no{ font-family:var(--num); font-size:17px; letter-spacing:.12em; color:var(--bronze); margin:0; }
+.sheet.cover h1{ font-family:var(--title); font-weight:700; font-size:clamp(23px,3vw,32px);
+  color:var(--stone); margin:.25em 0 .5em; text-wrap:balance; }
+.recap{ text-align:left; max-width:620px; background:var(--page-2); border:1px solid var(--line);
+  border-left:3px solid var(--bronze); padding:13px 17px; }
+.recap h3{ font-family:var(--title); font-weight:600; color:var(--bronze); margin:0 0 6px; font-size:14.5px;
+  letter-spacing:.04em; }
+.recap ol{ margin:0; padding-left:1.15em; } .recap li{ margin:3px 0; }
+.recap ol, .recap p, .recap li{ font-family:var(--serif); font-size:15.5px; line-height:1.75; color:var(--ink-2); }
+.recap p{ margin:0; }
+
+/* 마지막 쪽 */
+/* 마지막 쪽도 세로 중앙: 위 auto와 아래 auto가 남은 공간을 반씩 나눈다 */
+.sheet.end h2{ font-family:var(--title); font-weight:700; font-size:24px; color:var(--stone); margin:auto 0 14px; }
+.sheet.end .end-actions{ margin-bottom:auto; }
+.sheet.end h3{ font-family:var(--title); font-weight:600; font-size:15px; color:var(--bronze);
+  letter-spacing:.04em; margin:0 0 9px; }
+.predict{ background:var(--page-2); border:1px solid var(--line); border-left:3px solid var(--terra);
+  padding:14px 18px; margin:0 0 15px; }
+.predict .q{ font-family:var(--serif); font-weight:700; font-size:17px; color:var(--ink); margin:0 0 6px; }
+.predict .h{ margin:0; color:var(--ink-3); font-size:13.5px; }
+.next-preview{ font-family:var(--serif); font-size:16px; color:var(--ink-2); margin:0 0 16px;
+  padding-left:12px; border-left:2px solid var(--line); }
+.cast{ display:flex; flex-wrap:wrap; gap:10px; margin:0 0 18px; }
+.cast-card{ width:84px; text-align:center; background:var(--page-2); border:1px solid var(--line);
+  padding:6px 4px 8px; cursor:pointer; font:inherit; }
+.cast-card:hover{ border-color:var(--bronze); }
+.cast-card:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
+.cast-card img{ width:58px; height:58px; object-fit:cover; }
+.cast-card b{ display:block; font-family:var(--title); font-weight:600; font-size:13px;
+  color:var(--stone); margin-top:5px; }
+.end-actions{ display:flex; gap:10px; flex-wrap:wrap; }
+/* 폰에서는 인물 카드가 지면을 넘긴다: 13명이면 577px로 지면(742px)의 78%를 먹는다(14회 실측).
+   한 줄에 넷씩, 얼굴을 44px로 줄여 넉 줄 안에 들어오게 한다. */
+@media (max-width:560px){
+  .sheet.end h2{ font-size:21px; margin-bottom:10px; }
+  .predict{ padding:10px 12px; margin-bottom:10px; }
+  .next-preview{ margin-bottom:8px; }
+  .sheet.end h3{ margin:0 0 6px; }
+  .cast{ gap:8px; margin-bottom:12px; }
+  .cast-card{ width:calc((100% - 24px) / 4); padding:5px 2px 6px; }
+  .cast-card img{ width:44px; height:44px; }
+  .cast-card b{ font-size:11px; margin-top:3px; line-height:1.25; }
+  /* 버튼 셋이 두 줄로 접히면서 98px를 먹었다. 한 줄에 세운다. */
+  .end-actions{ gap:6px; }
+  .end-actions .btn{ flex:1 1 0; min-width:0; padding:9px 4px; font-size:13px; white-space:nowrap; }
+}
+
+/* 읽기 바 */
+.book-nav{
+  flex:none; height:var(--nav-h); display:flex; align-items:center; gap:16px; padding:0 16px;
+  background-color:var(--stone); background-image:linear-gradient(180deg,#333A32 0%, #262B25 100%);
+  box-shadow:0 -2px 0 rgba(148,112,47,.85);
+}
+.nav-btn{
+  height:32px; padding:0 15px; display:inline-flex; align-items:center; gap:7px; white-space:nowrap;
+  font:500 14px var(--sans); color:#EFE5CA; cursor:pointer;
+  background:rgba(240,228,200,.07); border:1px solid rgba(200,162,90,.45);
+}
+.nav-btn:hover:not(:disabled){ background:rgba(200,162,90,.2); }
+.nav-btn:disabled{ opacity:.32; cursor:default; }
+.nav-btn.next{ background:var(--terra); border-color:#C2573A; color:#FFF4EA; font-weight:700; }
+.nav-btn.next:hover:not(:disabled){ background:#C0522F; }
+.nav-btn.next:disabled{ background:rgba(240,228,200,.07); border-color:rgba(200,162,90,.45); color:#EFE5CA; }
+.progress{ flex:1; min-width:0; display:flex; align-items:center; justify-content:center; gap:14px; }
+.pg-bar{ display:flex; gap:3px; }
+.pg-bar i{ display:block; width:13px; height:4px; background:rgba(232,222,196,.22); }
+.pg-bar i.done{ background:rgba(200,162,90,.7); }
+.pg-bar i.now{ background:#E7B45E; height:8px; margin-top:-2px; }
+.pg-label{ font-family:var(--num); font-size:17px; color:#E9DDBC; letter-spacing:.07em; white-space:nowrap; }
+.pg-label b{ color:#F5D999; font-weight:600; }
+.pg-label span{ font-family:var(--sans); font-size:12px; color:#A0957C; margin-left:8px; letter-spacing:0; }
+.tap-zone{ position:absolute; top:0; bottom:0; width:9%; background:transparent; border:0; cursor:pointer; z-index:2; }
+.tap-zone.left{ left:0; } .tap-zone.right{ right:0; }
+
+/* ══ 회차 목록(첫 화면) ═══════════════════════════════════ */
+.wrap{ position:relative; z-index:6; max-width:var(--wrap); margin:0 auto; padding:0 22px; }
+/* ── 표제 배너 ─────────────────────────────────────────────
+   시즌 표지(1200x800)를 104px 썸네일로 쓰고 있었다. 펼쳐서 배너로 깔고
+   글자가 읽히게 어둡기를 덮는다. 표지가 없는 시즌은 석판 그러데이션으로 내려앉는다
+   (`--cover`가 404여도 뒤의 gradient가 남는다). */
+.hero{
+  position:relative; z-index:6; overflow:hidden;
+  min-height:clamp(238px, 34vh, 380px);
+  display:flex; align-items:flex-end;
+  background:linear-gradient(155deg, var(--stone-2), var(--stone));
+}
+/* 표지는 CSS `url()`이 아니라 <img>로 깐다. 커스텀 속성 안의 상대 경로는 문서가 아니라
+   **스타일시트 기준**으로 풀려서 /assets/content/... 를 찾다가 404가 났다.
+   <img>면 경로가 문서 기준이고, 표지 없는 시즌은 onerror가 지워 석판만 남는다. */
+.hero-bg{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; object-position:center 44%;
+  /* 표지는 크림 바탕에 그려진 **원형 비네트**다. 그대로 깔면 좌우에 크림색 쐐기와
+     비네트의 잘린 테두리가 드러나 스티커처럼 보인다. 키워서 프레임 밖으로 민다. */
+  transform:scale(1.34); transform-origin:center 46%;
+}
+/* 표지가 밝은 파스텔 비네트라 전면 어둡기를 씌우면 그림이 죽는다. 위쪽만 살짝 눌러
+   상단바를 받치고, 아래쪽은 파피루스 색으로 녹여 본문과 이어 붙인다.
+   글자는 어둡기가 아니라 석판 명패가 받는다(.hero-txt). */
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(26,30,24,.30) 0%, rgba(26,30,24,.04) 22%, rgba(26,30,24,0) 46%),
+    linear-gradient(180deg, rgba(234,224,202,0) 62%, rgba(234,224,202,.72) 88%, var(--papyrus) 100%);
+}
+.hero-in{
+  position:relative; z-index:1;
+  display:flex; align-items:flex-end; gap:18px; width:100%;
+  max-width:var(--wrap); margin:0 auto; padding:26px 22px 22px;
+}
+/* 석판 명패: 그림 위에서 글자를 읽히게 하는 유일한 정직한 방법이다. 전면 어둡기는
+   일러스트를 죽이고, 그림자만으로는 밝은 하늘 위에서 안 읽힌다. */
+.hero-txt{
+  min-width:0; padding:14px 20px 15px; border-left:3px solid var(--bronze-lt);
+  background:linear-gradient(100deg, rgba(28,32,26,.90), rgba(28,32,26,.72));
+  box-shadow:0 6px 22px rgba(30,26,16,.28);
+}
+.hero h1{
+  font-family:var(--title); font-weight:700; font-size:clamp(25px, 3.3vw, 40px);
+  color:#F7F1E0; margin:0; letter-spacing:.01em; text-wrap:balance;
+}
+.hero .tag{
+  font-size:clamp(13.5px, 1.2vw, 16px); color:#DBCEB0; margin:7px 0 0;
+}
+.hero-right{ margin-left:auto; display:flex; align-items:flex-end; gap:20px; flex:none; }
+/* 배너 위에서는 밝은 쪽으로 뒤집는다. 청동·먹빛은 사진 위에서 안 읽힌다. */
+.hero-cnt{ text-align:right; white-space:nowrap; padding:11px 16px 12px;
+  background:linear-gradient(260deg, rgba(28,32,26,.90), rgba(28,32,26,.72));
+  border-right:3px solid var(--bronze-lt); box-shadow:0 6px 22px rgba(30,26,16,.28); }
+.hero-cnt .n{ font-family:var(--num); font-size:15px; letter-spacing:.08em; color:#E6DBC0; }
+.hero-cnt .n b{ font-size:27px; color:var(--bronze-lt); font-weight:600; }
+.hero-cnt .d{ font-size:12.5px; color:#CDBF9E; margin-top:5px; }
+.hero-cnt .d b{ color:#E8A88C; font-weight:700; }
+.hero-cnt .track{ width:170px; height:6px; margin:6px 0 0 auto; border-radius:1px;
+  background:rgba(0,0,0,.42); border:1px solid rgba(240,230,205,.34); }
+.hero-cnt .track i{ display:block; height:100%; background:var(--bronze-lt); transition:width .4s; }
+
+/* 배너와 본문 사이의 그리스 열쇠무늬 띠. 무늬는 이미 --meander로 있었는데 쓰이지 않았다. */
+.meander-rule{
+  position:relative; z-index:6; height:12px; margin:0;
+  background-image:var(--meander); background-repeat:repeat-x; background-position:center;
+  border-bottom:1px solid var(--line-2); opacity:.85;
+}
+
+/* 시즌 소개: 배너 아래 첫 화면의 빈 자리를 이야기가 채운다 */
+.season-intro{
+  /* .parts와 같은 자리에서 시작해야 아래 '세상이 생기던 때'와 왼쪽 줄이 맞는다.
+     가운데로 띄우면 본문과 따로 노는 덩어리가 된다. */
+  position:relative; z-index:6; max-width:var(--wrap);
+  margin:20px auto 2px; padding:0 22px 0 calc(22px + 14px);
+  font-family:var(--serif); font-size:15.5px; line-height:1.95; color:var(--ink-2);
+  word-break:keep-all; text-wrap:pretty;
+}
+/* 줄을 고르게 떨군다. keep-all만 걸면 마지막 줄에 낱말 하나가 남아 문단이 흘러내린다.
+   balance는 줄 수를 유지한 채 각 줄 길이를 맞춰 그 꼬리를 없앤다. */
+/* 줄바꿈 자리는 introLines()가 정한다(절 끝). 여기서는 그 줄이 도로 접히지만 않으면 된다.
+   39em = INTRO_LINE(38자) + 여유 한 자. 화면이 이보다 좁으면 어쩔 수 없이 접히고,
+   그때는 keep-all이 낱말만 지킨다. */
+.season-intro > span{ display:block; max-width:39em; text-wrap:pretty; }
+.season-intro::before{
+  content:""; position:absolute; left:22px; top:.35em; bottom:.35em; width:3px;
+  background:linear-gradient(180deg, var(--bronze), rgba(148,112,47,.15));
+}
+
+@media (max-width:760px){
+  /* 세로 화면에서는 명패 둘이 세로로 쌓여 배너를 다 덮는다. 배너를 키워 위쪽에
+     그림이 숨 쉴 자리를 남긴다(내용은 flex-end라 아래에 붙는다). */
+  .hero{ min-height:clamp(272px, 44vh, 360px); }
+  .hero-in{ flex-direction:column; align-items:stretch; gap:10px; padding:18px 14px 14px; }
+  .hero-txt{ padding:11px 15px 12px; }
+  .hero-right{ margin-left:0; align-items:stretch; justify-content:space-between; gap:10px; }
+  .hero-cnt{ text-align:left; padding:9px 13px 10px; border-right:0; border-left:3px solid var(--bronze-lt); }
+  .hero-cnt .n b{ font-size:23px; }
+  .hero-cnt .track{ margin-left:0; width:120px; }
+  .season-intro{ font-size:15px; padding-right:16px; padding-left:30px; }
+  .season-intro::before{ left:16px; }
+}
+
+.parts{ position:relative; z-index:6; max-width:var(--wrap); margin:14px auto 0; padding:0 22px; }
+.part{ margin-bottom:18px; }
+.parthd{ display:flex; align-items:baseline; gap:12px; margin-bottom:10px;
+  border-bottom:1px solid #D9CBAC; padding-bottom:6px; }
+.parthd .rn{ font-family:var(--num); font-size:18px; font-weight:600; color:var(--bronze);
+  letter-spacing:.1em; min-width:32px; }
+.parthd h2{ font-family:var(--title); font-weight:600; font-size:17px; color:var(--stone); margin:0; }
+.parthd .rng{ font-size:12.5px; color:var(--ink-3); margin-left:auto; white-space:nowrap; }
+.ep-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(178px,1fr)); gap:11px; }
+.ep-card{
+  min-height:86px; padding:10px 12px; position:relative; display:flex; flex-direction:column; gap:6px;
+  text-align:left; font:inherit; cursor:pointer;
+  background:var(--page); border:1px solid var(--line); box-shadow:0 2px 0 rgba(140,120,84,.16);
+}
+.ep-card:hover{ border-color:var(--bronze); background:var(--page-2); }
+.ep-card:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
+.ep-card .ep-no{ font-family:var(--num); font-weight:600; font-size:20px; line-height:1; color:var(--bronze); }
+.ep-card .ep-t{ font-size:13.5px; line-height:1.45; color:var(--ink); text-wrap:balance; }
+.ep-card .ep-when{ margin-top:auto; font-size:11.5px; color:var(--ink-3); }
+.ep-card.read{ border-left:3px solid var(--olive); }
+.ep-card.read .ep-no{ color:var(--olive); }
+.ep-card.today{ background:#FBEFE3; border-color:var(--terra); border-left-width:3px;
+  box-shadow:0 2px 0 rgba(172,69,38,.28); }
+.ep-card.today .ep-no{ color:var(--terra); }
+.ep-seal{ position:absolute; right:8px; top:8px; font:700 10.5px var(--sans); letter-spacing:.04em;
+  color:#FFF3E9; background:var(--terra); padding:3px 7px; }
+/* 잠긴 회차는 눌러 앉힌다: 열린 회차가 주인공 */
+.ep-card.locked{
+  min-height:0; height:36px; padding:0 11px; flex-direction:row; align-items:center; gap:8px; cursor:default;
+  background-color:var(--sunk); border-color:#D0C1A1; box-shadow:none;
+  background-image:repeating-linear-gradient(45deg, rgba(120,98,60,.045) 0 2px, transparent 2px 7px);
+}
+.ep-card.locked:hover{ border-color:#D0C1A1; }
+.ep-card.locked .ep-no{ font-size:15px; color:#9C9078; }
+.ep-card.locked .ep-when{ margin:0 0 0 auto; font-size:11.5px; color:#7C7360; }
+.morelock{
+  grid-column:1/-1; min-height:38px; display:flex; align-items:center; justify-content:center; text-align:center;
+  padding:8px 14px; font-size:13px; color:#7C7360;
+  border:1px dashed #C9B994; background:rgba(228,218,194,.5);
+}
+.views{ margin:0; text-align:right; font-size:12.5px; font-weight:600; color:var(--ink-3);
+  white-space:nowrap; align-self:flex-end; }
+.views .n{ font-weight:700; color:var(--ink-2); font-variant-numeric:tabular-nums;
+  box-shadow:inset 0 -.38em 0 rgba(200,162,90,.42); padding:0 2px; border-radius:2px; }
+
+/* 잠긴 회차는 열린 회차와 행을 섞지 않는다: 높이가 달라 어수선해진다 */
+.ep-grid.locked-grid{ grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:8px; margin-top:9px; }
+
+/* ══ 인물 도감 ════════════════════════════════════════════ */
+.codex{ position:relative; z-index:6; max-width:var(--wrap); margin:0 auto; padding:18px 22px 0; }
+.codex-head{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;
+  margin-bottom:4px; }
+.codex-head h1{ font-family:var(--title); font-weight:700; margin:0; font-size:23px; color:var(--stone); }
+.codex-ep{ font:500 14px var(--sans); border:1px solid var(--line); padding:8px 10px;
+  background:var(--page-2); color:var(--ink-2); }
+.codex-note{ color:var(--ink-3); font-size:13.5px; margin:2px 0 0; }
+.codex-tools{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.seg{ display:flex; border:1px solid var(--line); }
+.seg button{ height:34px; padding:0 16px; font:500 13.5px var(--sans); color:var(--ink-2);
+  background:var(--page-2); border:0; border-left:1px solid var(--line); cursor:pointer; }
+.seg button:first-child{ border-left:0; }
+.seg button[aria-pressed="true"]{ background:var(--stone); color:#F3EAD3; }
+.seg button:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
+.fac-tabs{ display:flex; flex-wrap:wrap; gap:7px; margin:14px 0; }
+.fac-tab{ height:36px; padding:0 13px; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
+  font:500 13.5px var(--sans); color:var(--ink-2); background:transparent; border:1px solid #CFC0A2;
+  cursor:pointer; }
+.fac-tab:hover{ background:var(--page-2); }
+.fac-tab:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
+.fac-tab em{ font-style:normal; font-family:var(--num); font-size:15px; color:var(--ink-3); }
+.fac-tab[aria-selected="true"]{ background:var(--stone); border-color:var(--stone); color:#F3EAD3; }
+.fac-tab[aria-selected="true"] em{ color:var(--bronze-lt); }
+.fac-tab.dim{ color:#A0957D; border-color:#DDD2B8; background:rgba(255,253,247,.35); cursor:default; }
+/* 카드는 왼쪽, 상세는 오른쪽에 붙박이: 인물이 몇 명 없을 때 화면이 비지 않는다 */
+.codex-body{ display:grid; grid-template-columns:1fr; gap:18px; align-items:start; }
+@media (min-width:1100px){ .codex-body{ grid-template-columns:1fr 352px; } }
+.codex-detail{ position:sticky; top:calc(var(--bar-h) + 14px); }
+.detail-empty{ margin:0; min-height:220px; padding:26px 22px; display:flex; align-items:center; justify-content:center;
+  text-align:center; color:var(--ink-3); font-size:13.5px; line-height:1.75;
+  background:rgba(255,253,247,.5); border:1px dashed #C9B994; }
+.char-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(176px,1fr)); gap:12px; }
+.char-card{ display:block; width:100%; padding:0; overflow:hidden; text-align:left; font:inherit; cursor:pointer;
+  background:var(--page); border:1px solid var(--line); }
+.char-card:hover{ border-color:var(--bronze); }
+.char-card:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
+.char-card[aria-expanded="true"]{ border-color:var(--terra); box-shadow:0 0 0 2px rgba(172,69,38,.26); }
+/* 초상은 1:1로 그렸다. 가로로 긴 상자에 넣으면 머리 위가 잘린다(하데스·아틀라스·헤파이스토스). */
+.char-card img{ width:100%; aspect-ratio:1/1; height:auto; object-fit:cover; display:block; filter:saturate(.94); }
+.char-card .cc-in{ display:block; padding:10px 12px 12px; }
+.char-card b{ display:block; font-family:var(--title); font-weight:600; font-size:16.5px; color:var(--stone); }
+.char-card small{ display:block; font-size:12.5px; line-height:1.5; color:var(--ink-2); margin-top:5px; }
+.char-empty{ grid-column:1/-1; min-height:130px; display:flex; flex-direction:column; align-items:center;
+  justify-content:center; text-align:center; gap:8px; padding:18px; color:#6E6553; font-size:13.5px; line-height:1.6;
+  background-color:var(--sunk); border:1px dashed #C4B492;
+  background-image:repeating-linear-gradient(45deg, rgba(120,98,60,.045) 0 2px, transparent 2px 7px); }
+.char-detail{ background:var(--page-2); border:1px solid var(--line); border-top:3px solid var(--terra);
+  padding:16px 18px; display:grid; grid-template-columns:104px 1fr; gap:16px; }
+.char-detail img{ width:104px; aspect-ratio:1/1; height:auto; object-fit:cover; border:1px solid #C3B18A; }
+@media (min-width:1100px){ .char-detail{ grid-template-columns:1fr; }
+  .char-detail img{ width:100%; aspect-ratio:1/1; height:auto; } }
+.char-detail h2{ font-family:var(--title); font-weight:700; font-size:25px; color:var(--stone); margin:0; }
+.char-detail .alias{ color:var(--ink-3); font-size:13px; margin:4px 0 0; }
+/* 칭호: 그 인물이 무엇을 맡은 존재인지. 이야기에서 그 자리를 맡는 회차부터 붙는다. */
+.title-badge{ display:inline-block; margin-left:8px; padding:2px 8px; vertical-align:middle;
+  font:600 12px var(--sans); letter-spacing:.02em; color:#FFF3E9; background:var(--bronze); }
+.title-badge.sm{ display:block; margin:5px 0 0; padding:2px 7px; font-size:11px; width:fit-content; }
+.char-detail .about{ font-family:var(--serif); font-size:14px; line-height:1.85; color:var(--ink-2);
+  margin:10px 0 4px; padding-top:10px; border-top:1px dotted #D8C9A9; }
+.char-detail .one{ font-family:var(--serif); font-size:15px; line-height:1.7; color:var(--ink-2); margin:9px 0 0; }
+.char-detail dl{ display:flex; gap:10px; font-size:13.5px; line-height:1.6; padding:7px 0; margin:0;
+  border-bottom:1px dotted #D8C9A9; }
+.char-detail dt{ width:58px; flex:none; color:var(--ink-3); }
+.char-detail dd{ margin:0; color:var(--ink); }
+.char-detail .rel{ display:inline-block; margin-right:9px; color:var(--olive); }
+.trace{ margin-top:14px; }
+.trace .lbl{ font-family:var(--title); font-weight:600; font-size:13.5px; color:var(--bronze);
+  letter-spacing:.04em; margin:0 0 8px; }
+.trace ol{ list-style:none; margin:0; padding:0; }
+.trace li{ display:flex; gap:11px; margin-bottom:9px; }
+.trace li b{ flex:none; width:32px; height:32px; display:flex; align-items:center; justify-content:center;
+  font-family:var(--num); font-size:15px; font-weight:600; color:#F3EAD3; background:var(--stone); }
+.trace li span{ font-family:var(--serif); font-size:14px; line-height:1.7; color:var(--ink-2); }
+
+/* ── 가족 보기: 가로로 넓은 가계도 대신 가족 카드를 세로로 쌓는다 ──
+   한 줄이 한 문장이 된다: "가이아의 아이들 · 우라노스와 함께 → 크로노스, 키클롭스, 백수거인" */
+.family-stack{ display:flex; flex-direction:column; gap:11px; min-width:0; }
+.fam{ display:grid; grid-template-columns:112px minmax(0,1fr); background:var(--page);
+  border:1px solid var(--line); box-shadow:0 2px 0 rgba(140,120,84,.14); }
+.fam-who{ padding:13px 8px; border-right:1px solid var(--line); background:rgba(255,253,247,.55);
+  display:flex; flex-direction:column; align-items:center; gap:4px; text-align:center; }
+.fam-who .of{ font-size:11.5px; color:var(--ink-3); }
+.fam-rows{ display:flex; flex-direction:column; min-width:0; }
+.fam-row{ display:flex; align-items:flex-start; gap:12px; padding:11px 14px; border-top:1px dotted #DDD0B4; }
+.fam-row:first-child{ border-top:0; }
+.with{ flex:none; width:116px; margin:16px 0 0; text-align:right; font-size:12.5px; color:var(--ink-3); line-height:1.5; }
+.with b{ display:block; font-family:var(--title); font-weight:600; font-size:14px; color:var(--olive); }
+.kids{ display:flex; flex-wrap:wrap; gap:4px; min-width:0; }
+
+/* 인물 알갱이 */
+.p{ display:flex; flex-direction:column; align-items:center; gap:4px; width:76px; padding:5px 2px 6px;
+  border:1px solid transparent; background:transparent; cursor:pointer; font:inherit; }
+.p:hover{ border-color:var(--bronze); background:var(--page-2); }
+.p:focus-visible{ outline:3px solid var(--terra); outline-offset:1px; }
+.p .av{ width:48px; height:48px; border-radius:50%; overflow:hidden; background:var(--sunk);
+  border:2px solid var(--bronze); display:flex; align-items:center; justify-content:center;
+  font-family:var(--title); font-weight:600; font-size:17px; color:#7A6B4B; }
+.p .av img{ width:100%; height:100%; object-fit:cover; display:block; }
+.p .nm{ font-family:var(--title); font-weight:600; font-size:12.5px; color:var(--stone);
+  line-height:1.25; text-align:center; }
+.p .down{ font-size:10px; color:var(--bronze); line-height:1; }
+.p.big{ width:88px; } .p.big .av{ width:62px; height:62px; font-size:22px; }
+.p.big .nm{ font-size:14px; }
+.p.f-primordial .av{ border-color:#4F6135; } .p.f-titans .av{ border-color:var(--bronze); }
+.p.f-olympians .av{ border-color:var(--terra); } .p.f-creatures .av{ border-color:#6B5B7B; }
+.p.f-mortals .av{ border-color:var(--ink-3); }  .p.f-heroes .av{ border-color:#2F5468; }
+.p.on{ border-color:var(--terra); background:#FBEFE3; }
+.p.on .av{ box-shadow:0 0 0 3px rgba(172,69,38,.3); }
+/* 고른 인물이 나오는 묶음만 밝게 */
+.family-stack.focused .p{ opacity:.3; }
+.family-stack.focused .p.on,
+.family-stack.focused .fam.hit .p,
+.family-stack.focused .mini.hit .p{ opacity:1; }
+.fam.hit, .mini.hit{ border-color:var(--terra); box-shadow:0 0 0 2px rgba(172,69,38,.16); }
+
+.mini{ background:var(--page); border:1px solid var(--line); padding:11px 14px 12px; }
+.mini h3{ font-family:var(--title); font-weight:600; font-size:13px; color:var(--bronze);
+  letter-spacing:.04em; margin:0 0 8px; }
+.mini .mrow{ display:flex; flex-wrap:wrap; gap:10px; }
+.mini.sunk{ background:rgba(228,218,194,.45); border-style:dashed; border-color:#C9B994; }
+.pair{ display:flex; align-items:center; gap:2px; padding:2px 8px 2px 2px;
+  border:1px solid #E0D3B6; background:var(--page-2); }
+.pair .link{ font-size:12px; color:var(--terra); padding:0 2px; }
+
+/* 상세 패널의 관계 묶음 */
+.rel-grp{ margin-top:9px; }
+.rel-grp b{ display:block; font-size:11.5px; color:var(--ink-3); letter-spacing:.03em; margin-bottom:4px; }
+.rel-grp span{ display:inline-block; font-size:12.5px; color:var(--ink); background:var(--sunk);
+  padding:3px 8px; margin:0 4px 4px 0; }
+.rel-grp.other span{ background:transparent; border:1px dashed #C4B492; color:var(--ink-2); }
+
+/* ══ 안내·잠김·에러: 세로 중앙 정렬(아침신문 계승 규칙) ═════ */
+.notice{ position:relative; z-index:6; min-height:calc(100vh - var(--bar-h) - 60px);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+  gap:14px; padding:40px 22px; max-width:640px; margin:0 auto; }
+.notice h1{ font-family:var(--title); font-weight:700; font-size:26px; color:var(--stone); margin:0; }
+.notice p{ margin:0; color:var(--ink-2); line-height:1.8; }
+
+/* ── 서가(시즌 2개부터 되살림. DECISIONS 2026-08-23) ── */
+.shelf-title{ font-family:var(--title); font-size:24px; margin:18px auto 14px; max-width:var(--wrap); padding:0 22px;
+  position:relative; z-index:6; }
+.shelf{ position:relative; z-index:6; max-width:var(--wrap); margin:0 auto; padding:0 22px; display:grid; gap:16px; }
+.season-card{ display:grid; grid-template-columns:minmax(160px,280px) 1fr; gap:20px;
+  background:var(--page-2); border:1px solid var(--line); padding:16px; }
+.season-card img{ width:100%; aspect-ratio:3/2; object-fit:cover; }
+.season-card h2{ font-family:var(--title); font-weight:700; margin:0 0 4px; font-size:22px; color:var(--stone); }
+.sc-meta{ color:var(--ink-3); font-size:13.5px; margin:0 0 12px; }
+.sc-actions{ display:flex; flex-wrap:wrap; gap:10px; }
+.season-card.upcoming{ opacity:.85; }
+
+/* ══ 좁은 화면 ═══════════════════════════════════════════ */
+@media (max-width:1023px), (orientation:portrait){
+  .tap-zone{ display:none; }
+  .sheet{ padding:20px 22px 8px; }
+  .more-hint{ margin-left:-22px; margin-right:-22px; padding-left:22px; padding-right:22px; }
+  .book-stage{ padding:12px 14px 0; }
+}
+@media (max-width:760px){
+  .brand-meta{ display:none; }
+  .bar-title{ font-size:14.5px; }
+  .bar-title small{ display:none; }
+  .tb-txt{ display:none; }
+  .tbtn{ padding:0 10px; }
+  .hero{ flex-wrap:wrap; }
+  .hero-in{ flex-wrap:wrap; }
+  .hero-right{ margin-left:0; width:100%; justify-content:space-between; }
+  .char-detail{ grid-template-columns:1fr; }
+  .char-detail img{ width:104px; aspect-ratio:1/1; }
+  .fam{ grid-template-columns:1fr; }
+  .fam-who{ flex-direction:row; justify-content:flex-start; gap:8px; border-right:0;
+    border-bottom:1px solid var(--line); padding:9px 12px; }
+  .fam-row{ flex-direction:column; gap:4px; }
+  .with{ width:auto; margin:0; text-align:left; }
+  .with b{ display:inline; margin-right:4px; }
+  :root{ --body-size:18px; }
+}
+
+/* 아주 좁은 화면(휴대폰 세로): 상단바에 제목까지 넣으면 21px로 눌려 "제." 로만 보인다.
+   제목은 표지 쪽에 이미 크게 있으니 여기서는 접는다. 버튼이 더 중요하다. */
+@media (max-width:520px){
+  .bar-title{ display:none; }
+}
+
+/* ── 바닥 띠 ────────────────────────────────────────────────
+   공개 첫날은 회차 카드가 여섯 장뿐이라 화면 아래가 크게 빈다. 날이 갈수록 카드가
+   차면서 이 띠는 아래로 밀린다. 지금 비어 보이지 않게 하는 것이 일이다. */
+.foot{
+  position:relative; z-index:6; margin:34px 0 0; padding:0;
+  border-top:1px solid var(--line-2);
+  background:linear-gradient(180deg, rgba(214,200,171,.22), transparent 70%);
+}
+.foot-rule{ height:12px; background-image:var(--meander); background-repeat:repeat-x;
+  background-position:center; opacity:.5; }
+/* MattoLAB 푸터의 구조·크기는 assets/brand/brand.css(공용)가 정한다.
+   여기서는 이 사이트의 색만 넘긴다. 고칠 곳은 f:/VibeCoding/promo/mattolab-brand/brand.css. */
+.lab{
+  --lab-wrap:var(--wrap);
+  --lab-ink:var(--ink-2); --lab-dim:var(--ink-3); --lab-line:var(--line-2);
+  --lab-hi:rgba(200,162,90,.42); --lab-key:#8B8271; --lab-soft:#948C7B; --lab-soon:#A79C87;
+  --lab-sans:var(--sans); --lab-focus:var(--bronze-lt);
+}
+
+/* ── 폰 하단 겹침 (09-02 자체 검수 B1·B2·B3, 09-16 재측정 후 수정) ─────────────
+   세 가지가 같은 46px 안에서 포개져 있었다. 따로 고치면 "아직도 겹친다"가 되므로 한 덩어리로 둔다.
+   이 블록은 위의 좁은 화면 규칙(.book-stage 패딩 등)을 덮어야 해서 파일 맨 끝에 있다. */
+/* B1: 폰은 쪽 나누기가 화면 기준이라 한 회가 30쪽을 넘는다. 13px 눈금 30개가 버튼 밑으로 깔리고
+   "2 / 32쪽" 라벨은 화면 밖으로 밀려 안 보였다. 눈금은 줄어들게 하고, 폰에서는 라벨만 남긴다. */
+.progress{ overflow:hidden; }
+.pg-bar{ flex:0 1 auto; min-width:0; }
+.pg-bar i{ flex:0 1 auto; min-width:2px; }   /* 폭 13px은 그대로, 모자라면 줄어든다 */
+@media (hover:none), (max-width:760px){ .pg-label span{ display:none; } }   /* 키보드 안내는 폰에 없다 */
+@media (max-width:760px){
+  .pg-bar{ display:none; }
+  .book-nav{ gap:10px; --nav-pad:12px; }
+}
+/* B2: "아직 남았어요" 띠가 지면 아래로 10px 삐져나와 읽기 바에 붙어 한 덩어리로 보였다. */
+.more-hint{ bottom:0; margin-bottom:0; }
+.book-stage{ padding-bottom:10px; }
+/* B3: viewport-fit=cover라 제스처 바·홈 인디케이터·노치 밑까지 그린다. 그만큼 비켜 선다. */
+.book-nav{
+  height:calc(var(--nav-h) + env(safe-area-inset-bottom, 0px));
+  padding-bottom:env(safe-area-inset-bottom, 0px);
+  padding-left:max(var(--nav-pad, 16px), env(safe-area-inset-left, 0px));
+  padding-right:max(var(--nav-pad, 16px), env(safe-area-inset-right, 0px));
+}
+.topbar{
+  height:calc(var(--bar-h) + env(safe-area-inset-top, 0px));
+  padding-top:env(safe-area-inset-top, 0px);
+}
+/* P1-3: 도감이 폰에서 1열(카드 하나 452px)이라 82명이면 3만 픽셀을 내려야 했다. */
+@media (max-width:520px){
+  .char-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:8px; }
+}
+/* P2-2: 손가락으로 누르는 기기에서는 버튼을 키운다 (바 높이 44·46 안에서) */
+@media (hover:none), (max-width:760px){
+  .tbtn{ height:38px; min-width:40px; justify-content:center; }
+  .nav-btn{ height:40px; }
+}
