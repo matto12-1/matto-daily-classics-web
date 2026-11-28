@@ -1,0 +1,21 @@
+@page { size: A4; margin: 13mm 14mm 10mm; }
+body.printing #app { display: none !important; } body.printing #print-root { display: block !important; }
+html, body { background: #fff !important; }
+#print-root { color: #000; font-family: "Pretendard", system-ui, sans-serif; }
+.page { font-size: 10.4pt; line-height: 1.5; word-break: keep-all; overflow-wrap: anywhere; }
+.pw-mast { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2.4pt solid #000; padding-bottom: 1.6mm; }
+.pw-mast .nm { font-family: "Hahmlet", serif; font-size: 13.5pt; } .pw-mast .meta { font-size: 8.6pt; }
+.pw-title { font-family: "Hahmlet", serif; font-size: 20pt; margin: 3mm 0 2mm; }
+.pw-fill { display: flex; border: 1pt solid #000; margin: 0 0 4mm; } .pw-fill > div { flex: 1; border-right: 1pt solid #000; padding: 1.4mm 2.5mm 3mm; } .pw-fill > div:last-child { border-right: 0; } .pw-fill b { font-size: 8pt; color: #333; }
+.pw-recap { border: .8pt solid #000; padding: 2mm 3mm; margin: 0 0 4mm; font-size: 9.5pt; } .pw-recap ol { margin: 1mm 0 0; padding-left: 5mm; }
+.pw-body { column-count: 2; column-gap: 8mm; text-align: justify; font-family: "Gowun Batang", "Pretendard", serif; } .pw-body p { margin: 0 0 .55em; }
+.pw-sec { font-family: "Hahmlet", serif; font-size: 12pt; font-weight: 400; margin: 3mm 0 1.5mm; padding-left: 3mm; border-left: 2.4pt solid #000; break-after: avoid; }
+/* 화면 쪽 번호는 종이에 찍지 않는다. 인쇄물은 2단으로 이어 흐르므로 "· 7 ·"이 가리킬 것이
+   종이 위에 없다: 단 한가운데 뜬 뜻 없는 표시일 뿐이고, 20쪽짜리 회차에서는 그 표시와 여백만
+   30mm 넘게 먹어 11회가 4면을 넘겼다. 구조는 머리글(.pw-sec)이 이미 보여 준다.
+   HTML에는 남겨 둔다: 화면 쪽 정보 자체는 문서에 있는 편이 낫다. */
+.pw-pno { display: none; }
+.pw-predict { break-inside: avoid; border: 1pt solid #000; padding: 2.5mm 3mm; margin: 4mm 0 0; } .pw-predict p { margin: 1mm 0 2mm; font-weight: 600; }
+.pw-write .ln { height: 8mm; border-bottom: .8pt solid #888; }
+.pw-cast { margin: 3mm 0 0; font-size: 9.5pt; }
+.pw-foot { margin-top: 4mm; padding-top: 2mm; border-top: .6pt solid #000; display: flex; justify-content: space-between; font-size: 8.4pt; color: #333; }
